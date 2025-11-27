@@ -24,7 +24,7 @@ st.set_page_config(
     page_title="COGNISYN: Yb-171 Materials Discovery",
     page_icon="🔬",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="auto"  # Collapsed on mobile, expanded on desktop
 )
 
 # Demo materials data (baseline Nash equilibria)
