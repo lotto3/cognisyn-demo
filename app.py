@@ -371,61 +371,68 @@ def main():
     🎮 **5 Quantum Superpowers** - Visualize quantum-inspired operations in action
     🔬 **Novel materials** - Materials NOT in databases (potential publications)
 
-    ### Available Demo Formats:
+    **What you'll see in a live demo:**
+    - 🖥️ **Virtual Demo (Zoom, 30 min)** - Live system walkthrough, Q&A, technical deep-dive
+    - 🏢 **In-Person Demo (1 hour)** - Full architecture, hands-on exploration, research collaboration
 
-    **🖥️ Virtual Demo (30 minutes via Zoom)**
-    - Live system walkthrough
-    - Q&A with technical deep-dive
-    - Perfect for investors, partners, collaborators
+    **What makes COGNISYN unique:**
+    - ✨ LLMs as strategic operators of quantum-inspired mathematical physics
+    - 🧠 Compositional learning beyond pattern matching (games → materials)
+    - 🔬 Real materials discovery with potential publications
+    - 📈 60-day continuous learning pipeline
 
-    **🏢 In-Person Demo (1 hour)**
-    - Full architecture presentation
-    - Live system demonstration
-    - Hands-on exploration
-    - Perfect for research institutions, corporate partnerships
-
-    ### Contact for Demo:
-
-    📧 **Email:** [Your email here]
-    📅 **Available:** Dec 2-6, 2025 (before Europe trip)
-    ⏱️ **Duration:** 30-60 minutes
-
-    **What makes this unique:**
-    - LLMs doing actual quantum-inspired math operations (not just chatting!)
-    - Compositional learning beyond pattern matching
-    - Real materials discovery application
-    - 60-day continuous learning pipeline
-
-    **Target audience:**
+    **Perfect for:**
     - Investors seeking novel AI applications
-    - Quantum computing & materials science partners
-    - Research institutions validating continuous learning
+    - Quantum computing & materials science research partners
+    - Institutions validating continuous learning capabilities
     """)
 
-    # Contact form (simplified for demo)
-    with st.form("demo_request"):
-        st.subheader("Request a Demo")
+    # Contact form
+    st.markdown("---")
 
+    st.subheader("📩 Request a Demo")
+
+    st.markdown("""
+    **Or email directly:** tish@cognisyn.ai (preferred for fastest response)
+
+    Fill out the form below and we'll get back to you soon:
+    """)
+
+    with st.form("demo_request"):
         col_a, col_b = st.columns(2)
         with col_a:
-            name = st.text_input("Name")
-            email = st.text_input("Email")
+            name = st.text_input("Name *")
+            email = st.text_input("Email *")
         with col_b:
             org = st.text_input("Organization")
-            demo_type = st.selectbox("Demo Type", ["Virtual (Zoom)", "In-Person"])
+            demo_type = st.selectbox("Preferred Demo Type", ["Virtual (Zoom)", "In-Person", "Either works"])
 
-        message = st.text_area("Message (optional)")
+        interest = st.multiselect(
+            "Primary Interest",
+            ["Investment opportunity", "Research collaboration", "Materials partnership",
+             "Technical validation", "Other"]
+        )
 
-        submitted = st.form_submit_button("Request Demo")
+        message = st.text_area("Message / Questions (optional)")
+
+        submitted = st.form_submit_button("Submit Demo Request")
 
         if submitted:
-            st.success(f"""
-            ✅ **Demo request received!**
+            if name and email:
+                st.success(f"""
+                ✅ **Thank you {name}!**
 
-            Thank you {name}! We'll contact you at {email} to schedule your {demo_type} demo.
+                Your demo request has been submitted. We'll contact you at **{email}** to schedule your {demo_type} demo.
 
-            In the meantime, explore this dashboard to see COGNISYN's approach to materials discovery.
-            """)
+                **Next steps:**
+                1. Watch for our email (check spam folder if needed)
+                2. We'll send available times (virtual demos available worldwide, in-person in San Francisco)
+                3. Prepare any specific questions about the technology
+
+                In the meantime, explore this dashboard to see COGNISYN's approach!
+                """)
+            else:
+                st.error("Please fill in Name and Email fields (marked with *)")
 
     st.markdown("---")
 
