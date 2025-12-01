@@ -195,6 +195,8 @@ def main():
     st.title("🔬 COGNISYN: Yb-171 Materials Discovery")
     st.markdown("### *Novel Quantum Materials & Continuous Learning AI Through Quantum-Inspired Game Theory Compositional Learning*")
 
+    st.info("📺 **This is a preview.** Schedule a live demo below to watch real-time discovery in action.")
+
     st.markdown("""
     ---
     **Mission:** Finding Yb-171 quantum computing materials where stability + optical + coherence are ALL high—synergies beyond the Pareto frontier that classical methods cannot reach.
