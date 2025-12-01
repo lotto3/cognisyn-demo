@@ -228,14 +228,6 @@ def main():
     with col3:
         st.metric("Novel Discoveries", "0")
 
-    st.info("""
-    🎯 **This is a demo dashboard showing COGNISYN's approach.**
-
-    **To see the full system in action** with real-time discovery, quantum operations, and continuous learning, **schedule a live demonstration!**
-
-    Scroll down to book your demo.
-    """)
-
     st.markdown("---")
 
     # ========================================================================
