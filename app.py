@@ -198,7 +198,6 @@ def main():
     st.info("📺 **This is a preview.** Schedule a live demo below to watch real-time discovery in action.")
 
     st.markdown("""
-    ---
     **Mission:** Finding Yb-171 quantum computing materials where stability + optical + coherence are ALL high—synergies beyond the Pareto frontier that classical methods cannot reach.
 
     **Core Insight:** Materials discovery is NOT single-objective optimization—it's a multi-agent cooperative game between competing properties (stability, optical, coherence). Traditional DFT approaches converge to Nash equilibria (trade-off solutions) because they optimize properties independently. COGNISYN's Care operator, trained through compositional learning from Baba is Quantum language (Days 1-5) through quantum-inspired game scenarios (Days 6-14), discovers materials at Care equilibria where properties synergize.
