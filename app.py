@@ -208,7 +208,7 @@ def main():
     • Makes cooperation mathematically optimal (transforms Nash equilibria)
     • Connects all system components
 
-    LLMs learn to be strategic operators of quantum-inspired mathematical physics through quantum games, enabling transformative capabilities in molecular design, robotics, and advanced AI applications.
+    LLMs learn to be strategic operators of quantum-inspired mathematical physics through quantum games and the Baba is Quantum language—which brings quantum games to classical compute—to enable beyond-Pareto solutions and transformative capabilities in molecular design, robotics, and advanced AI applications.
     ---
     """)
 
@@ -216,7 +216,7 @@ def main():
     # DEMO STATUS
     # ========================================================================
 
-    st.header("📊 Current Day: 5/60")
+    st.header("📊 Current Day: 6/60")
 
     col1, col2, col3, col4 = st.columns(4)
 
