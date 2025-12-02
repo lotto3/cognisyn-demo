@@ -464,6 +464,15 @@ def main():
 
         st.markdown("---")
 
+        st.subheader("🔬 Data Source")
+        st.markdown("""
+        Materials data from [Materials Project](https://materialsproject.org/)
+
+        *A. Jain et al., APL Materials 1, 011002 (2013)*
+        """)
+
+        st.markdown("---")
+
         st.caption("Powered by COGNISYN Framework")
         st.caption("Built with Streamlit + Plotly")
 
