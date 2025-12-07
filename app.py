@@ -241,8 +241,10 @@ def main():
     **COGNISYN** (green/yellow) is designed to discover Care equilibria where ALL THREE properties are high.
 
     🔴 **Red points:** Baseline materials (Nash) - One property high, others suffer
-    🟢 **Green points:** Anticipated COGNISYN discoveries (Care) - ALL THREE properties high
+    🟢 **Green points:** *Illustrative* target discoveries (Care) - ALL THREE properties high
     🟡 **Yellow plane:** Pareto frontier - Trade-off boundary classical methods cannot escape
+
+    ⚠️ **Note:** Green points are **illustrative examples** showing the *types* of materials COGNISYN is designed to discover—not actual discoveries. Schedule a live demo to see real results.
     """)
 
     # Load data
@@ -321,10 +323,10 @@ def main():
     # NOVEL DISCOVERIES
     # ========================================================================
 
-    st.header("✨ Anticipated Novel Discoveries")
+    st.header("✨ Illustrative Discovery Examples")
 
     st.markdown("""
-    **Target discoveries:** These materials are **NOT in the baseline top-100**. COGNISYN's quantum-inspired game theory approach is designed to discover synergies like these. Each represents a potential publishable result.
+    ⚠️ **IMPORTANT:** The materials shown below are **illustrative examples** demonstrating the *types* of discoveries COGNISYN is designed to find—not actual discoveries. These examples show target Care equilibria (synergies) where ALL THREE properties are high. **Schedule a live demo to see real discoveries.**
     """)
 
     # Display novel materials
