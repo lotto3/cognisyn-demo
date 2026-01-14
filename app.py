@@ -198,30 +198,13 @@ def main():
     # ========================================================================
 
     st.title("🔬 COGNISYN: Yb-171 Host Materials Discovery")
-    st.markdown("### *Novel Quantum Materials & Continuous Learning AI Through Quantum-Inspired Game Theory Compositional Learning*")
 
-    st.info("📺 **This is a preview.** Schedule a live demo below to watch real-time discovery in action.")
-
-    st.markdown("""
-    > **What are host materials?** We're finding crystals to DOPE Yb-171 ions INTO.
-    > The notation `CaWO₄:Yb³⁺` means "Yb ions doped into calcium tungstate."
-    > The HOST material's properties determine Yb-171 quantum memory performance.
-    """)
+    st.info("📺 **Preview demo.** Schedule a live demo below to see real-time discovery.")
 
     st.markdown("""
-    **Mission:** Finding HOST MATERIALS for Yb-171 quantum computing where host quality + optical properties + spin coherence are ALL high—synergies beyond the Pareto frontier that classical methods cannot reach.
+    **What are host materials?** Crystals we dope Yb-171 ions into (e.g., `CaWO₄:Yb³⁺` = Yb in calcium tungstate).
 
-    **Core Insight:** Materials discovery is NOT single-objective optimization—it's a multi-agent cooperative game between competing properties (host quality, optical properties, spin coherence). Traditional DFT approaches converge to Nash equilibria (trade-off solutions) because they optimize properties independently. COGNISYN's Care operator, trained through compositional learning from Baba is Quantum language (Days 1-5) through quantum-inspired game scenarios (Days 6-14), discovers materials at Care equilibria where properties synergize.
-
-    **The COGNISYN Framework:** An external framework that uses the Baba is Quantum language to enable a quantum-inspired game theory approach, turning LLMs into strategic mathematical physics operators through their APIs.
-
-    **The Care Operator (C_λ)** is crucial to enabling quantum-inspired mathematics on classical compute:
-    • Transforms exponential complexity → polynomial (by pruning non-beneficial paths)
-    • Makes cooperation mathematically optimal (transforms Nash equilibria)
-    • Connects all system components
-
-    LLMs learn to be strategic operators of quantum-inspired mathematical physics through quantum games and the Baba is Quantum language—which brings quantum games to classical compute—to enable beyond-Pareto solutions and transformative capabilities in molecular design, robotics, and advanced AI applications.
-    ---
+    **Mission:** Find hosts where **host quality + optical properties + spin coherence** are ALL high—synergies beyond the Pareto frontier.
     """)
 
     # ========================================================================
@@ -245,22 +228,14 @@ def main():
     # SYNERGY SPACE 3D
     # ========================================================================
 
-    st.header("Synergy Space: The Core Discovery")
+    st.header("Synergy Space")
 
     st.markdown("""
-    **Classical methods** (red) find Nash equilibria where properties trade off.
-    **COGNISYN** (green/yellow) is designed to discover Care equilibria where ALL THREE properties are high.
+    🔴 **Red:** Baseline (Nash) - trade-offs | 🟢 **Green:** COGNISYN (Care) - synergies | 🟡 **Yellow:** Pareto frontier
 
-    🔴 **Red points:** Baseline host materials (Nash) - One property high, others suffer
-    🟢 **Green points:** *Illustrative* target discoveries (Care) - Host Quality + Optical + Spin Coherence ALL high
-    🟡 **Yellow plane:** Pareto frontier - Trade-off boundary classical methods cannot escape
+    **Three Properties:** Host Quality (stability + linewidth) · Optical Properties (band gap) · Spin Coherence (I=0 nuclei)
 
-    **The Three Properties for Yb-171 Host Materials:**
-    - **Host Quality:** Crystal stability + narrow inhomogeneous linewidth (for Yb³⁺ integration)
-    - **Optical Properties:** Suitable band gap for Yb³⁺ transitions (2-6 eV ideal)
-    - **Spin Coherence:** I=0 host nuclei content (reduces decoherence from nuclear spin bath)
-
-    ⚠️ **Note:** Green points are **illustrative examples** showing the *types* of materials COGNISYN is designed to discover—not actual discoveries. Schedule a live demo to see real results.
+    ⚠️ Green points are *illustrative targets*—schedule a live demo to see real discoveries.
     """)
 
     # Load data
@@ -341,9 +316,7 @@ def main():
 
     st.header("✨ Illustrative Discovery Examples")
 
-    st.markdown("""
-    ⚠️ **IMPORTANT:** The materials shown below are **illustrative examples** demonstrating the *types* of discoveries COGNISYN is designed to find—not actual discoveries. These examples show target Care equilibria (synergies) where ALL THREE properties are high. **Schedule a live demo to see real discoveries.**
-    """)
+    st.caption("⚠️ These are target examples—schedule a live demo to see real discoveries.")
 
     # Display novel materials
     novel_materials = cognisyn_df[cognisyn_df['novel'] == True].sort_values('synergy_score', ascending=False)
@@ -374,78 +347,11 @@ def main():
     st.header("🎯 Schedule a Live Demo")
 
     st.markdown("""
-    **See COGNISYN in action!** This dashboard shows the concept - in a live demo you'll see:
+    **In a live demo you'll see:** Real-time quantum operations · 1,073 → 25 → 1 optimal material · 60-day continuous learning
 
-    ✨ **Real-time quantum operations** - Agents executing SUPERPOSE, ENTANGLE, INTERFERENCE
-    📊 **Live pruning** - Watch 1,073 compounds → 25 → 1 optimal material
-    🧠 **Continuous learning** - Strategic memory accumulating patterns over 60 days
-    🎮 **5 Quantum Superpowers** - Visualize quantum-inspired operations in action
-    🔬 **Novel materials** - Materials NOT in databases (potential publications)
-
-    **What you'll see in a live demo:**
-    - 🖥️ **Virtual Demo (Zoom, 30 min)** - Live system walkthrough, Q&A, technical deep-dive
-    - 🏢 **In-Person Demo (1 hour)** - Full architecture, hands-on exploration, research collaboration
-
-    **What makes COGNISYN unique:**
-    - ✨ LLMs as strategic operators of quantum-inspired mathematical physics
-    - 🧠 Compositional learning beyond pattern matching (games → materials)
-    - 🔬 Real materials discovery with potential publications
-    - 📈 60-day continuous learning pipeline
-
-    **Perfect for:**
-    - Investors seeking novel AI applications
-    - Quantum computing & materials science research partners
-    - Institutions validating continuous learning capabilities
+    **Contact:** tish@cognisyn.ai | Virtual (30 min) or In-Person (1 hour)
     """)
 
-    # Contact form
-    st.markdown("---")
-
-    st.subheader("📩 Request a Demo")
-
-    st.markdown("""
-    **Or email directly:** tish@cognisyn.ai (preferred for fastest response)
-
-    Fill out the form below and we'll get back to you soon:
-    """)
-
-    with st.form("demo_request"):
-        col_a, col_b = st.columns(2)
-        with col_a:
-            name = st.text_input("Name *")
-            email = st.text_input("Email *")
-        with col_b:
-            org = st.text_input("Organization")
-            demo_type = st.selectbox("Preferred Demo Type", ["Virtual (Zoom)", "In-Person", "Either works"])
-
-        interest = st.multiselect(
-            "Primary Interest",
-            ["Investment opportunity", "Research collaboration", "Materials partnership",
-             "Technical validation", "Other"]
-        )
-
-        message = st.text_area("Message / Questions (optional)")
-
-        submitted = st.form_submit_button("Submit Demo Request")
-
-        if submitted:
-            if name and email:
-                st.success(f"""
-                ✅ **Thank you {name}!**
-
-                Your demo request has been submitted. We'll contact you at **{email}** to schedule your {demo_type} demo.
-
-                **Next steps:**
-                1. Watch for our email (check spam folder if needed)
-                2. We'll send available times (virtual demos available worldwide, in-person in San Francisco)
-                3. Prepare any specific questions about the technology
-
-                In the meantime, explore this dashboard to see COGNISYN's approach!
-                """)
-            else:
-                st.error("Please fill in Name and Email fields (marked with *)")
-
-    st.markdown("---")
 
     # ========================================================================
     # SIDEBAR
@@ -455,49 +361,25 @@ def main():
         st.header("ℹ️ About")
 
         st.markdown("""
-        **COGNISYN Host Materials Discovery Dashboard**
+        **COGNISYN** discovers Yb-171 host materials through quantum-inspired game theory.
 
-        Demonstrates continuous learning AI discovering Yb-171 quantum computing HOST MATERIALS through quantum-inspired game theory.
+        **Key Innovation:** Care equilibria (synergies) beyond Pareto frontier (trade-offs).
 
-        **Key Innovation:** Care equilibria discovery (synergies) beyond Pareto frontier (trade-offs).
-
-        **The Three Properties:**
-        - Host Quality (stability + linewidth)
-        - Optical Properties (band gap)
-        - Spin Coherence (I=0 host nuclei)
-
-        **Target Audience:**
-        - Investors seeking novel AI applications
-        - Partners in quantum computing & materials science
-        - Research institutions validating continuous learning
+        **Three Properties:**
+        - Host Quality
+        - Optical Properties
+        - Spin Coherence
         """)
 
         st.markdown("---")
-
-        st.subheader("📚 Key Innovation: Care equilibria")
 
         st.markdown("""
-        **Care equilibria discovery (synergies) beyond Pareto frontier (trade-offs)**
+        **Data:** [Materials Project](https://materialsproject.org/)
 
-        - Care operator transforms Nash → Care
-        - Compositional learning from games → materials
-        - 60-day continuous learning pipeline
-        - Beyond pattern matching
+        **Contact:** tish@cognisyn.ai
         """)
 
-        st.markdown("---")
-
-        st.subheader("🔬 Data Source")
-        st.markdown("""
-        Materials data from [Materials Project](https://materialsproject.org/)
-
-        *A. Jain et al., APL Materials 1, 011002 (2013)*
-        """)
-
-        st.markdown("---")
-
-        st.caption("Powered by COGNISYN Framework")
-        st.caption("Built with Streamlit + Plotly")
+        st.caption("Powered by COGNISYN · Built with Streamlit")
 
 
 # ============================================================================
