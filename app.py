@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
 """
-COGNISYN Yb-171 Materials Discovery - Demo Dashboard
-=====================================================
+COGNISYN Yb-171 Host Materials Discovery - Demo Dashboard
+=========================================================
 
-Invitation dashboard showing quantum-inspired AI materials discovery
+Invitation dashboard showing quantum-inspired AI HOST MATERIALS discovery
 
 Target: Investors, partners, and collaborators
 Purpose: Demonstrate COGNISYN's approach - Schedule live demo for full system
 
 Key Message: "Classical methods find trade-offs. COGNISYN discovers synergies."
+
+Scientific Context:
+- We're finding HOST CRYSTALS to dope Yb-171 ions INTO
+- Notation: CaWO₄:Yb³⁺ means "Yb doped into calcium tungstate"
+- Three properties: Host Quality, Optical Properties, Spin Coherence
 """
 
 import streamlit as st
@@ -21,7 +26,7 @@ import numpy as np
 # ============================================================================
 
 st.set_page_config(
-    page_title="COGNISYN: Yb-171 Materials Discovery",
+    page_title="COGNISYN: Yb-171 Host Materials Discovery",
     page_icon="🔬",
     layout="wide",
     initial_sidebar_state="auto"  # Collapsed on mobile, expanded on desktop
@@ -31,54 +36,54 @@ st.set_page_config(
 BASELINE_MATERIALS = {
     'YVO4': {
         'formula': 'YVO₄:Yb³⁺',
-        'structure': 9.0,
-        'optical': 9.0,
-        'coherence': 4.0,
+        'host_quality': 9.0,
+        'optical_properties': 9.0,
+        'spin_coherence': 4.0,
         'synergy_score': 4.0,
         'type': 'Nash Equilibrium',
-        'note': 'Excellent structure+optical BUT Y-89 and V-51 spins kill coherence'
+        'note': 'Excellent host quality + optical BUT V-51 (I=7/2) spins kill spin coherence'
     },
     'CaWO4': {
         'formula': 'CaWO₄:Yb³⁺',
-        'structure': 8.0,
-        'optical': 6.0,
-        'coherence': 8.0,
+        'host_quality': 8.0,
+        'optical_properties': 6.0,
+        'spin_coherence': 8.0,
         'synergy_score': 6.0,
         'type': 'Nash Equilibrium',
-        'note': 'Good structure+coherence BUT Ca too light for optimal optical'
+        'note': 'Good host quality + spin coherence (W/Ca mostly I=0) BUT optical moderate'
     },
     'Y2SiO5': {
         'formula': 'Y₂SiO₅:Yb³⁺',
-        'structure': 7.0,
-        'optical': 8.0,
-        'coherence': 5.0,
+        'host_quality': 7.0,
+        'optical_properties': 8.0,
+        'spin_coherence': 5.0,
         'synergy_score': 5.0,
         'type': 'Nash Equilibrium',
-        'note': 'Decent optical BUT Y-89 spins hurt coherence'
+        'note': 'Best linewidth (320 Hz) BUT Y-89 (I=1/2) spins hurt spin coherence'
     }
 }
 
 # Demo COGNISYN discoveries (Care equilibria - synergies)
 COGNISYN_DISCOVERIES = [
-    {'formula': 'SrTeO₄:Yb³⁺', 'structure': 9.0, 'optical': 9.0, 'coherence': 9.0,
+    {'formula': 'SrTeO₄:Yb³⁺', 'host_quality': 9.0, 'optical_properties': 9.0, 'spin_coherence': 9.0,
      'synergy_score': 9.0, 'type': 'Care Equilibrium', 'novel': True, 'day_discovered': 31,
-     'note': 'Heavy Sr+Te helps ALL THREE! Non-polar scheelite structure'},
+     'note': 'Heavy Sr+Te (all I=0) helps ALL THREE! Non-polar scheelite structure'},
 
-    {'formula': 'Sr₃TeO₆:Yb³⁺', 'structure': 8.0, 'optical': 9.0, 'coherence': 9.0,
+    {'formula': 'Sr₃TeO₆:Yb³⁺', 'host_quality': 8.0, 'optical_properties': 9.0, 'spin_coherence': 9.0,
      'synergy_score': 8.0, 'type': 'Care Equilibrium', 'novel': True, 'day_discovered': 38,
      'note': 'Sr-Te pattern holds! Perovskite structure with I=0 cations'},
 
-    {'formula': 'BaTeO₄:Yb³⁺', 'structure': 8.0, 'optical': 9.0, 'coherence': 9.0,
+    {'formula': 'BaTeO₄:Yb³⁺', 'host_quality': 8.0, 'optical_properties': 9.0, 'spin_coherence': 9.0,
      'synergy_score': 8.0, 'type': 'Care Equilibrium', 'novel': True, 'day_discovered': 45,
-     'note': 'Ba heavier than Sr → even larger oscillator strength'},
+     'note': 'Ba heavier than Sr → larger oscillator strength, Ba-138 I=0 (71.7%)'},
 
-    {'formula': 'SrSeO₄:Yb³⁺', 'structure': 9.0, 'optical': 8.0, 'coherence': 9.0,
+    {'formula': 'SrSeO₄:Yb³⁺', 'host_quality': 9.0, 'optical_properties': 8.0, 'spin_coherence': 9.0,
      'synergy_score': 8.0, 'type': 'Care Equilibrium', 'novel': True, 'day_discovered': 52,
-     'note': 'Se analog of Te - same synergy pattern'},
+     'note': 'Se analog of Te - Se-80 I=0 (49.6%), same synergy pattern'},
 
-    {'formula': 'BaSeO₄:Yb³⁺', 'structure': 8.0, 'optical': 8.0, 'coherence': 9.0,
+    {'formula': 'BaSeO₄:Yb³⁺', 'host_quality': 8.0, 'optical_properties': 8.0, 'spin_coherence': 9.0,
      'synergy_score': 8.0, 'type': 'Care Equilibrium', 'novel': True, 'day_discovered': 56,
-     'note': 'Ba-Se combination maintains synergy'},
+     'note': 'Ba-Se combination: high I=0 content maintains spin coherence'},
 ]
 
 # ============================================================================
@@ -92,9 +97,9 @@ def create_synergy_space_3d(baseline_df: pd.DataFrame, cognisyn_df: pd.DataFrame
 
     # Baseline (red - Nash equilibria)
     fig.add_trace(go.Scatter3d(
-        x=baseline_df['structure'],
-        y=baseline_df['optical'],
-        z=baseline_df['coherence'],
+        x=baseline_df['host_quality'],
+        y=baseline_df['optical_properties'],
+        z=baseline_df['spin_coherence'],
         mode='markers+text',
         name='Baseline (Nash)',
         marker=dict(size=12, color='red', opacity=0.8, line=dict(color='darkred', width=2)),
@@ -102,9 +107,9 @@ def create_synergy_space_3d(baseline_df: pd.DataFrame, cognisyn_df: pd.DataFrame
         textposition='top center',
         hovertemplate=(
             '<b>%{text}</b><br>' +
-            'Structure: %{x:.1f}/10<br>' +
-            'Optical: %{y:.1f}/10<br>' +
-            'Coherence: %{z:.1f}/10<br>' +
+            'Host Quality: %{x:.1f}/10<br>' +
+            'Optical Properties: %{y:.1f}/10<br>' +
+            'Spin Coherence: %{z:.1f}/10<br>' +
             '<i>%{customdata}</i><br>' +
             '<extra></extra>'
         ),
@@ -114,9 +119,9 @@ def create_synergy_space_3d(baseline_df: pd.DataFrame, cognisyn_df: pd.DataFrame
     # COGNISYN discoveries (green - Care equilibria)
     high_synergy = cognisyn_df[cognisyn_df['synergy_score'] >= 8.0]
     fig.add_trace(go.Scatter3d(
-        x=high_synergy['structure'],
-        y=high_synergy['optical'],
-        z=high_synergy['coherence'],
+        x=high_synergy['host_quality'],
+        y=high_synergy['optical_properties'],
+        z=high_synergy['spin_coherence'],
         mode='markers+text',
         name='COGNISYN (Care)',
         marker=dict(size=15, color='lime', opacity=0.9, symbol='diamond',
@@ -125,9 +130,9 @@ def create_synergy_space_3d(baseline_df: pd.DataFrame, cognisyn_df: pd.DataFrame
         textposition='top center',
         hovertemplate=(
             '<b>%{text}</b><br>' +
-            'Structure: %{x:.1f}/10<br>' +
-            'Optical: %{y:.1f}/10<br>' +
-            'Coherence: %{z:.1f}/10<br>' +
+            'Host Quality: %{x:.1f}/10<br>' +
+            'Optical Properties: %{y:.1f}/10<br>' +
+            'Spin Coherence: %{z:.1f}/10<br>' +
             '<i>%{customdata}</i><br>' +
             '<b>✨ NOT IN BASELINE TOP-100</b><br>' +
             '<extra></extra>'
@@ -153,11 +158,11 @@ def create_synergy_space_3d(baseline_df: pd.DataFrame, cognisyn_df: pd.DataFrame
         title={'text': 'Synergy Space: Classical Trade-offs vs COGNISYN Synergies',
                'x': 0.5, 'xanchor': 'center', 'font': {'size': 20, 'color': 'white'}},
         scene=dict(
-            xaxis=dict(title='Structure Score', range=[5, 10], backgroundcolor='rgb(20, 20, 30)',
+            xaxis=dict(title='Host Quality', range=[5, 10], backgroundcolor='rgb(20, 20, 30)',
                       gridcolor='rgb(50, 50, 60)'),
-            yaxis=dict(title='Optical Score', range=[3, 10], backgroundcolor='rgb(20, 20, 30)',
+            yaxis=dict(title='Optical Properties', range=[3, 10], backgroundcolor='rgb(20, 20, 30)',
                       gridcolor='rgb(50, 50, 60)'),
-            zaxis=dict(title='Coherence Score', range=[3, 10], backgroundcolor='rgb(20, 20, 30)',
+            zaxis=dict(title='Spin Coherence', range=[3, 10], backgroundcolor='rgb(20, 20, 30)',
                       gridcolor='rgb(50, 50, 60)'),
             bgcolor='rgb(20, 20, 30)'
         ),
@@ -192,15 +197,21 @@ def main():
     # HEADER
     # ========================================================================
 
-    st.title("🔬 COGNISYN: Yb-171 Materials Discovery")
+    st.title("🔬 COGNISYN: Yb-171 Host Materials Discovery")
     st.markdown("### *Novel Quantum Materials & Continuous Learning AI Through Quantum-Inspired Game Theory Compositional Learning*")
 
     st.info("📺 **This is a preview.** Schedule a live demo below to watch real-time discovery in action.")
 
     st.markdown("""
-    **Mission:** Finding Yb-171 quantum computing materials where stability + optical + coherence are ALL high—synergies beyond the Pareto frontier that classical methods cannot reach.
+    > **What are host materials?** We're finding crystals to DOPE Yb-171 ions INTO.
+    > The notation `CaWO₄:Yb³⁺` means "Yb ions doped into calcium tungstate."
+    > The HOST material's properties determine Yb-171 quantum memory performance.
+    """)
 
-    **Core Insight:** Materials discovery is NOT single-objective optimization—it's a multi-agent cooperative game between competing properties (stability, optical, coherence). Traditional DFT approaches converge to Nash equilibria (trade-off solutions) because they optimize properties independently. COGNISYN's Care operator, trained through compositional learning from Baba is Quantum language (Days 1-5) through quantum-inspired game scenarios (Days 6-14), discovers materials at Care equilibria where properties synergize.
+    st.markdown("""
+    **Mission:** Finding HOST MATERIALS for Yb-171 quantum computing where host quality + optical properties + spin coherence are ALL high—synergies beyond the Pareto frontier that classical methods cannot reach.
+
+    **Core Insight:** Materials discovery is NOT single-objective optimization—it's a multi-agent cooperative game between competing properties (host quality, optical properties, spin coherence). Traditional DFT approaches converge to Nash equilibria (trade-off solutions) because they optimize properties independently. COGNISYN's Care operator, trained through compositional learning from Baba is Quantum language (Days 1-5) through quantum-inspired game scenarios (Days 6-14), discovers materials at Care equilibria where properties synergize.
 
     **The COGNISYN Framework:** An external framework that uses the Baba is Quantum language to enable a quantum-inspired game theory approach, turning LLMs into strategic mathematical physics operators through their APIs.
 
@@ -240,9 +251,14 @@ def main():
     **Classical methods** (red) find Nash equilibria where properties trade off.
     **COGNISYN** (green/yellow) is designed to discover Care equilibria where ALL THREE properties are high.
 
-    🔴 **Red points:** Baseline materials (Nash) - One property high, others suffer
-    🟢 **Green points:** *Illustrative* target discoveries (Care) - ALL THREE properties high
+    🔴 **Red points:** Baseline host materials (Nash) - One property high, others suffer
+    🟢 **Green points:** *Illustrative* target discoveries (Care) - Host Quality + Optical + Spin Coherence ALL high
     🟡 **Yellow plane:** Pareto frontier - Trade-off boundary classical methods cannot escape
+
+    **The Three Properties for Yb-171 Host Materials:**
+    - **Host Quality:** Crystal stability + narrow inhomogeneous linewidth (for Yb³⁺ integration)
+    - **Optical Properties:** Suitable band gap for Yb³⁺ transitions (2-6 eV ideal)
+    - **Spin Coherence:** I=0 host nuclei content (reduces decoherence from nuclear spin bath)
 
     ⚠️ **Note:** Green points are **illustrative examples** showing the *types* of materials COGNISYN is designed to discover—not actual discoveries. Schedule a live demo to see real results.
     """)
@@ -341,9 +357,9 @@ def main():
                         border-left: 5px solid lime; margin-bottom: 20px;">
                 <h3 style="color: lime;">✨ {material['formula']}</h3>
                 <p><b>Synergy Score:</b> {material['synergy_score']:.1f}/10
-                   (Structure: {material['structure']:.1f},
-                    Optical: {material['optical']:.1f},
-                    Coherence: {material['coherence']:.1f})</p>
+                   (Host Quality: {material['host_quality']:.1f},
+                    Optical: {material['optical_properties']:.1f},
+                    Spin Coherence: {material['spin_coherence']:.1f})</p>
                 <p><b>Why it's novel:</b> {material['note']}</p>
                 <p style="color: lime;"><b>🎯 NOT IN BASELINE TOP-100</b></p>
             </div>
@@ -439,11 +455,16 @@ def main():
         st.header("ℹ️ About")
 
         st.markdown("""
-        **COGNISYN Materials Discovery Dashboard**
+        **COGNISYN Host Materials Discovery Dashboard**
 
-        Demonstrates continuous learning AI discovering Yb-171 quantum computing materials through quantum-inspired game theory.
+        Demonstrates continuous learning AI discovering Yb-171 quantum computing HOST MATERIALS through quantum-inspired game theory.
 
         **Key Innovation:** Care equilibria discovery (synergies) beyond Pareto frontier (trade-offs).
+
+        **The Three Properties:**
+        - Host Quality (stability + linewidth)
+        - Optical Properties (band gap)
+        - Spin Coherence (I=0 host nuclei)
 
         **Target Audience:**
         - Investors seeking novel AI applications
