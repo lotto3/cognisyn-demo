@@ -81,8 +81,8 @@ def main():
         st.markdown(f"""
         <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; height: 260px;">
             <h4 style="color: #4dabf7; font-size: 26px; margin-bottom: 12px;">YVO₄:Yb³⁺</h4>
-            <p style="font-size: 18px; line-height: 2;">✓ Host Quality<br/>✓ Optical Properties<br/><span style="color: #ff6b6b;">✗ Spin Coherence</span></p>
-            <p style="font-size: 15px; color: #888;"><i>V-51 (I=7/2, 99.75%) creates magnetic noise</i></p>
+            <p style="font-size: 18px; line-height: 2; color: #e0e0e0;"><span style="color: #00d4aa;">✓ Host Quality</span><br/><span style="color: #00d4aa;">✓ Optical Properties</span><br/><span style="color: #ff6b6b;">✗ Spin Coherence</span></p>
+            <p style="font-size: 15px; color: #aaa;"><i>V-51 (I=7/2, 99.75%) creates magnetic noise</i></p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -90,8 +90,8 @@ def main():
         st.markdown(f"""
         <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; height: 260px;">
             <h4 style="color: #4dabf7; font-size: 26px; margin-bottom: 12px;">Y₂SiO₅:Yb³⁺</h4>
-            <p style="font-size: 18px; line-height: 2;">✓ Host Quality (320 Hz)<br/>~ Optical Properties<br/><span style="color: #ff6b6b;">✗ Spin Coherence</span></p>
-            <p style="font-size: 15px; color: #888;"><i>Y-89 (I=1/2, 100%) limits T₂ times</i></p>
+            <p style="font-size: 18px; line-height: 2; color: #e0e0e0;"><span style="color: #00d4aa;">✓ Host Quality (320 Hz)</span><br/><span style="color: #aaa;">~ Optical Properties</span><br/><span style="color: #ff6b6b;">✗ Spin Coherence</span></p>
+            <p style="font-size: 15px; color: #aaa;"><i>Y-89 (I=1/2, 100%) limits T₂ times</i></p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -99,8 +99,8 @@ def main():
         st.markdown(f"""
         <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ffd43b; height: 260px;">
             <h4 style="color: #4dabf7; font-size: 26px; margin-bottom: 12px;">CaWO₄:Yb³⁺</h4>
-            <p style="font-size: 18px; line-height: 2;">✓ Host Quality<br/>~ Optical Properties<br/>✓ Spin Coherence (0.15s)</p>
-            <p style="font-size: 15px; color: #888;"><i>Best so far—W/Ca mostly I=0. Can we find better?</i></p>
+            <p style="font-size: 18px; line-height: 2; color: #e0e0e0;"><span style="color: #00d4aa;">✓ Host Quality</span><br/><span style="color: #aaa;">~ Optical Properties</span><br/><span style="color: #00d4aa;">✓ Spin Coherence (0.15s)</span></p>
+            <p style="font-size: 15px; color: #aaa;"><i>Best so far—W/Ca mostly I=0. Can we find better?</i></p>
         </div>
         """, unsafe_allow_html=True)
 
