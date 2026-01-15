@@ -38,12 +38,13 @@ st.set_page_config(
 def main():
     """Main dashboard application"""
 
-    # Custom CSS
+    # Custom CSS - larger fonts for Streamlit's low-res rendering
     st.markdown("""
         <style>
         .main {background-color: #0e1117;}
         .stMetric {background-color: #1e2130; padding: 10px; border-radius: 5px;}
         h1, h2, h3 {color: #00ffff;}
+        p, li, .stMarkdown {font-size: 20px !important; line-height: 1.7;}
         </style>
     """, unsafe_allow_html=True)
 
@@ -78,34 +79,34 @@ def main():
 
     with col1:
         st.markdown(f"""
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; border-left: 5px solid #ff6b6b; height: 200px;">
-            <h4 style="color: #4dabf7;">YVO₄:Yb³⁺</h4>
-            <p>✓ Host Quality<br/>✓ Optical Properties<br/><span style="color: #ff6b6b;">✗ Spin Coherence</span></p>
-            <p style="font-size: 12px; color: #888;"><i>V-51 (I=7/2, 99.75%) creates magnetic noise</i></p>
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; height: 260px;">
+            <h4 style="color: #4dabf7; font-size: 26px; margin-bottom: 12px;">YVO₄:Yb³⁺</h4>
+            <p style="font-size: 18px; line-height: 2;">✓ Host Quality<br/>✓ Optical Properties<br/><span style="color: #ff6b6b;">✗ Spin Coherence</span></p>
+            <p style="font-size: 15px; color: #888;"><i>V-51 (I=7/2, 99.75%) creates magnetic noise</i></p>
         </div>
         """, unsafe_allow_html=True)
 
     with col2:
         st.markdown(f"""
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; border-left: 5px solid #ff6b6b; height: 200px;">
-            <h4 style="color: #4dabf7;">Y₂SiO₅:Yb³⁺</h4>
-            <p>✓ Host Quality (320 Hz linewidth)<br/>~ Optical Properties<br/><span style="color: #ff6b6b;">✗ Spin Coherence</span></p>
-            <p style="font-size: 12px; color: #888;"><i>Y-89 (I=1/2, 100%) limits T₂ times</i></p>
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; height: 260px;">
+            <h4 style="color: #4dabf7; font-size: 26px; margin-bottom: 12px;">Y₂SiO₅:Yb³⁺</h4>
+            <p style="font-size: 18px; line-height: 2;">✓ Host Quality (320 Hz)<br/>~ Optical Properties<br/><span style="color: #ff6b6b;">✗ Spin Coherence</span></p>
+            <p style="font-size: 15px; color: #888;"><i>Y-89 (I=1/2, 100%) limits T₂ times</i></p>
         </div>
         """, unsafe_allow_html=True)
 
     with col3:
         st.markdown(f"""
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; border-left: 5px solid #ffd43b; height: 200px;">
-            <h4 style="color: #4dabf7;">CaWO₄:Yb³⁺</h4>
-            <p>✓ Host Quality<br/>~ Optical Properties<br/>✓ Spin Coherence (0.15s)</p>
-            <p style="font-size: 12px; color: #888;"><i>Best so far—W/Ca mostly I=0. Can we find better?</i></p>
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ffd43b; height: 260px;">
+            <h4 style="color: #4dabf7; font-size: 26px; margin-bottom: 12px;">CaWO₄:Yb³⁺</h4>
+            <p style="font-size: 18px; line-height: 2;">✓ Host Quality<br/>~ Optical Properties<br/>✓ Spin Coherence (0.15s)</p>
+            <p style="font-size: 15px; color: #888;"><i>Best so far—W/Ca mostly I=0. Can we find better?</i></p>
         </div>
         """, unsafe_allow_html=True)
 
     st.markdown("""
-    <div style="text-align: center; padding: 16px; background-color: #1e2130; border-radius: 8px; margin-top: 16px;">
-        <span style="color: #00d4aa; font-size: 18px; font-weight: bold;">COGNISYN searches systematically for hosts where ALL THREE are high</span>
+    <div style="text-align: center; padding: 24px; background-color: #1e2130; border-radius: 8px; margin-top: 20px;">
+        <span style="color: #00d4aa; font-size: 22px; font-weight: bold;">COGNISYN searches systematically for hosts where ALL THREE are high</span>
     </div>
     """, unsafe_allow_html=True)
 
