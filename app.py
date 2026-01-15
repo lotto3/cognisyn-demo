@@ -100,7 +100,7 @@ def main():
         <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ffd43b; min-height: 300px;">
             <h4 style="color: #4dabf7; font-size: 26px; margin-bottom: 12px;">CaWO₄:Yb³⁺</h4>
             <p style="font-size: 18px; line-height: 2; color: #e0e0e0;"><span style="color: #00d4aa;">✓ Host Quality</span><br/><span style="color: #aaa;">~ Optical Properties</span><br/><span style="color: #00d4aa;">✓ Spin Coherence (0.15s)</span></p>
-            <p style="font-size: 15px; color: #aaa; margin-top: 16px;"><i>Best so far—W/Ca mostly I=0. Can we find better?</i></p>
+            <p style="font-size: 15px; color: #aaa; margin-top: 16px;"><i>Current best—W/Ca mostly I=0. COGNISYN searches for more.</i></p>
         </div>
         """, unsafe_allow_html=True)
 
