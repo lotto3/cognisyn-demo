@@ -119,7 +119,7 @@ def main():
     st.header("🎯 Schedule a Live Demo")
 
     st.markdown("""
-    **In a live demo you'll see:** Real-time quantum operations · 1,073 → 25 → 1 optimal material · 60-day continuous learning
+    **In a live demo you'll see:** Real-time quantum operations · Systematic search through 1,073 compounds · Care equilibria discovery
 
     **Contact:** tish@cognisyn.ai | Virtual (30 min) or In-Person (1 hour)
     """)

@@ -1,19 +1,27 @@
-# COGNISYN: Yb-171 Materials Discovery Demo
+# COGNISYN: Yb-171 Host Materials Discovery
 
-**Live Demo Dashboard:** [Your Streamlit URL here after deployment]
+**Live Demo:** [cognisyn-demo.streamlit.app](https://cognisyn-demo.streamlit.app)
 
 ## Overview
 
-This dashboard demonstrates COGNISYN's quantum-inspired AI approach to materials discovery.
+COGNISYN discovers Yb-171 quantum computing **host materials** through quantum-inspired game theory.
 
-**Mission:** Find Yb-171 quantum computing materials where stability + optical + coherence are ALL high—synergies beyond the Pareto frontier that classical methods cannot reach.
+**What are host materials?** Crystals we dope Yb-171 ions into (e.g., CaWO4:Yb3+ = Yb in calcium tungstate).
 
-## Key Features
+**Mission:** Find hosts where **host quality + optical properties + spin coherence** are ALL high—synergies beyond the Pareto frontier.
 
-- 🎯 **3D Synergy Space** - Classical trade-offs (Nash) vs COGNISYN synergies (Care)
-- ✨ **Novel Discoveries** - 5 materials NOT in baseline databases
-- 📊 **Success Metrics** - +56% synergy improvement, 9.9× complexity reduction
-- 📅 **Live Demo Scheduling** - Book a demonstration of the full system
+## The Problem
+
+Current state-of-the-art materials each sacrifice at least one property:
+- **YVO4:Yb3+** - Good host quality and optical, but V-51 spins kill coherence
+- **Y2SiO5:Yb3+** - Good host quality, but Y-89 spins limit coherence
+- **CaWO4:Yb3+** - Current best (0.15s coherence), but can we find better?
+
+## Key Innovation
+
+**Care equilibria** (synergies) beyond the Pareto frontier (trade-offs).
+
+Classical methods accept "pick two" as physics. COGNISYN finds where ALL THREE are high.
 
 ## Running Locally
 
@@ -22,30 +30,9 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Deployment
-
-Deployed on Streamlit Cloud - always available, $0 cost.
-
-## Purpose
-
-This is an **invitation dashboard** showing COGNISYN's approach. For the full system with:
-- Real-time quantum operations
-- Live 60-day continuous learning
-- Interactive agent visualization
-- Materials evaluation dashboard
-
-**Schedule a live demo** using the form in the dashboard!
-
-## Technical Details
-
-- **Frontend:** Streamlit
-- **Visualization:** Plotly 3D
-- **Data:** Demo mode (no live system connection)
-- **Purpose:** Investor/partner invitations
-
 ## Contact
 
-For demo requests, technical questions, or partnership opportunities, use the contact form in the dashboard.
+**Email:** tish@cognisyn.ai
 
 ---
 
