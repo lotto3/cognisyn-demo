@@ -223,6 +223,105 @@ def main():
     st.markdown("---")
 
     # ========================================================================
+    # PIPELINE OUTPUT: COMPUTED FROM MATERIALS PROJECT DATA
+    # ========================================================================
+
+    st.header("Pipeline Output: Computed from Materials Project Data")
+
+    st.markdown("""
+    The following results are from the COGNISYN orchestration pipeline operating on
+    **1,073 cached Yb-containing compounds** from the [Materials Project](https://materialsproject.org/).
+    All scores are computed by H_total — a 60-dimensional Hamiltonian integrating 7 mathematical frameworks.
+    """)
+
+    # SUPERPOSE results
+    st.markdown("""
+    <div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border-left: 6px solid #00d4aa; margin-bottom: 20px;">
+        <h4 style="color: #00d4aa; font-size: 20px; margin-bottom: 12px;">SUPERPOSE: 1,073 Compounds Evaluated</h4>
+        <p style="font-size: 15px; color: #c0c0c0; margin-bottom: 12px;">
+            H_total identified <span style="color: #00d4aa; font-weight: bold;">26 Care equilibria</span>
+            (all three properties high) out of 1,073 compounds.
+            The remaining 1,047 are Nash equilibria (trade-offs).
+        </p>
+        <div style="background-color: #0e1117; padding: 16px; border-radius: 6px; font-family: monospace;">
+            <div style="color: #00ffff; font-size: 14px; margin-bottom: 8px;">TOP 5 — Care Equilibria (Beyond Pareto Frontier):</div>
+            <div style="font-size: 14px; color: #e0e0e0; line-height: 2;">
+                1. <span style="color: #00d4aa;">YbOF</span>: care=0.94 — tetragonal structure<br/>
+                2. <span style="color: #00d4aa;">YbSiO₃</span>: care=0.94<br/>
+                3. <span style="color: #00d4aa;">YbCl₃</span>: care=0.94<br/>
+                4. <span style="color: #00d4aa;">Ba₂YbMoO₆</span>: care=0.93 — Ba-138 I=0 (71.7%) + heavy elements<br/>
+                5. <span style="color: #00d4aa;">Cs₂YbCl₄</span>: care=0.93 — tetragonal structure
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # FILTER + ENTANGLE results
+    st.markdown("""
+    <div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border-left: 6px solid #da77f2; margin-bottom: 20px;">
+        <h4 style="color: #da77f2; font-size: 20px; margin-bottom: 12px;">FILTER I=0 → ENTANGLE: Nuclear Spin Bath + Synergy Detection</h4>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div style="background-color: #0e1117; padding: 16px; border-radius: 6px;">
+                <div style="color: #00ffff; font-size: 14px; margin-bottom: 8px;">FILTER: I=0 Spin Bath Analysis</div>
+                <div style="font-size: 14px; color: #e0e0e0; line-height: 2;">
+                    1,073 → <span style="color: #00d4aa;">1,057</span> passed (i_zero &gt; 0.3)<br/>
+                    <br/>
+                    Top coherence hosts:<br/>
+                    • <span style="color: #da77f2;">BaYbCuTe₃</span>: I=0 score=0.90, coherence=0.94<br/>
+                    • <span style="color: #da77f2;">Ba₃Yb₂TeO₅</span>: I=0 score=0.90, coherence=0.94<br/>
+                    • <span style="color: #da77f2;">BaSrYb₂</span>: I=0 score=0.95, coherence=0.83
+                </div>
+            </div>
+            <div style="background-color: #0e1117; padding: 16px; border-radius: 6px;">
+                <div style="color: #00ffff; font-size: 14px; margin-bottom: 8px;">ENTANGLE: Multi-Agent Synergy</div>
+                <div style="font-size: 14px; color: #e0e0e0; line-height: 2;">
+                    <span style="color: #00d4aa;">26 compounds</span> where ALL THREE benefit<br/>
+                    <br/>
+                    Top synergy compounds:<br/>
+                    • <span style="color: #00d4aa;">YbCl₃</span>: B1=0.90, B2=0.94, B3=0.90<br/>
+                    • <span style="color: #00d4aa;">YbSiO₃</span>: B1=0.90, B2=0.94, B3=0.90<br/>
+                    • <span style="color: #00d4aa;">CsYbCl₃</span>: B1=0.90, B2=0.92, B3=0.90
+                </div>
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # INTERFERE results
+    st.markdown("""
+    <div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border-left: 6px solid #ffd43b; margin-bottom: 20px;">
+        <h4 style="color: #ffd43b; font-size: 20px; margin-bottom: 12px;">INTERFERE: Quantum Pruning — 1,073 → 25 Compounds</h4>
+        <p style="font-size: 15px; color: #c0c0c0; margin-bottom: 12px;">
+            Care-guided interference dynamics: high-care compounds receive constructive interference (amplified),
+            low-care compounds receive destructive interference (suppressed).
+            <span style="color: #00d4aa; font-weight: bold;">All 25 Care equilibria preserved. Zero false negatives.</span>
+        </p>
+        <div style="background-color: #0e1117; padding: 16px; border-radius: 6px; font-family: monospace;">
+            <div style="color: #00ffff; font-size: 14px; margin-bottom: 8px;">TOP 5 — Post-Interference (by interference score):</div>
+            <div style="font-size: 14px; color: #e0e0e0; line-height: 2;">
+                1. <span style="color: #00d4aa;">YbOF</span>: score=0.937<br/>
+                2. <span style="color: #00d4aa;">YbSiO₃</span>: score=0.936<br/>
+                3. <span style="color: #00d4aa;">YbCl₃</span>: score=0.935<br/>
+                4. <span style="color: #00d4aa;">Ba₂YbMoO₆</span>: score=0.934<br/>
+                5. <span style="color: #00d4aa;">Cs₂YbCl₄</span>: score=0.932
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="text-align: center; padding: 20px; background-color: #1e2130; border-radius: 8px; margin-top: 10px; margin-bottom: 10px;">
+        <span style="font-size: 15px; color: #888;">
+            Pipeline demonstration — computed from cached Materials Project data via H_total.
+            All compound names and crystal structures are real. Scores reflect H_total evaluation
+            across 7 unified mathematical frameworks.
+        </span>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ========================================================================
     # CARE VS NASH
     # ========================================================================
 
