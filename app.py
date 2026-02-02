@@ -54,7 +54,7 @@ def main():
 
     st.title("🔬 COGNISYN: Yb-171 Host Materials Discovery")
 
-    st.info("📺 **Preview demo.** Schedule a live demo below to see real-time discovery.")
+    st.info("📺 **How COGNISYN works** — Care mathematics on classical hardware, applied to quantum materials discovery.")
 
     st.markdown("""
     **What are host materials?** Crystals we dope Yb-171 ions into (e.g., `CaWO₄:Yb³⁺` = Yb in calcium tungstate).
