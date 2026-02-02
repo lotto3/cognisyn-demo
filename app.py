@@ -493,14 +493,17 @@ result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
     with col1:
         st.image("dashboard_b2_b3.png", caption="B2 Ex 2-5 complete, B3 (Coherence) begins — all agents run the same grammar")
     with col2:
-        st.image("dashboard_b3_coherence.png", caption="B3 (Coherence): All 5 examples — same pipeline progression, convergence through Care operator")
+        st.image("dashboard_b3_coherence.png", caption="B3 (Coherence): All 5 examples — same pipeline, evaluating from spin coherence perspective")
 
     st.markdown("""
     <div style="text-align: center; padding: 16px; background-color: #1e2130; border-radius: 8px;">
         <span style="font-size: 15px; color: #888;">
-            Each agent runs the same examples from its own perspective (host quality, optical, coherence).
-            Each agent evaluates from its own property perspective. When all three score above threshold simultaneously, that's a Care equilibrium.
+            Each agent evaluates from its own property perspective (host quality, optical, coherence).
+            When all three score above threshold simultaneously, that's a Care equilibrium.
         </span>
+        <div style="font-size: 13px; color: #666; margin-top: 8px;">
+            Illustrative examples from orchestration pipeline test. Scores computed by H_total from real crystal structure data.
+        </div>
     </div>
     """, unsafe_allow_html=True)
 
