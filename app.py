@@ -72,7 +72,7 @@ def main():
     st.markdown("""
     **Three Properties:** Host Quality (stability + linewidth) · Optical Properties (band gap) · Spin Coherence (I=0 nuclei)
 
-    Current state-of-the-art materials each sacrifice at least one property:
+    Well-known host materials each sacrifice at least one property (illustrative examples):
     """)
 
     col1, col2, col3 = st.columns(3)
@@ -436,35 +436,19 @@ def main():
     5 examples in parallel, building from single operations to multi-stage pipelines.
     """)
 
+    st.image("dashboard_overview.png", caption="System overview: 5/5 examples complete, 3/3 agents, 1,073 compounds evaluated, 24 strategic patterns learned")
+
     col1, col2 = st.columns(2)
-
     with col1:
-        st.markdown("""
-        <div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border-left: 6px solid #4dabf7; margin-bottom: 16px;">
-            <h4 style="color: #4dabf7; font-size: 20px; margin-bottom: 12px;">System Overview</h4>
-            <div style="font-size: 16px; color: #e0e0e0; line-height: 2;">
-                Examples: <span style="color: #00d4aa; font-weight: bold;">5/5</span><br/>
-                Agents: <span style="color: #00d4aa; font-weight: bold;">3/3</span><br/>
-                Checkpoints: <span style="color: #00d4aa; font-weight: bold;">33</span><br/>
-                Compounds: <span style="color: #00d4aa; font-weight: bold;">1,073</span><br/>
-                Strategic Patterns: <span style="color: #00d4aa; font-weight: bold;">24</span>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-
+        st.image("dashboard_b1_examples.png", caption="B1 (Host Quality): All 5 examples — from SUPERPOSE to full 3-stage pipeline")
     with col2:
-        st.markdown("""
-        <div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border-left: 6px solid #00d4aa; margin-bottom: 16px;">
-            <h4 style="color: #00d4aa; font-size: 20px; margin-bottom: 12px;">Pipeline Progression (B1)</h4>
-            <div style="font-size: 14px; color: #e0e0e0; line-height: 2.2;">
-                Ex 1: <code style="color: #00ffff;">[COMPOUNDS] [SUPERPOSE] [HOST-QUALITY]</code><br/>
-                Ex 2: <code style="color: #00ffff;">[HOST-QUALITY] [COUPLE] [OPTICAL]</code><br/>
-                Ex 3: <code style="color: #00ffff;">[COMPOUNDS] [FILTER] [I=0] [HOST-QUALITY] [ENTANGLE] [CARE-SYNERGY]</code><br/>
-                Ex 4: <code style="color: #00ffff;">[COMPOUNDS] [INTERFERE] [CARE-GUIDED]</code><br/>
-                Ex 5: <code style="color: #00ffff;">[FILTER] [I=0] → [COUPLE] [CROSS-SCALE] → [ENTANGLE] [CARE-SYNERGY]</code>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.image("dashboard_b1_b2.png", caption="B1 completes Ex 3-5, B2 (Optical) begins — same operations, different perspective")
+
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image("dashboard_b2_b3.png", caption="B2 Ex 2-5 complete, B3 (Coherence) begins — all agents run the same grammar")
+    with col2:
+        st.image("dashboard_b3_coherence.png", caption="B3 (Coherence): All 5 examples — same pipeline progression, convergence through Care operator")
 
     st.markdown("""
     <div style="text-align: center; padding: 16px; background-color: #1e2130; border-radius: 8px;">
