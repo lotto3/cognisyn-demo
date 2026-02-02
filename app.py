@@ -372,8 +372,11 @@ def main():
     <div style="text-align: center; padding: 24px; background-color: #1e2130; border-radius: 8px; margin-top: 20px;">
         <span style="color: #00d4aa; font-size: 20px; font-weight: bold;">
             Classical optimization finds Nash equilibria (trade-offs).<br/>
-            COGNISYN discovers Care equilibria (synergies beyond the Pareto frontier).
+            COGNISYN identifies Care equilibria (synergies beyond the Pareto frontier).
         </span>
+        <div style="font-size: 13px; color: #666; margin-top: 10px;">
+            Illustrative examples from orchestration pipeline test. Scores computed by H_total from real crystal structure data.
+        </div>
     </div>
     """, unsafe_allow_html=True)
 
