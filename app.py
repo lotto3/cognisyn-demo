@@ -57,7 +57,7 @@ def main():
     st.info("**COGNISYN** turns LLMs into mathematical physics operators using quantum-inspired game theory. Quantum game theory discovers synergies where classical methods find only trade-offs.")
 
     st.markdown("""
-    **What are host materials?** Crystals we dope Yb-171 ions into (e.g., `CaWO₄:Yb³⁺` = Yb in calcium tungstate).
+    **What are host materials?** Crystals that Yb-171 ions are doped into (e.g., `CaWO₄:Yb³⁺` = Yb in calcium tungstate).
 
     **Mission:** Find hosts where **host quality + optical properties + spin coherence** are ALL high—synergies beyond the Pareto frontier.
     """)
@@ -221,7 +221,7 @@ def main():
     <div style="text-align: center; padding: 24px; background-color: #1e2130; border-radius: 8px; margin-top: 20px;">
         <span style="color: #ffd43b; font-size: 20px; font-weight: bold;">
             All three agents run these examples in parallel -- each from their own perspective.<br/>
-            They converge on the same top compounds. That's Care equilibrium.
+            When all three agents score above threshold simultaneously, that's a Care equilibrium — a synergy beyond the Pareto frontier.
         </span>
     </div>
     """, unsafe_allow_html=True)
@@ -493,7 +493,7 @@ result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
     <div style="text-align: center; padding: 16px; background-color: #1e2130; border-radius: 8px;">
         <span style="font-size: 15px; color: #888;">
             Each agent runs the same examples from its own perspective (host quality, optical, coherence).
-            All three converge on the same top compounds — mathematical convergence through the Care operator.
+            Each agent evaluates from its own property perspective. When all three score above threshold simultaneously, that's a Care equilibrium.
         </span>
     </div>
     """, unsafe_allow_html=True)
