@@ -113,13 +113,194 @@ def main():
     st.markdown("---")
 
     # ========================================================================
+    # HOW IT WORKS: THREE AGENTS, ONE GRAMMAR
+    # ========================================================================
+
+    st.header("How It Works: Three Agents, One Grammar")
+
+    st.markdown("""
+    COGNISYN uses **three AI agents** that operate as **mathematical operators**, not chatbots.
+    Each agent evaluates materials from a different perspective:
+    """)
+
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-top: 6px solid #00d4aa; height: 200px;">
+            <h4 style="color: #00d4aa; font-size: 24px;">B1: Host Quality</h4>
+            <p style="font-size: 16px; color: #e0e0e0;">Crystal stability, site symmetry, phonon properties, optical linewidth</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-top: 6px solid #4dabf7; height: 200px;">
+            <h4 style="color: #4dabf7; font-size: 24px;">B2: Optical Properties</h4>
+            <p style="font-size: 16px; color: #e0e0e0;">Band gap, transition rates, photon emission quality for quantum networking</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col3:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-top: 6px solid #da77f2; height: 200px;">
+            <h4 style="color: #da77f2; font-size: 24px;">B3: Spin Coherence</h4>
+            <p style="font-size: 16px; color: #e0e0e0;">Nuclear spin bath (I=0), T2 coherence times, magnetic noise suppression</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("")
+
+    st.markdown("""
+    Agents communicate through **Baba is Quantum** -- a compositional grammar where rules ARE mathematical operators:
+
+    ```
+    [SUBJECT]  [VERB]      [PROPERTY]
+    COMPOUNDS  SUPERPOSE   HOST-QUALITY     # Evaluate all compounds for host quality
+    COMPOUNDS  FILTER      I=0              # Keep only zero-spin nuclei hosts
+    HOST-QUALITY ENTANGLE  CARE-SYNERGY     # Find where all three properties are high
+    ```
+
+    Each rule triggers **H_total** -- a real Hamiltonian that computes quantum properties from
+    [Materials Project](https://materialsproject.org/) data for **1,073 Yb-containing compounds**.
+    Nothing is hallucinated. Every score is computed.
+    """)
+
+    st.markdown("---")
+
+    # ========================================================================
+    # REAL RESULTS: 5-EXAMPLE DISCOVERY PIPELINE
+    # ========================================================================
+
+    st.header("Real Results: A Discovery Pipeline Emerges")
+
+    st.markdown("""
+    Over 5 examples, each agent builds increasingly sophisticated operations.
+    The grammar is **compositional** -- agents chain operations into pipelines:
+    """)
+
+    examples = [
+        ("Ex 1", "Cooperative Parallel Evaluation",
+         "[COMPOUNDS] [SUPERPOSE] [HOST-QUALITY]",
+         "Evaluate all 1,073 Yb compounds. H_total returns Care scores for each.",
+         "#00d4aa"),
+        ("Ex 2", "Scale Coupling Analysis",
+         "[HOST-QUALITY] [COUPLE] [OPTICAL]",
+         "Cross-scale coupling -- how does host quality affect optical properties?",
+         "#4dabf7"),
+        ("Ex 3", "Nuclear Spin Bath Analysis",
+         "[COMPOUNDS] [FILTER] [I=0]  [HOST-QUALITY] [ENTANGLE] [CARE-SYNERGY]",
+         "Two-stage pipeline: filter for zero-spin hosts, then find synergies across all three properties.",
+         "#da77f2"),
+        ("Ex 4", "Interference Pruning",
+         "[COMPOUNDS] [INTERFERE] [CARE-GUIDED]",
+         "Quantum interference: 1,073 compounds pruned to tractable set. Zero Care equilibria lost.",
+         "#ffd43b"),
+        ("Ex 5", "Full Pipeline Execution",
+         "[COMPOUNDS] [FILTER] [I=0]  [HOST-QUALITY] [COUPLE] [CROSS-SCALE]  [HOST-QUALITY] [ENTANGLE] [CARE-SYNERGY]",
+         "Three-stage pipeline: Filter -> Cross-scale coupling -> Care synergy. The full discovery workflow.",
+         "#ff6b6b"),
+    ]
+
+    for ex_num, title, rule, desc, color in examples:
+        st.markdown(f"""
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; border-left: 6px solid {color}; margin-bottom: 16px;">
+            <h4 style="color: {color}; font-size: 20px; margin-bottom: 8px;">{ex_num}: {title}</h4>
+            <code style="font-size: 16px; color: #00ffff; background-color: #0e1117; padding: 8px 12px; border-radius: 4px; display: block; margin-bottom: 12px;">{rule}</code>
+            <p style="font-size: 16px; color: #c0c0c0;">{desc}</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="text-align: center; padding: 24px; background-color: #1e2130; border-radius: 8px; margin-top: 20px;">
+        <span style="color: #ffd43b; font-size: 20px; font-weight: bold;">
+            All three agents run these examples in parallel -- each from their own perspective.<br/>
+            They converge on the same top compounds. That's Care equilibrium.
+        </span>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ========================================================================
+    # CARE VS NASH
+    # ========================================================================
+
+    st.header("The Key Insight: Care vs Nash Equilibria")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; height: 300px;">
+            <h4 style="color: #ff6b6b; font-size: 24px;">Nash Equilibrium (Trade-off)</h4>
+            <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
+                One property wins, others lose.<br/><br/>
+                <b>YbBr₂:</b><br/>
+                B2 (Optical) = <span style="color: #00d4aa;">1.0</span><br/>
+                B1 (Host) = <span style="color: #ff6b6b;">0.698</span><br/>
+                B3 (Coherence) = <span style="color: #ff6b6b;">0.65</span>
+            </p>
+            <p style="font-size: 14px; color: #aaa; margin-top: 12px;"><i>Great optics, poor host, poor coherence</i></p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #00d4aa; height: 300px;">
+            <h4 style="color: #00d4aa; font-size: 24px;">Care Equilibrium (Synergy)</h4>
+            <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
+                ALL three properties are high.<br/><br/>
+                <b>YbCl₃:</b><br/>
+                B1 (Host) = <span style="color: #00d4aa;">0.90</span><br/>
+                B2 (Optical) = <span style="color: #00d4aa;">0.94</span><br/>
+                B3 (Coherence) = <span style="color: #00d4aa;">0.90</span>
+            </p>
+            <p style="font-size: 14px; color: #aaa; margin-top: 12px;"><i>Beyond Pareto -- everyone wins</i></p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="text-align: center; padding: 24px; background-color: #1e2130; border-radius: 8px; margin-top: 20px;">
+        <span style="color: #00d4aa; font-size: 20px; font-weight: bold;">
+            Classical optimization finds Nash equilibria (trade-offs).<br/>
+            COGNISYN discovers Care equilibria (synergies beyond the Pareto frontier).
+        </span>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ========================================================================
+    # BY THE NUMBERS
+    # ========================================================================
+
+    st.header("By the Numbers")
+
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Compounds Evaluated", "1,073")
+    col2.metric("AI Agents", "3")
+    col3.metric("Properties Optimized", "3")
+    col4.metric("Strategic Patterns", "24+")
+
+    st.markdown("")
+
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Data Source", "Materials Project")
+    col2.metric("Computation", "Real H_total")
+    col3.metric("Hallucination", "Zero")
+    col4.metric("Agent Behavior", "Operator")
+
+    st.markdown("---")
+
+    # ========================================================================
     # SCHEDULE LIVE DEMO
     # ========================================================================
 
-    st.header("🎯 Schedule a Live Demo")
+    st.header("Schedule a Live Demo")
 
     st.markdown("""
-    **In a live demo you'll see:** Real-time quantum operations · Systematic search through 1,073 compounds · Care equilibria discovery
+    **In a live demo you'll see:** Real-time quantum operations, systematic search through 1,073 compounds, Care equilibria discovery, and agents creating novel mathematical rules.
 
     **Contact:** tish@cognisyn.ai | Virtual (30 min) or In-Person (1 hour)
     """)
