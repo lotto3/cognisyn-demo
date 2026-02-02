@@ -54,7 +54,7 @@ def main():
 
     st.title("🔬 COGNISYN: Yb-171 Host Materials Discovery")
 
-    st.info("📺 **How COGNISYN works** — Care mathematics on classical hardware, applied to quantum materials discovery.")
+    st.info("**COGNISYN** turns LLMs into mathematical physics operators using quantum-inspired game theory. Quantum game theory discovers synergies where classical methods find only trade-offs.")
 
     st.markdown("""
     **What are host materials?** Crystals we dope Yb-171 ions into (e.g., `CaWO₄:Yb³⁺` = Yb in calcium tungstate).
@@ -119,8 +119,9 @@ def main():
     st.header("How It Works: Three Agents, One Grammar")
 
     st.markdown("""
-    COGNISYN uses **three AI agents** that operate as **mathematical operators**, not chatbots.
-    Each agent evaluates materials from a different perspective:
+    COGNISYN is an external framework that turns LLMs into **mathematical physics operators** through their APIs.
+    LLMs don't discuss science — they execute operations that trigger real Hamiltonians computing real properties from real data.
+    Three agents operate in parallel, each evaluating from a different perspective:
     """)
 
     col1, col2, col3 = st.columns(3)
@@ -152,7 +153,8 @@ def main():
     st.markdown("")
 
     st.markdown("""
-    Agents communicate through **Baba is Quantum** -- a compositional grammar where rules ARE mathematical operators:
+    Agents communicate through **Baba is Quantum** — a compositional grammar built through AI-human collaboration,
+    where rules ARE mathematical operators:
 
     ```
     [SUBJECT]  [VERB]      [PROPERTY]
@@ -161,9 +163,13 @@ def main():
     HOST-QUALITY ENTANGLE  CARE-SYNERGY     # Find where all three properties are high
     ```
 
-    Each rule triggers **H_total** -- a real Hamiltonian that computes quantum properties from
+    Each rule triggers **H_total** — a real Hamiltonian that computes quantum properties from
     [Materials Project](https://materialsproject.org/) data for **1,073 Yb-containing compounds**.
     Nothing is hallucinated. Every score is computed.
+
+    Agent convergence isn't emergent or imposed by constraint — it's mathematical.
+    The **Care operator** (C = H_care - H_nash) defines cooperation as a fundamental mathematical state.
+    This is one of the key aspects of making quantum game theory **tractable on classical hardware**.
     """)
 
     st.markdown("---")
@@ -377,19 +383,44 @@ def main():
 
     st.header("By the Numbers")
 
-    col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Compounds Evaluated", "1,073")
-    col2.metric("AI Agents", "3")
-    col3.metric("Properties Optimized", "3")
-    col4.metric("Strategic Patterns", "24+")
-
-    st.markdown("")
-
-    col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Data Source", "Materials Project")
-    col2.metric("Computation", "Real H_total")
-    col3.metric("Hallucination", "Zero")
-    col4.metric("Agent Behavior", "Operator")
+    st.markdown("""
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px;">
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">Compounds Evaluated</div>
+            <div style="font-size: 32px; color: #00d4aa; font-weight: bold;">1,073</div>
+        </div>
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">AI Agents</div>
+            <div style="font-size: 32px; color: #4dabf7; font-weight: bold;">3</div>
+        </div>
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">Properties Optimized</div>
+            <div style="font-size: 32px; color: #da77f2; font-weight: bold;">3</div>
+        </div>
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">Strategic Patterns</div>
+            <div style="font-size: 32px; color: #ffd43b; font-weight: bold;">24+</div>
+        </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">Data Source</div>
+            <div style="font-size: 18px; color: #e0e0e0; font-weight: bold;">Materials Project</div>
+        </div>
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">Computation</div>
+            <div style="font-size: 18px; color: #e0e0e0; font-weight: bold;">Real H_total</div>
+        </div>
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">Hallucination</div>
+            <div style="font-size: 18px; color: #00d4aa; font-weight: bold;">Zero</div>
+        </div>
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">Agent Behavior</div>
+            <div style="font-size: 18px; color: #e0e0e0; font-weight: bold;">Operator</div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
     st.markdown("---")
 
@@ -457,7 +488,7 @@ def main():
 
     **Email:** tish@cognisyn.ai
 
-    **55,000 lines of code** · 2 years of AI-human collaboration · Built with Claude
+    **55,000 lines of code** · 2 years of AI-human collaboration
     """)
 
 
