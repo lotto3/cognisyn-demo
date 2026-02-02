@@ -436,6 +436,46 @@ def main():
     5 examples in parallel, building from single operations to multi-stage pipelines.
     """)
 
+    with st.expander("View Orchestration Code", expanded=False):
+        st.markdown("Real orchestration calls — zero LLM tokens, cached Materials Project data, real H_total computation:")
+        st.code('''# Setup: real mathematics, real memory, real validation
+H = UnifiedStrategicMathematics()        # H_total Hamiltonian
+m = DynamicMemoryArchitecture(agent_id)  # Episodic + strategic memory
+v = OrchestrationValidator()             # Rule validation
+b = OrchestrationBridge(H, m, v)         # Orchestration engine
+b.materials_adapter = MaterialsProjectAdapter(use_cached=True)  # 1,073 Yb compounds
+
+# SUPERPOSE — evaluate all compounds for host quality
+rule = BabaIsQuantumRule(
+    subject="COMPOUNDS", verb="SUPERPOSE",
+    property="HOST-QUALITY", category="strategy"
+)
+result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
+# → 1,073 compounds evaluated, 26 Care equilibria found
+
+# FILTER → ENTANGLE — two-stage pipeline
+rule_filter = BabaIsQuantumRule(
+    subject="COMPOUNDS", verb="FILTER",
+    property="I=0", category="strategy"
+)
+r_filter = await b.orchestrate_mathematics(rule_filter, ctx, {'day': 6})
+# → 1,073 → 1,057 passed (i_zero > 0.3)
+
+rule_entangle = BabaIsQuantumRule(
+    subject="HOST-QUALITY", verb="ENTANGLE",
+    property="CARE-SYNERGY", category="strategy"
+)
+r_entangle = await b.orchestrate_mathematics(rule_entangle, ctx, {'day': 6})
+# → 26 synergy compounds: YbCl₃ (B1=0.90, B2=0.94, B3=0.90)
+
+# INTERFERE — quantum pruning
+rule = BabaIsQuantumRule(
+    subject="COMPOUNDS", verb="INTERFERE",
+    property="CARE-GUIDED", category="strategy"
+)
+result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
+# → 1,073 → 25 compounds, all Care equilibria preserved''', language='python')
+
     st.image("dashboard_overview.png", caption="System overview: 5/5 examples complete, 3/3 agents, 1,073 compounds evaluated, 24 strategic patterns learned")
 
     col1, col2 = st.columns(2)
