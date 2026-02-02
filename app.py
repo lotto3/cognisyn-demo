@@ -428,17 +428,16 @@ def main():
     # ORCHESTRATION MONITOR
     # ========================================================================
 
-    st.header("Orchestration Monitor: The System Running")
+    st.header("Orchestration Monitor")
 
     st.markdown("""
-    The COGNISYN Test Run Monitor shows the orchestration pipeline in action.
     Three agents — **B1 (Host Quality)**, **B2 (Optical)**, **B3 (Coherence)** — each run
     5 examples in parallel, building from single operations to multi-stage pipelines.
     """)
 
-    with st.expander("View Orchestration Code", expanded=False):
-        st.markdown("Real orchestration calls — zero LLM tokens, cached Materials Project data, real H_total computation:")
-        st.code('''# Setup: real mathematics, real memory, real validation
+    st.subheader("Pipeline Test Code")
+    st.markdown("Real orchestration calls — zero LLM tokens, cached Materials Project data, real H_total computation:")
+    st.code('''# Setup: real mathematics, real memory, real validation
 H = UnifiedStrategicMathematics()        # H_total Hamiltonian
 m = DynamicMemoryArchitecture(agent_id)  # Episodic + strategic memory
 v = OrchestrationValidator()             # Rule validation
