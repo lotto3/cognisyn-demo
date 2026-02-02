@@ -459,6 +459,47 @@ def main():
     </div>
     """, unsafe_allow_html=True)
 
+    st.markdown("")
+
+    # Agent Learning: Core Memory Systems
+    st.subheader("Agent Learning: Core Memory Systems")
+
+    st.markdown("""
+    As agents process examples, they accumulate episodic memories, discover strategic patterns,
+    and invent new compositional rules — building cumulative intelligence across the pipeline.
+    """)
+
+    st.markdown("""
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px;">
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">Episodic Memory</div>
+            <div style="font-size: 32px; color: #00d4aa; font-weight: bold;">100</div>
+            <div style="font-size: 12px; color: #666;">episodes</div>
+        </div>
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">Strategic Patterns</div>
+            <div style="font-size: 32px; color: #4dabf7; font-weight: bold;">4</div>
+            <div style="font-size: 12px; color: #666;">discovered</div>
+        </div>
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">Rules Invented</div>
+            <div style="font-size: 32px; color: #ffd43b; font-weight: bold;">5</div>
+            <div style="font-size: 12px; color: #666;">Baba is Quantum</div>
+        </div>
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
+            <div style="font-size: 14px; color: #888;">Total Memories</div>
+            <div style="font-size: 32px; color: #ff6b6b; font-weight: bold;">106</div>
+            <div style="font-size: 12px; color: #666;">accumulated</div>
+        </div>
+    </div>
+    <div style="text-align: center; padding: 12px; background-color: #1e2130; border-radius: 8px;">
+        <span style="font-size: 14px; color: #888;">
+            Data from DynamicMemoryArchitecture checkpoint files — agents learn and retain knowledge across examples.
+            Illustrative test run data.
+        </span>
+    </div>
+    """, unsafe_allow_html=True)
+
     st.markdown("---")
 
     # ========================================================================
