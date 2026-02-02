@@ -171,7 +171,8 @@ def main():
 
     Agent convergence isn't emergent or imposed by constraint — it's mathematical.
     The **Care operator C_λ** reweights the energy landscape so cooperation becomes the ground state.
-    H_total = H_quantum + H_classical + H_coupling + H_care — real quantum formalism, **tractable on classical hardware**.
+    H_total = H_quantum + H_classical + H_coupling + H_care
+    F_boundary(t) = optimize(ρ_quantum, ρ_classical, C_care) — real quantum formalism, **tractable on classical hardware**.
     """)
 
     st.markdown("---")

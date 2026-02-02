@@ -261,8 +261,11 @@ elif slide.startswith("6."):
             </div>
         </div>
         <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: #1e2130; border-radius: 8px; max-width: 700px; margin-left: auto; margin-right: auto;">
-            <span style="font-size: 18px; color: #ffd43b; font-weight: bold;">
+            <span style="font-size: 16px; color: #ffd43b; font-weight: bold;">
                 H<sub>total</sub> = H<sub>quantum</sub> + H<sub>classical</sub> + H<sub>coupling</sub> + H<sub>care</sub>
+            </span><br/>
+            <span style="font-size: 14px; color: #ffd43b;">
+                F<sub>boundary</sub>(t) = optimize(ρ<sub>quantum</sub>, ρ<sub>classical</sub>, C<sub>care</sub>)
             </span><br/>
             <span style="font-size: 15px; color: #888;">
                 Care operator C<sub>λ</sub> reweights the energy landscape — cooperation becomes the ground state
@@ -457,7 +460,8 @@ elif slide.startswith("11."):
             </div>
         </div>
         <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: #1e2130; border-radius: 8px; max-width: 700px; margin-left: auto; margin-right: auto;">
-            <span style="font-size: 18px; color: #ffd43b; font-weight: bold;">H<sub>total</sub> = H<sub>quantum</sub> + H<sub>classical</sub> + H<sub>coupling</sub> + H<sub>care</sub></span><br/>
+            <span style="font-size: 16px; color: #ffd43b; font-weight: bold;">H<sub>total</sub> = H<sub>quantum</sub> + H<sub>classical</sub> + H<sub>coupling</sub> + H<sub>care</sub></span><br/>
+            <span style="font-size: 14px; color: #ffd43b;">F<sub>boundary</sub>(t) = optimize(ρ<sub>quantum</sub>, ρ<sub>classical</sub>, C<sub>care</sub>)</span><br/>
             <span style="font-size: 16px; color: #888;">Care operator C<sub>λ</sub> reweights the energy landscape — cooperation becomes the ground state</span><br/>
             <span style="font-size: 13px; color: #666;">Illustrative examples from orchestration pipeline test. Scores computed by H_total from real crystal structure data.</span>
         </div>
