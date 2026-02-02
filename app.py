@@ -165,7 +165,8 @@ def main():
 
     Each rule triggers **H_total** — a real Hamiltonian that computes quantum properties from
     [Materials Project](https://materialsproject.org/) data for **1,073 Yb-containing compounds**.
-    Nothing is hallucinated. Every score is computed.
+    The LLM operates the mathematics — it doesn't generate the answers.
+    Baba rules trigger computation, not generation. Every score is computed by H_total.
 
     Agent convergence isn't emergent or imposed by constraint — it's mathematical.
     The **Care operator** (C = H_care - H_nash) defines cooperation as a fundamental mathematical state.
@@ -414,6 +415,7 @@ def main():
         <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
             <div style="font-size: 14px; color: #888;">Hallucination</div>
             <div style="font-size: 18px; color: #00d4aa; font-weight: bold;">Zero</div>
+            <div style="font-size: 11px; color: #666;">Rules trigger computation,<br/>not generation</div>
         </div>
         <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center;">
             <div style="font-size: 14px; color: #888;">Agent Behavior</div>
