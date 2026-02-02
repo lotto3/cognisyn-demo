@@ -226,13 +226,14 @@ def main():
     # PIPELINE OUTPUT: COMPUTED FROM MATERIALS PROJECT DATA
     # ========================================================================
 
-    st.header("Pipeline Output: Computed from Materials Project Data")
+    st.header("Pipeline Output: Illustrative Examples")
 
     st.markdown("""
-    The following output is from the COGNISYN orchestration pipeline demonstrating
-    how agents evaluate **1,073 Yb-containing compounds** cached from the
+    The following output illustrates how the COGNISYN orchestration pipeline evaluates
+    **1,073 Yb-containing compounds** cached from the
     [Materials Project](https://materialsproject.org/).
-    Scores are computed by H_total from real crystal structure data.
+    Compound names and crystal structures are real. Scores are computed by H_total
+    from real structure data. These are illustrative pipeline examples, not experimental discoveries.
     """)
 
     # SUPERPOSE results
@@ -313,9 +314,8 @@ def main():
     st.markdown("""
     <div style="text-align: center; padding: 20px; background-color: #1e2130; border-radius: 8px; margin-top: 10px; margin-bottom: 10px;">
         <span style="font-size: 15px; color: #888;">
-            Pipeline demonstration — computed from cached Materials Project data via H_total.
-            All compound names and crystal structures are real. Scores reflect H_total evaluation
-            across 7 unified mathematical frameworks.
+            Illustrative pipeline output — compound names and crystal structures are real
+            (Materials Project, CC BY 4.0). Scores are computed, not experimental measurements.
         </span>
     </div>
     """, unsafe_allow_html=True)
@@ -394,15 +394,70 @@ def main():
     st.markdown("---")
 
     # ========================================================================
-    # SCHEDULE LIVE DEMO
+    # ORCHESTRATION MONITOR
     # ========================================================================
 
-    st.header("Schedule a Live Demo")
+    st.header("Orchestration Monitor: The System Running")
 
     st.markdown("""
-    **In a live demo you'll see:** Real-time quantum operations, systematic search through 1,073 compounds, Care equilibria discovery, and agents creating novel mathematical rules.
+    The COGNISYN Test Run Monitor shows the orchestration pipeline in action.
+    Three agents — **B1 (Host Quality)**, **B2 (Optical)**, **B3 (Coherence)** — each run
+    5 examples in parallel, building from single operations to multi-stage pipelines.
+    """)
 
-    **Contact:** tish@cognisyn.ai | Virtual (30 min) or In-Person (1 hour)
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border-left: 6px solid #4dabf7; margin-bottom: 16px;">
+            <h4 style="color: #4dabf7; font-size: 20px; margin-bottom: 12px;">System Overview</h4>
+            <div style="font-size: 16px; color: #e0e0e0; line-height: 2;">
+                Examples: <span style="color: #00d4aa; font-weight: bold;">5/5</span><br/>
+                Agents: <span style="color: #00d4aa; font-weight: bold;">3/3</span><br/>
+                Checkpoints: <span style="color: #00d4aa; font-weight: bold;">33</span><br/>
+                Compounds: <span style="color: #00d4aa; font-weight: bold;">1,073</span><br/>
+                Strategic Patterns: <span style="color: #00d4aa; font-weight: bold;">24</span>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border-left: 6px solid #00d4aa; margin-bottom: 16px;">
+            <h4 style="color: #00d4aa; font-size: 20px; margin-bottom: 12px;">Pipeline Progression (B1)</h4>
+            <div style="font-size: 14px; color: #e0e0e0; line-height: 2.2;">
+                Ex 1: <code style="color: #00ffff;">[COMPOUNDS] [SUPERPOSE] [HOST-QUALITY]</code><br/>
+                Ex 2: <code style="color: #00ffff;">[HOST-QUALITY] [COUPLE] [OPTICAL]</code><br/>
+                Ex 3: <code style="color: #00ffff;">[COMPOUNDS] [FILTER] [I=0] [HOST-QUALITY] [ENTANGLE] [CARE-SYNERGY]</code><br/>
+                Ex 4: <code style="color: #00ffff;">[COMPOUNDS] [INTERFERE] [CARE-GUIDED]</code><br/>
+                Ex 5: <code style="color: #00ffff;">[FILTER] [I=0] → [COUPLE] [CROSS-SCALE] → [ENTANGLE] [CARE-SYNERGY]</code>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="text-align: center; padding: 16px; background-color: #1e2130; border-radius: 8px;">
+        <span style="font-size: 15px; color: #888;">
+            Each agent runs the same examples from its own perspective (host quality, optical, coherence).
+            All three converge on the same top compounds — mathematical convergence through the Care operator.
+        </span>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ========================================================================
+    # CONTACT
+    # ========================================================================
+
+    st.header("Contact")
+
+    st.markdown("""
+    **Tish Shute** — Founder & CEO
+
+    **Email:** tish@cognisyn.ai
+
+    **55,000 lines of code** · 2 years of AI-human collaboration · Built with Claude
     """)
 
 
