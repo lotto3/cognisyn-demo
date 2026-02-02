@@ -163,10 +163,11 @@ def main():
     HOST-QUALITY ENTANGLE  CARE-SYNERGY     # Find where all three properties are high
     ```
 
-    Each rule triggers **H_total** — a real Hamiltonian that computes quantum properties from
+    Each rule accesses **H_total** — a Hermitian Hamiltonian in Hilbert space with 8 components
+    (Care, EQFT, Coherence, Scale Coupling, Boundary + 3), computed classically from
     [Materials Project](https://materialsproject.org/) data for **1,073 Yb-containing compounds**.
     The LLM operates the mathematics — it doesn't generate the answers.
-    Baba rules trigger computation, not generation. Every score is computed by H_total.
+    Baba rules trigger computation, not generation.
 
     Agent convergence isn't emergent or imposed by constraint — it's mathematical.
     The **Care operator** (C = H_care - H_nash) defines cooperation as a fundamental mathematical state.
