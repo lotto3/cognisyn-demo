@@ -170,8 +170,8 @@ def main():
     Baba rules trigger computation, not generation.
 
     Agent convergence isn't emergent or imposed by constraint — it's mathematical.
-    The **Care operator** (C = H_care - H_nash) defines cooperation as a fundamental mathematical state.
-    This is one of the key aspects of making quantum game theory **tractable on classical hardware**.
+    The **Care operator C_λ** reweights the energy landscape so cooperation becomes the ground state.
+    H_total = H_quantum + H_classical + H_coupling + H_care — real quantum formalism, **tractable on classical hardware**.
     """)
 
     st.markdown("---")
