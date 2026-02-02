@@ -229,9 +229,10 @@ def main():
     st.header("Pipeline Output: Computed from Materials Project Data")
 
     st.markdown("""
-    The following results are from the COGNISYN orchestration pipeline operating on
-    **1,073 cached Yb-containing compounds** from the [Materials Project](https://materialsproject.org/).
-    All scores are computed by H_total — a 60-dimensional Hamiltonian integrating 7 mathematical frameworks.
+    The following output is from the COGNISYN orchestration pipeline demonstrating
+    how agents evaluate **1,073 Yb-containing compounds** cached from the
+    [Materials Project](https://materialsproject.org/).
+    Scores are computed by H_total from real crystal structure data.
     """)
 
     # SUPERPOSE results
