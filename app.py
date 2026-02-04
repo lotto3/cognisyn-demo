@@ -54,9 +54,9 @@ def main():
     # HEADER
     # ========================================================================
 
-    st.title("🔬 COGNISYN — Why trade off? AI-operated math finds cooperative wins.")
+    st.title("🔬 COGNISYN — Applying AI-operated quantum game theory to find cooperative wins")
 
-    st.info("**COGNISYN** is cooperative intelligence through mathematical physics. Where classical methods accept trade-offs as inevitable, COGNISYN applies AI-operated quantum game theory to find cooperative wins.")
+    st.info("**COGNISYN** turns LLMs into mathematical physics operators using quantum-inspired game theory. Quantum game theory discovers synergies where classical methods find only trade-offs.")
 
     st.markdown("""
     **First application: quantum computing materials discovery** — finding host crystals for Yb-171 where host quality, optical properties, and spin coherence are ALL high simultaneously, not one at the expense of another.
