@@ -358,7 +358,7 @@ def main():
     st.markdown("")
 
     st.markdown("""
-    Agents communicate through **Baba is Quantum** — a compositional grammar where rules ARE mathematical operators.
+    Agents communicate with the mathematical physics engine through **Baba is Quantum** — a compositional grammar where rules ARE mathematical operators.
     23 operators access the full H_total Hamiltonian:
     """)
 
