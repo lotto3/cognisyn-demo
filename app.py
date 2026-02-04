@@ -58,11 +58,11 @@ def main():
 
     st.markdown("""
     <div style="text-align: center; padding: 16px 0;">
-        <span style="font-size: 28px; color: #ffd43b; font-weight: bold;">Why trade off? AI-operated math finds mutual wins.</span>
+        <span style="font-size: 28px; color: #ffd43b; font-weight: bold;">Why trade off? AI-operated math finds cooperative wins.</span>
     </div>
     """, unsafe_allow_html=True)
 
-    st.info("**COGNISYN** is cooperative intelligence through mathematical physics. Where classical methods accept trade-offs as inevitable, our quantum game theory finds the state where all objectives cooperate — no qubits required, just as simulated annealing borrows from metallurgy without molten metal.")
+    st.info("**COGNISYN** is cooperative intelligence through mathematical physics. Where classical methods accept trade-offs as inevitable, COGNISYN applies AI-operated quantum game theory to find cooperative wins. Just as annealing borrows from metallurgy without molten metal, COGNISYN borrows from quantum mechanics without the need for qubits.")
 
     st.markdown("""
     **First application: quantum computing materials discovery** — finding host crystals for Yb-171 where host quality, optical properties, and spin coherence are ALL high. Multi-objective optimization matters from materials to medicine to society — the same mathematics applies wherever classical methods force trade-offs.
