@@ -995,15 +995,17 @@ rule = BabaIsQuantumRule(
 result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
 # → 1,073 → 25 compounds, all Care equilibria preserved''', language='python')
 
-    st.image("dashboard_overview.png", caption="System overview: 5/5 examples complete, 3/3 agents, 1,073 compounds evaluated, 24 strategic patterns learned")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image("dashboard_overview.png", caption="System overview: 5/5 examples, 3/3 agents, 1,073 compounds, 24 patterns")
+    with col2:
+        st.image("dashboard_b1_examples.png", caption="B1 (Host Quality): All 5 examples — SUPERPOSE through full pipeline")
 
     col1, col2 = st.columns(2)
     with col1:
-        st.image("dashboard_b1_examples.png", caption="B1 (Host Quality): All 5 examples — SUPERPOSE through full 3-stage pipeline")
+        st.image("dashboard_b2_optical.png", caption="B2 (Optical): All 5 examples — evaluating from optical perspective")
     with col2:
-        st.image("dashboard_b2_optical.png", caption="B2 (Optical): All 5 examples — same operations, evaluating from optical perspective")
-
-    st.image("dashboard_b3_coherence.png", caption="B3 (Coherence): All 5 examples — same pipeline, evaluating from spin coherence perspective")
+        st.image("dashboard_b3_coherence.png", caption="B3 (Coherence): All 5 examples — evaluating from spin coherence perspective")
 
     st.markdown("""
     <div style="text-align: center; padding: 16px; background-color: #1e2130; border-radius: 8px;">
