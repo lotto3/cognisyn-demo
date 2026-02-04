@@ -156,26 +156,39 @@ def main():
     st.markdown("")
 
     st.markdown("""
-    Agents communicate through **Baba is Quantum** — a compositional grammar built through AI-human collaboration,
-    where rules ARE mathematical operators:
+    Agents communicate through **Baba is Quantum** — a compositional grammar where rules ARE mathematical operators.
+    23 operators access the full H_total Hamiltonian:
+    """)
 
-    ```
-    [SUBJECT]  [VERB]      [PROPERTY]
-    COMPOUNDS  SUPERPOSE   HOST-QUALITY     # Evaluate all compounds for host quality
-    COMPOUNDS  FILTER      I=0              # Keep only zero-spin nuclei hosts
-    HOST-QUALITY ENTANGLE  CARE-SYNERGY     # Find where all three properties are high
-    ```
+    st.markdown("""<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 20px;">
+<span style="padding: 8px 16px; background-color: #00d4aa33; border: 1px solid #00d4aa; border-radius: 20px; color: #00d4aa; font-weight: 600; font-size: 15px;">Superpose</span>
+<span style="padding: 8px 16px; background-color: #4dabf733; border: 1px solid #4dabf7; border-radius: 20px; color: #4dabf7; font-weight: 600; font-size: 15px;">Interfere</span>
+<span style="padding: 8px 16px; background-color: #da77f233; border: 1px solid #da77f2; border-radius: 20px; color: #da77f2; font-weight: 600; font-size: 15px;">Entangle</span>
+<span style="padding: 8px 16px; background-color: #ffd43b33; border: 1px solid #ffd43b; border-radius: 20px; color: #ffd43b; font-weight: 600; font-size: 15px;">Care</span>
+<span style="padding: 8px 16px; background-color: #ff6b6b33; border: 1px solid #ff6b6b; border-radius: 20px; color: #ff6b6b; font-weight: 600; font-size: 15px;">Boundary</span>
+<span style="padding: 8px 16px; background-color: #4dabf733; border: 1px solid #4dabf7; border-radius: 20px; color: #4dabf7; font-weight: 600; font-size: 15px;">Scale Coupling</span>
+<span style="padding: 8px 16px; background-color: #00d4aa33; border: 1px solid #00d4aa; border-radius: 20px; color: #00d4aa; font-weight: 600; font-size: 15px;">EQFT</span>
+<span style="padding: 8px 16px; background-color: #da77f233; border: 1px solid #da77f2; border-radius: 20px; color: #da77f2; font-weight: 600; font-size: 15px;">Coherence</span>
+</div>""", unsafe_allow_html=True)
 
-    Each rule accesses **H_total** — a Hermitian Hamiltonian in Hilbert space with 8 components
-    (Care, EQFT, Coherence, Scale Coupling, Boundary + 3), computed classically from
-    [Materials Project](https://materialsproject.org/) data for **1,073 Yb-containing compounds**.
+    st.markdown("""<div style="background-color: #1e2130; padding: 24px; border-radius: 10px; margin-bottom: 16px;">
+<div style="text-align: center; font-size: 16px; color: #aaa; margin-bottom: 16px;">Grammar: <span style="color: #da77f2;">[SUBJECT]</span> <span style="color: #4dabf7;">[VERB]</span> <span style="color: #00d4aa;">[PROPERTY]</span> → Mathematical Operation</div>
+<div style="display: grid; grid-template-columns: 1fr auto; gap: 8px 20px; font-size: 15px; font-family: monospace; padding: 0 20px;">
+<span style="color: #e0e0e0;">[COMPOUNDS] [SUPERPOSE] [HOST-QUALITY]</span>
+<span style="color: #aaa; font-family: sans-serif;">Evaluate all compounds</span>
+<span style="color: #e0e0e0;">[AGENTS] [COORDINATE] [ENTANGLE]</span>
+<span style="color: #aaa; font-family: sans-serif;">Multi-agent entanglement</span>
+<span style="color: #e0e0e0;">[NASH] [TRANSFORM] [CARE]</span>
+<span style="color: #aaa; font-family: sans-serif;">Nash → Care transformation</span>
+<span style="color: #e0e0e0;">[PATTERNS] [ANALYZE] [CROSS-PROPERTY]</span>
+<span style="color: #aaa; font-family: sans-serif;">Cross-property correlation</span>
+</div>
+</div>""", unsafe_allow_html=True)
+
+    st.markdown("""
+    Each rule accesses **H_total** — a Hermitian Hamiltonian in Hilbert space with 8 components,
+    computed classically from [Materials Project](https://materialsproject.org/) data for **1,073 Yb-containing compounds**.
     The LLM operates the mathematics — it doesn't generate the answers.
-    Baba rules trigger computation, not generation.
-
-    Agent convergence isn't emergent or imposed by constraint — it's mathematical.
-    The **Care operator C_λ** reweights the energy landscape so cooperation becomes the ground state.
-    H_total = H_quantum + H_classical + H_coupling + H_care
-    F_boundary(t) = optimize(ρ_quantum, ρ_classical, C_care) — real quantum formalism, **tractable on classical hardware**.
     """)
 
     # Why This Runs on Classical Compute (from pitch deck slide 5)
