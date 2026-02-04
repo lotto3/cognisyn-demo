@@ -374,16 +374,16 @@ def main():
 </div>""", unsafe_allow_html=True)
 
     st.markdown("""<div style="background-color: #1e2130; padding: 24px; border-radius: 10px; margin-bottom: 16px;">
-<div style="text-align: center; font-size: 16px; color: #aaa; margin-bottom: 16px;">Grammar: <span style="color: #da77f2;">[SUBJECT]</span> <span style="color: #4dabf7;">[VERB]</span> <span style="color: #00d4aa;">[PROPERTY]</span> → Mathematical Operation</div>
-<div style="display: grid; grid-template-columns: 1fr auto; gap: 8px 20px; font-size: 15px; font-family: monospace; padding: 0 20px;">
-<span style="color: #e0e0e0;">[COMPOUNDS] [SUPERPOSE] [HOST-QUALITY]</span>
-<span style="color: #aaa; font-family: sans-serif;">Evaluate all compounds</span>
-<span style="color: #e0e0e0;">[AGENTS] [COORDINATE] [ENTANGLE]</span>
-<span style="color: #aaa; font-family: sans-serif;">Multi-agent entanglement</span>
-<span style="color: #e0e0e0;">[NASH] [TRANSFORM] [CARE]</span>
-<span style="color: #aaa; font-family: sans-serif;">Nash → Care transformation</span>
-<span style="color: #e0e0e0;">[PATTERNS] [ANALYZE] [CROSS-PROPERTY]</span>
-<span style="color: #aaa; font-family: sans-serif;">Cross-property correlation</span>
+<div style="text-align: center; font-size: 16px; color: #aaa; margin-bottom: 16px;">Grammar: <span style="color: #da77f2;">[SUBJECT]</span> <span style="color: #4dabf7;">[VERB]</span> <span style="color: #00d4aa;">[PROPERTY]</span> → H_total computes</div>
+<div style="display: grid; grid-template-columns: 1fr auto; gap: 8px 20px; font-size: 14px; font-family: monospace; padding: 0 20px;">
+<span style="color: #e0e0e0;">[COMPOUNDS] [SUPERPOSE] [<span style="color: #00d4aa;">HOST-QUALITY</span>]</span>
+<span style="color: #aaa; font-family: sans-serif;">B1 evaluates all compounds for its property</span>
+<span style="color: #e0e0e0;">[COMPOUNDS] [SUPERPOSE] [<span style="color: #4dabf7;">OPTICAL</span>]</span>
+<span style="color: #aaa; font-family: sans-serif;">B2 evaluates from its perspective</span>
+<span style="color: #e0e0e0;">[<span style="color: #00d4aa;">HOST-QUALITY</span>] [COUPLE] [<span style="color: #4dabf7;">OPTICAL</span>]</span>
+<span style="color: #aaa; font-family: sans-serif;">Cross-property scale coupling</span>
+<span style="color: #e0e0e0;">[COMPOUNDS] [FILTER] [I=0] → [<span style="color: #da77f2;">COHERENCE</span>] [ENTANGLE] [CARE-SYNERGY]</span>
+<span style="color: #aaa; font-family: sans-serif;">B3 multi-stage pipeline</span>
 </div>
 </div>""", unsafe_allow_html=True)
 
