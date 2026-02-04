@@ -116,6 +116,208 @@ def main():
     st.markdown("---")
 
     # ========================================================================
+    # A DIFFERENT MATHEMATICS (from pitch deck slides 2 & 3)
+    # ========================================================================
+
+    st.header("A Different Mathematics")
+
+    st.markdown("""
+    <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; margin-bottom: 20px;">
+        <h4 style="color: #ff6b6b; font-size: 22px; margin-bottom: 12px;">The Hidden Premise</h4>
+        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
+            Classical optimization forces impossible choices. "Pick two" blocks progress everywhere:
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px;">
+            <div style="text-align: center; padding: 14px; background-color: #0e1117; border-radius: 8px; border: 1px solid #ff6b6b44;">
+                <div style="font-size: 16px; color: #ff6b6b; font-weight: 600;">Drug Discovery</div>
+                <div style="font-size: 14px; color: #aaa; margin-top: 6px;">Efficacy OR Safety OR Synthesizability</div>
+            </div>
+            <div style="text-align: center; padding: 14px; background-color: #0e1117; border-radius: 8px; border: 1px solid #ff6b6b44;">
+                <div style="font-size: 16px; color: #ff6b6b; font-weight: 600;">Control Systems (PID)</div>
+                <div style="font-size: 14px; color: #aaa; margin-top: 6px;">Speed OR Stability OR Accuracy</div>
+            </div>
+            <div style="text-align: center; padding: 14px; background-color: #0e1117; border-radius: 8px; border: 1px solid #ff6b6b44;">
+                <div style="font-size: 16px; color: #ff6b6b; font-weight: 600;">Foundation Models</div>
+                <div style="font-size: 14px; color: #aaa; margin-top: 6px;">Capability OR Alignment OR Efficiency</div>
+            </div>
+        </div>
+        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8; margin-top: 16px;">
+            Classical methods assume objectives must be optimized independently or collapsed into weighted trade-offs.
+            <span style="color: #ff6b6b; font-weight: 600;">This assumption creates the competition it claims to solve.</span>
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #4dabf7; margin-bottom: 20px;">
+        <p style="font-size: 20px; color: #4dabf7; font-style: italic; text-align: center;">
+            But is this a physics limit... or a mathematical assumption we can change?
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #00d4aa; margin-bottom: 20px;">
+        <h4 style="color: #00d4aa; font-size: 22px; margin-bottom: 12px;">The Solution: A Different Mathematics</h4>
+        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
+            Competitive solutions to optimization problems aren't physics limits — they're mathematical assumptions.
+            We changed the mathematics. <span style="color: #00d4aa; font-weight: 700;">AI agents built the language.</span>
+        </p>
+        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8; margin-top: 12px;">
+            <span style="color: #ffd43b; font-weight: 700;">COGNISYN enables quantum game theory on classical compute.</span>
+            Mathematical structures transfer without the physical substrate:
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; height: 160px;">
+            <h4 style="color: #ffd43b; font-size: 18px;">Annealing</h4>
+            <p style="font-size: 15px; color: #aaa; margin-top: 8px;">Metallurgy math<br/><b style="color: #e0e0e0;">→ no molten metal</b></p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; height: 160px;">
+            <h4 style="color: #da77f2; font-size: 18px;">Genetic Algorithms</h4>
+            <p style="font-size: 15px; color: #aaa; margin-top: 8px;">Biology math<br/><b style="color: #e0e0e0;">→ no DNA</b></p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col3:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; border: 2px solid #00d4aa; height: 160px;">
+            <h4 style="color: #00d4aa; font-size: 18px;">COGNISYN</h4>
+            <p style="font-size: 15px; color: #aaa; margin-top: 8px;">Quantum game theory<br/><b style="color: #e0e0e0;">→ no qubits</b></p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ========================================================================
+    # THE STAG HUNT (from pitch deck slide 4)
+    # ========================================================================
+
+    st.header("The Stag Hunt: Quantum Game Theory in Action")
+
+    st.markdown("""
+    <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; margin-bottom: 20px;">
+        <p style="font-size: 15px; color: #aaa; text-align: center; margin-bottom: 16px;">
+            How "pick one" becomes "pick both"
+        </p>
+        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
+            The <b>Stag Hunt</b> is one of game theory's most important problems. Two hunters go out
+            separately. Each must choose independently:
+        </p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 16px 0;">
+            <div style="padding: 16px; background-color: #0e1117; border-radius: 8px; border: 1px solid #ffd43b44;">
+                <div style="font-size: 20px; margin-bottom: 6px;">🦌</div>
+                <div style="font-size: 17px; color: #ffd43b; font-weight: 600;">Hunt the Stag</div>
+                <div style="font-size: 15px; color: #aaa; margin-top: 6px;">
+                    High reward — feeds the village for a week.<br/>
+                    But it <b style="color: #e0e0e0;">requires both hunters</b>. If the other hunter doesn't show up, you get nothing.
+                </div>
+            </div>
+            <div style="padding: 16px; background-color: #0e1117; border-radius: 8px; border: 1px solid #ff6b6b44;">
+                <div style="font-size: 20px; margin-bottom: 6px;">🐰</div>
+                <div style="font-size: 17px; color: #ff6b6b; font-weight: 600;">Hunt a Hare</div>
+                <div style="font-size: 15px; color: #aaa; margin-top: 6px;">
+                    Low reward — a small meal.<br/>
+                    But it's <b style="color: #e0e0e0;">guaranteed</b>. You can catch a hare alone, no matter what the other hunter does.
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
+            The rational choice? <span style="color: #ff6b6b; font-weight: 600;">Hunt hare.</span>
+            You can't be sure the other hunter will cooperate, so you play it safe.
+            Both hunters reason the same way — and both end up with a small meal when they could have
+            feasted. <span style="color: #ff6b6b;">This is the Nash equilibrium: stable, but suboptimal.</span>
+            No one can improve by changing alone, yet everyone is worse off.
+        </p>
+        <p style="font-size: 17px; color: #00d4aa; line-height: 1.8; margin-top: 12px; font-weight: 600;">
+            This is exactly the "pick two" problem. Classical mathematics says the safe trade-off is the
+            rational answer. Quantum game theory shows there's a better state — one where cooperation
+            isn't risky, it's the ground state.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #ff6b6b; height: 320px;">
+            <h4 style="color: #ff6b6b; font-size: 22px; margin-bottom: 16px;">CLASSICAL (Nash Equilibrium)</h4>
+            <div style="background-color: #0e1117; border-radius: 8px; padding: 14px; font-family: monospace; font-size: 15px; margin-bottom: 12px;">
+                <div style="color: #4dabf7;">Hunter A</div>
+                <div style="color: #aaa; margin-left: 16px;">├── 🦌 Stag (needs both)</div>
+                <div style="color: #ff6b6b; margin-left: 16px; font-weight: 600;">└── 🐰 Hare (safe) ✓</div>
+                <div style="color: #da77f2; margin-top: 8px;">Hunter B</div>
+                <div style="color: #aaa; margin-left: 16px;">├── 🦌 Stag (risky)</div>
+                <div style="color: #ff6b6b; margin-left: 16px; font-weight: 600;">└── 🐰 Hare (safe) ✓</div>
+            </div>
+            <div style="text-align: center; padding: 12px; background-color: #ff6b6b33; border-radius: 6px;">
+                <span style="font-size: 16px; color: #ff6b6b; font-weight: 600;">🐰🐰 Both pick Hare — stable but suboptimal</span>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #00d4aa; height: 320px;">
+            <h4 style="color: #00d4aa; font-size: 22px; margin-bottom: 16px;">QUANTUM (Cooperative Equilibrium)</h4>
+            <div style="background-color: #0e1117; border-radius: 8px; padding: 14px; font-family: monospace; font-size: 15px; margin-bottom: 12px;">
+                <div style="color: #4dabf7;">Hunter A</div>
+                <div style="color: #4dabf7; margin-left: 16px;">══╦══ 🦌 ╗</div>
+                <div style="color: #4dabf7; margin-left: 16px;">  ╚══ 🐰 <span style="color: #00d4aa;">╬══►</span> 🦌🦌</div>
+                <div style="color: #da77f2; margin-top: 8px;">Hunter B</div>
+                <div style="color: #da77f2; margin-left: 16px;">══╦══ 🦌 ╝</div>
+                <div style="color: #da77f2; margin-left: 16px;">  ╚══ 🐰</div>
+            </div>
+            <div style="text-align: center; padding: 12px; background-color: #00d4aa33; border-radius: 6px;">
+                <span style="font-size: 16px; color: #00d4aa; font-weight: 600;">🦌🦌 Both hunt Stag — cooperation is ground state</span>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; margin-bottom: 20px;">
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #4dabf7;">
+            <div style="font-size: 13px; color: #aaa; font-family: monospace;">══ double lines</div>
+            <h4 style="color: #4dabf7; font-size: 18px; margin-top: 6px;">Superposition</h4>
+            <p style="font-size: 14px; color: #aaa; margin-top: 8px;">Explore ALL strategies simultaneously</p>
+        </div>
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #da77f2;">
+            <div style="font-size: 13px; color: #aaa; font-family: monospace;">╗╝ paths merge</div>
+            <h4 style="color: #da77f2; font-size: 18px; margin-top: 6px;">Entanglement</h4>
+            <p style="font-size: 14px; color: #aaa; margin-top: 8px;">Agents' choices become correlated</p>
+        </div>
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #00d4aa;">
+            <div style="font-size: 13px; color: #aaa; font-family: monospace;">╬══► synergy vertex</div>
+            <h4 style="color: #00d4aa; font-size: 18px; margin-top: 6px;">Interference</h4>
+            <p style="font-size: 14px; color: #aaa; margin-top: 8px;">Amplify synergy, suppress trade-offs</p>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="text-align: center; padding: 24px; background-color: #1e2130; border-radius: 8px; border: 2px solid #00d4aa;">
+        <span style="color: #e0e0e0; font-size: 18px;">
+            <span style="color: #00d4aa; font-weight: bold;">Same principle as Yb-171:</span>
+            Classical forces "pick 2 of 3" properties →
+            <span style="color: #4dabf7;">Quantum game theory</span> finds where
+            <span style="color: #00d4aa; font-weight: bold;">ALL THREE</span> synergize
+        </span>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ========================================================================
     # HOW IT WORKS: THREE AGENTS, ONE GRAMMAR
     # ========================================================================
 
@@ -457,6 +659,69 @@ Language emerges bottom-up — AI agents discover what works through doing
         </div>
     </div>
     """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ========================================================================
+    # WHY RESULTS CAN'T BE HALLUCINATED (from pitch deck slide 12)
+    # ========================================================================
+
+    st.header("Why Results Can't Be Hallucinated")
+
+    st.markdown("""
+    <div style="background-color: #1e2130; padding: 16px; border-radius: 10px; margin-bottom: 20px;">
+        <p style="font-size: 17px; color: #aaa; text-align: center;">
+            Baba rules trigger computation, not generation
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""<div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 24px; flex-wrap: wrap;">
+<div style="width: 240px; padding: 20px; background-color: #da77f215; border: 2px solid #da77f2; border-radius: 12px; text-align: center;">
+<div style="font-size: 28px; margin-bottom: 8px;">🧠</div>
+<div style="font-size: 17px; color: #da77f2; font-weight: 700;">LLM Creates Baba is Quantum Rule</div>
+<div style="font-size: 14px; color: #aaa; margin-top: 8px;">Compositional grammar<br/>maps to operators</div>
+</div>
+<div style="font-size: 28px; color: #aaa;">→</div>
+<div style="width: 240px; padding: 20px; background-color: #4dabf715; border: 2px solid #4dabf7; border-radius: 12px; text-align: center;">
+<div style="font-size: 28px; margin-bottom: 8px;">⚙️</div>
+<div style="font-size: 17px; color: #4dabf7; font-weight: 700;">H_total Computes</div>
+<div style="font-size: 14px; color: #aaa; margin-top: 8px;">Mathematical<br/>operations</div>
+</div>
+<div style="font-size: 28px; color: #aaa;">→</div>
+<div style="width: 240px; padding: 20px; background-color: #00d4aa15; border: 2px solid #00d4aa; border-radius: 12px; text-align: center;">
+<div style="font-size: 28px; margin-bottom: 8px;">📊</div>
+<div style="font-size: 17px; color: #00d4aa; font-weight: 700;">Results Calculated</div>
+<div style="font-size: 14px; color: #aaa; margin-top: 8px;">Not generated—<br/>computed from physics</div>
+</div>
+</div>""", unsafe_allow_html=True)
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("""<div style="padding: 20px; background-color: #0e1117; border: 1px solid #00d4aa44; border-radius: 10px; height: 180px;">
+<div style="font-size: 16px; color: #00d4aa; font-weight: 700; margin-bottom: 10px;">✓ Computed by H_total (not LLM):</div>
+<div style="font-size: 15px; color: #aaa; line-height: 1.8;">
+8 operators — all computed, none generated:<br/>
+Care · EQFT · Coherence · Scale Coupling · Boundary · +3
+</div>
+</div>""", unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""<div style="padding: 20px; background-color: #0e1117; border: 1px solid #2a2a3a; border-radius: 10px; height: 180px;">
+<div style="font-size: 16px; color: #ff6b6b; font-weight: 700; margin-bottom: 10px;">If Routing Fails:</div>
+<div style="font-size: 15px; color: #aaa; line-height: 1.8;">
+• Wrong Baba rule → Operation fails visibly<br/>
+• No silent errors — immediate feedback<br/>
+• System self-corrects on next operation
+</div>
+</div>""", unsafe_allow_html=True)
+
+    st.markdown("""<div style="text-align: center; padding: 20px; background-color: #1e2130; border: 2px solid #00d4aa; border-radius: 10px; margin-top: 20px;">
+<span style="color: #00d4aa; font-size: 20px; font-weight: bold;">
+The LLM operates the mathematics — it doesn't generate the answers.
+</span>
+</div>""", unsafe_allow_html=True)
 
     st.markdown("---")
 
@@ -853,271 +1118,6 @@ Not ephemeral sessions — learning that persists
 
     st.markdown("""<div style="text-align: center; padding: 12px; margin-top: 8px;">
 <span style="font-size: 15px; color: #4dabf7; font-style: italic;">One mechanism delivers all three — no hyperparameter tuning required</span>
-</div>""", unsafe_allow_html=True)
-
-    st.markdown("---")
-
-    # ========================================================================
-    # A DIFFERENT MATHEMATICS (from pitch deck slides 2 & 3)
-    # ========================================================================
-
-    st.header("A Different Mathematics")
-
-    st.markdown("""
-    <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; margin-bottom: 20px;">
-        <h4 style="color: #ff6b6b; font-size: 22px; margin-bottom: 12px;">The Hidden Premise</h4>
-        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
-            Classical optimization forces impossible choices. "Pick two" blocks progress everywhere:
-        </p>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px;">
-            <div style="text-align: center; padding: 14px; background-color: #0e1117; border-radius: 8px; border: 1px solid #ff6b6b44;">
-                <div style="font-size: 16px; color: #ff6b6b; font-weight: 600;">Drug Discovery</div>
-                <div style="font-size: 14px; color: #aaa; margin-top: 6px;">Efficacy OR Safety OR Synthesizability</div>
-            </div>
-            <div style="text-align: center; padding: 14px; background-color: #0e1117; border-radius: 8px; border: 1px solid #ff6b6b44;">
-                <div style="font-size: 16px; color: #ff6b6b; font-weight: 600;">Control Systems (PID)</div>
-                <div style="font-size: 14px; color: #aaa; margin-top: 6px;">Speed OR Stability OR Accuracy</div>
-            </div>
-            <div style="text-align: center; padding: 14px; background-color: #0e1117; border-radius: 8px; border: 1px solid #ff6b6b44;">
-                <div style="font-size: 16px; color: #ff6b6b; font-weight: 600;">Foundation Models</div>
-                <div style="font-size: 14px; color: #aaa; margin-top: 6px;">Capability OR Alignment OR Efficiency</div>
-            </div>
-        </div>
-        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8; margin-top: 16px;">
-            Classical methods assume objectives must be optimized independently or collapsed into weighted trade-offs.
-            <span style="color: #ff6b6b; font-weight: 600;">This assumption creates the competition it claims to solve.</span>
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown("""
-    <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #4dabf7; margin-bottom: 20px;">
-        <p style="font-size: 20px; color: #4dabf7; font-style: italic; text-align: center;">
-            But is this a physics limit... or a mathematical assumption we can change?
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown("""
-    <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #00d4aa; margin-bottom: 20px;">
-        <h4 style="color: #00d4aa; font-size: 22px; margin-bottom: 12px;">The Solution: A Different Mathematics</h4>
-        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
-            Competitive solutions to optimization problems aren't physics limits — they're mathematical assumptions.
-            We changed the mathematics. <span style="color: #00d4aa; font-weight: 700;">AI agents built the language.</span>
-        </p>
-        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8; margin-top: 12px;">
-            <span style="color: #ffd43b; font-weight: 700;">COGNISYN enables quantum game theory on classical compute.</span>
-            Mathematical structures transfer without the physical substrate:
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    col1, col2, col3 = st.columns(3)
-
-    with col1:
-        st.markdown("""
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; height: 160px;">
-            <h4 style="color: #ffd43b; font-size: 18px;">Annealing</h4>
-            <p style="font-size: 15px; color: #aaa; margin-top: 8px;">Metallurgy math<br/><b style="color: #e0e0e0;">→ no molten metal</b></p>
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col2:
-        st.markdown("""
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; height: 160px;">
-            <h4 style="color: #da77f2; font-size: 18px;">Genetic Algorithms</h4>
-            <p style="font-size: 15px; color: #aaa; margin-top: 8px;">Biology math<br/><b style="color: #e0e0e0;">→ no DNA</b></p>
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col3:
-        st.markdown("""
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; border: 2px solid #00d4aa; height: 160px;">
-            <h4 style="color: #00d4aa; font-size: 18px;">COGNISYN</h4>
-            <p style="font-size: 15px; color: #aaa; margin-top: 8px;">Quantum game theory<br/><b style="color: #e0e0e0;">→ no qubits</b></p>
-        </div>
-        """, unsafe_allow_html=True)
-
-    st.markdown("---")
-
-    # ========================================================================
-    # THE STAG HUNT (from pitch deck slide 4)
-    # ========================================================================
-
-    st.header("The Stag Hunt: Quantum Game Theory in Action")
-
-    st.markdown("""
-    <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; margin-bottom: 20px;">
-        <p style="font-size: 15px; color: #aaa; text-align: center; margin-bottom: 16px;">
-            How "pick one" becomes "pick both"
-        </p>
-        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
-            The <b>Stag Hunt</b> is one of game theory's most important problems. Two hunters go out
-            separately. Each must choose independently:
-        </p>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 16px 0;">
-            <div style="padding: 16px; background-color: #0e1117; border-radius: 8px; border: 1px solid #ffd43b44;">
-                <div style="font-size: 20px; margin-bottom: 6px;">🦌</div>
-                <div style="font-size: 17px; color: #ffd43b; font-weight: 600;">Hunt the Stag</div>
-                <div style="font-size: 15px; color: #aaa; margin-top: 6px;">
-                    High reward — feeds the village for a week.<br/>
-                    But it <b style="color: #e0e0e0;">requires both hunters</b>. If the other hunter doesn't show up, you get nothing.
-                </div>
-            </div>
-            <div style="padding: 16px; background-color: #0e1117; border-radius: 8px; border: 1px solid #ff6b6b44;">
-                <div style="font-size: 20px; margin-bottom: 6px;">🐰</div>
-                <div style="font-size: 17px; color: #ff6b6b; font-weight: 600;">Hunt a Hare</div>
-                <div style="font-size: 15px; color: #aaa; margin-top: 6px;">
-                    Low reward — a small meal.<br/>
-                    But it's <b style="color: #e0e0e0;">guaranteed</b>. You can catch a hare alone, no matter what the other hunter does.
-                </div>
-            </div>
-        </div>
-        <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
-            The rational choice? <span style="color: #ff6b6b; font-weight: 600;">Hunt hare.</span>
-            You can't be sure the other hunter will cooperate, so you play it safe.
-            Both hunters reason the same way — and both end up with a small meal when they could have
-            feasted. <span style="color: #ff6b6b;">This is the Nash equilibrium: stable, but suboptimal.</span>
-            No one can improve by changing alone, yet everyone is worse off.
-        </p>
-        <p style="font-size: 17px; color: #00d4aa; line-height: 1.8; margin-top: 12px; font-weight: 600;">
-            This is exactly the "pick two" problem. Classical mathematics says the safe trade-off is the
-            rational answer. Quantum game theory shows there's a better state — one where cooperation
-            isn't risky, it's the ground state.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.markdown("""
-        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #ff6b6b; height: 320px;">
-            <h4 style="color: #ff6b6b; font-size: 22px; margin-bottom: 16px;">CLASSICAL (Nash Equilibrium)</h4>
-            <div style="background-color: #0e1117; border-radius: 8px; padding: 14px; font-family: monospace; font-size: 15px; margin-bottom: 12px;">
-                <div style="color: #4dabf7;">Hunter A</div>
-                <div style="color: #aaa; margin-left: 16px;">├── 🦌 Stag (needs both)</div>
-                <div style="color: #ff6b6b; margin-left: 16px; font-weight: 600;">└── 🐰 Hare (safe) ✓</div>
-                <div style="color: #da77f2; margin-top: 8px;">Hunter B</div>
-                <div style="color: #aaa; margin-left: 16px;">├── 🦌 Stag (risky)</div>
-                <div style="color: #ff6b6b; margin-left: 16px; font-weight: 600;">└── 🐰 Hare (safe) ✓</div>
-            </div>
-            <div style="text-align: center; padding: 12px; background-color: #ff6b6b33; border-radius: 6px;">
-                <span style="font-size: 16px; color: #ff6b6b; font-weight: 600;">🐰🐰 Both pick Hare — stable but suboptimal</span>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col2:
-        st.markdown("""
-        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #00d4aa; height: 320px;">
-            <h4 style="color: #00d4aa; font-size: 22px; margin-bottom: 16px;">QUANTUM (Cooperative Equilibrium)</h4>
-            <div style="background-color: #0e1117; border-radius: 8px; padding: 14px; font-family: monospace; font-size: 15px; margin-bottom: 12px;">
-                <div style="color: #4dabf7;">Hunter A</div>
-                <div style="color: #4dabf7; margin-left: 16px;">══╦══ 🦌 ╗</div>
-                <div style="color: #4dabf7; margin-left: 16px;">  ╚══ 🐰 <span style="color: #00d4aa;">╬══►</span> 🦌🦌</div>
-                <div style="color: #da77f2; margin-top: 8px;">Hunter B</div>
-                <div style="color: #da77f2; margin-left: 16px;">══╦══ 🦌 ╝</div>
-                <div style="color: #da77f2; margin-left: 16px;">  ╚══ 🐰</div>
-            </div>
-            <div style="text-align: center; padding: 12px; background-color: #00d4aa33; border-radius: 6px;">
-                <span style="font-size: 16px; color: #00d4aa; font-weight: 600;">🦌🦌 Both hunt Stag — cooperation is ground state</span>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-
-    st.markdown("""
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; margin-bottom: 20px;">
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #4dabf7;">
-            <div style="font-size: 13px; color: #aaa; font-family: monospace;">══ double lines</div>
-            <h4 style="color: #4dabf7; font-size: 18px; margin-top: 6px;">Superposition</h4>
-            <p style="font-size: 14px; color: #aaa; margin-top: 8px;">Explore ALL strategies simultaneously</p>
-        </div>
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #da77f2;">
-            <div style="font-size: 13px; color: #aaa; font-family: monospace;">╗╝ paths merge</div>
-            <h4 style="color: #da77f2; font-size: 18px; margin-top: 6px;">Entanglement</h4>
-            <p style="font-size: 14px; color: #aaa; margin-top: 8px;">Agents' choices become correlated</p>
-        </div>
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #00d4aa;">
-            <div style="font-size: 13px; color: #aaa; font-family: monospace;">╬══► synergy vertex</div>
-            <h4 style="color: #00d4aa; font-size: 18px; margin-top: 6px;">Interference</h4>
-            <p style="font-size: 14px; color: #aaa; margin-top: 8px;">Amplify synergy, suppress trade-offs</p>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown("""
-    <div style="text-align: center; padding: 24px; background-color: #1e2130; border-radius: 8px; border: 2px solid #00d4aa;">
-        <span style="color: #e0e0e0; font-size: 18px;">
-            <span style="color: #00d4aa; font-weight: bold;">Same principle as Yb-171:</span>
-            Classical forces "pick 2 of 3" properties →
-            <span style="color: #4dabf7;">Quantum game theory</span> finds where
-            <span style="color: #00d4aa; font-weight: bold;">ALL THREE</span> synergize
-        </span>
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown("---")
-
-    # ========================================================================
-    # WHY RESULTS CAN'T BE HALLUCINATED (from pitch deck slide 12)
-    # ========================================================================
-
-    st.header("Why Results Can't Be Hallucinated")
-
-    st.markdown("""
-    <div style="background-color: #1e2130; padding: 16px; border-radius: 10px; margin-bottom: 20px;">
-        <p style="font-size: 17px; color: #aaa; text-align: center;">
-            Baba rules trigger computation, not generation
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown("""<div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 24px; flex-wrap: wrap;">
-<div style="width: 240px; padding: 20px; background-color: #da77f215; border: 2px solid #da77f2; border-radius: 12px; text-align: center;">
-<div style="font-size: 28px; margin-bottom: 8px;">🧠</div>
-<div style="font-size: 17px; color: #da77f2; font-weight: 700;">LLM Creates Baba is Quantum Rule</div>
-<div style="font-size: 14px; color: #aaa; margin-top: 8px;">Compositional grammar<br/>maps to operators</div>
-</div>
-<div style="font-size: 28px; color: #aaa;">→</div>
-<div style="width: 240px; padding: 20px; background-color: #4dabf715; border: 2px solid #4dabf7; border-radius: 12px; text-align: center;">
-<div style="font-size: 28px; margin-bottom: 8px;">⚙️</div>
-<div style="font-size: 17px; color: #4dabf7; font-weight: 700;">H_total Computes</div>
-<div style="font-size: 14px; color: #aaa; margin-top: 8px;">Mathematical<br/>operations</div>
-</div>
-<div style="font-size: 28px; color: #aaa;">→</div>
-<div style="width: 240px; padding: 20px; background-color: #00d4aa15; border: 2px solid #00d4aa; border-radius: 12px; text-align: center;">
-<div style="font-size: 28px; margin-bottom: 8px;">📊</div>
-<div style="font-size: 17px; color: #00d4aa; font-weight: 700;">Results Calculated</div>
-<div style="font-size: 14px; color: #aaa; margin-top: 8px;">Not generated—<br/>computed from physics</div>
-</div>
-</div>""", unsafe_allow_html=True)
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.markdown("""<div style="padding: 20px; background-color: #0e1117; border: 1px solid #00d4aa44; border-radius: 10px; height: 180px;">
-<div style="font-size: 16px; color: #00d4aa; font-weight: 700; margin-bottom: 10px;">✓ Computed by H_total (not LLM):</div>
-<div style="font-size: 15px; color: #aaa; line-height: 1.8;">
-8 operators — all computed, none generated:<br/>
-Care · EQFT · Coherence · Scale Coupling · Boundary · +3
-</div>
-</div>""", unsafe_allow_html=True)
-
-    with col2:
-        st.markdown("""<div style="padding: 20px; background-color: #0e1117; border: 1px solid #2a2a3a; border-radius: 10px; height: 180px;">
-<div style="font-size: 16px; color: #ff6b6b; font-weight: 700; margin-bottom: 10px;">If Routing Fails:</div>
-<div style="font-size: 15px; color: #aaa; line-height: 1.8;">
-• Wrong Baba rule → Operation fails visibly<br/>
-• No silent errors — immediate feedback<br/>
-• System self-corrects on next operation
-</div>
-</div>""", unsafe_allow_html=True)
-
-    st.markdown("""<div style="text-align: center; padding: 20px; background-color: #1e2130; border: 2px solid #00d4aa; border-radius: 10px; margin-top: 20px;">
-<span style="color: #00d4aa; font-size: 20px; font-weight: bold;">
-The LLM operates the mathematics — it doesn't generate the answers.
-</span>
 </div>""", unsafe_allow_html=True)
 
     st.markdown("---")
