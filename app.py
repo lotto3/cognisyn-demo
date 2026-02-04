@@ -858,19 +858,6 @@ Not ephemeral sessions — learning that persists
     st.markdown("---")
 
     # ========================================================================
-    # UNDERSTANDING THE MATHEMATICS
-    # ========================================================================
-
-    st.markdown("""
-    <div style="text-align: center; padding: 32px; background-color: #1e2130; border-radius: 10px; margin-bottom: 20px;">
-        <h2 style="color: #4dabf7; font-size: 28px; margin-bottom: 8px;">Understanding the Mathematics</h2>
-        <p style="font-size: 17px; color: #aaa;">
-            How quantum game theory finds synergies where classical methods find only trade-offs
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    # ========================================================================
     # A DIFFERENT MATHEMATICS (from pitch deck slides 2 & 3)
     # ========================================================================
 

@@ -27,66 +27,86 @@ Paste this script exactly as-is (including the break tags). The `<!-- SCROLL -->
 ```
 COGNISYN finds solutions where all objectives are high simultaneously. Not trade-offs, but genuine synergies. Classical optimization says pick two out of three. Our Care operator, built on quantum game theory running on classical compute, finds states where all three synergize.
 
-<break time="2.5s"/>
+<break time="2.0s"/>
 <!-- SCROLL: down to "The Problem" — three material cards -->
 
 Here's the problem. The best known quantum computing host materials each excel at one or two properties, but sacrifice the rest. YVO4 has excellent host quality — but poor optical properties. Y2SiO5 has strong optical performance — but weak spin coherence. Every current material is a compromise.
 
-<break time="2.5s"/>
-<!-- SCROLL: down to "How It Works" — three agents + code -->
+<break time="2.0s"/>
+<!-- SCROLL: down to "How It Works" — three agents + operator tags -->
 
-COGNISYN approaches this differently. Three AI agents — each operating as a mathematical physics operator through the Baba is Quantum grammar — evaluate 1,073 Yb-containing compounds from the Materials Project database.
+COGNISYN approaches this differently. Three AI agents — each operating as a mathematical physics operator through the Baba is Quantum grammar. 23 operators access the full H total Hamiltonian. The grammar is compositional: subject, verb, property maps to a mathematical operation. The language emerges bottom-up — agents discover what works through doing.
 
 <break time="2.0s"/>
 <!-- SCROLL: down to "LLMs as Strategic Operators" — Most AI vs COGNISYN -->
 
-This is the key distinction. Most AI uses LLMs as knowledge repositories — query in, answer out. COGNISYN uses LLMs as strategic operators. The LLM creates a Baba rule, H total computes the result, and discovery follows. The language emerges bottom-up — agents discover what works through doing.
+This is the key distinction. Most AI uses LLMs as knowledge repositories — query in, answer out. COGNISYN uses LLMs as strategic operators. The LLM creates a rule, H total computes the result, and discovery follows.
 
-<break time="2.5s"/>
+<break time="2.0s"/>
 <!-- SCROLL: down to "Pipeline Output" — SUPERPOSE, FILTER, INTERFERE results -->
 
 The pipeline builds in stages. SUPERPOSE identifies 26 Care equilibria from over a thousand compounds. FILTER and ENTANGLE detect synergies — YbCl3 scores 0.90 for B1, 0.94 for B2, and 0.90 for B3. INTERFERE prunes to 25 top candidates with zero false negatives.
 
-<break time="2.5s"/>
+<break time="2.0s"/>
 <!-- SCROLL: down to "Care vs Nash" — YbBr2 vs YbCl3 score comparison -->
 
-Compare YbBr2, the Nash equilibrium result, with YbCl3, the Care equilibrium. YbBr2 has one strong property and two weak ones — the classical trade-off. YbCl3 has all three properties above 0.90. That's a synergy beyond the Pareto frontier.
+Compare YbBr2, the Nash equilibrium, with YbCl3, the Care equilibrium. YbBr2 has one strong property and two weak ones — the classical trade-off. YbCl3 has all three above 0.90. That's a synergy beyond the Pareto frontier.
 
-<break time="2.0s"/>
+<break time="1.5s"/>
 <!-- SCROLL: down to "By the Numbers" — metrics grid -->
 
-1,073 compounds evaluated. Three AI agents. 24 strategic patterns discovered. Zero hallucination — the LLM creates the rules, but H total computes the results.
+1,073 compounds evaluated. Three AI agents. Zero hallucination — the LLM creates the rules, but H total computes the results.
 
-<break time="2.0s"/>
+<break time="1.5s"/>
 <!-- SCROLL: down to "PID Platform Validation" — red vs green circles -->
 
-And the math is domain-agnostic. The same Care operator that discovers quantum materials also tunes PID controllers. Speed, stability, and accuracy — all high. Same H total, same grammar, different domain.
+The math is domain-agnostic. The same Care operator that discovers quantum materials also tunes PID controllers. Speed, stability, and accuracy — all high.
 
-<break time="2.5s"/>
+<break time="2.0s"/>
 <!-- SCROLL: down to "Market Expansion" — NOW, NEXT, FUTURE -->
 
-The platform vision: quantum materials is the first application — a 50 billion dollar market. Next is PID control systems — 350 billion in industrial and robotics. The same mathematics extends to drug discovery, climate and energy, even foundation model alignment. Today it's 3 agents, 3 properties. The math extends to N.
+Quantum materials is the first application — a 50 billion dollar market. Next is PID control — 350 billion in industrial and robotics. The same mathematics extends to drug discovery, climate and energy, even foundation model alignment. Today it's 3 agents, 3 properties. The math extends to N.
 
-<break time="2.5s"/>
+<break time="2.0s"/>
 <!-- SCROLL: down to "Orchestration Monitor" — dashboard screenshots -->
 
-This is the real orchestration pipeline. Three agents running across five examples each, building from single operations to full multi-stage discovery.
+This is the real orchestration pipeline running three agents across five examples each.
 
 <break time="2.0s"/>
 <!-- SCROLL: down to "Agent Learning" + "Cumulative Intelligence" -->
 
-The agents don't start over each session. COGNISYN's dynamic memory architecture has three layers: episodic memory records what happened, strategic memory amplifies what works, and conceptual memory retains only coherent abstractions. Matching patterns reinforce. Conflicting patterns cancel. One mechanism delivers learning, prevents overfitting, and enables generalization — no hyperparameter tuning required.
+The agents don't start over each session. COGNISYN's memory architecture has three layers: episodic memory records what happened, strategic memory amplifies what works, and conceptual memory retains only coherent abstractions. One mechanism delivers learning, prevents overfitting, and enables generalization.
 
-<break time="2.5s"/>
+<break time="2.0s"/>
+<!-- SCROLL: down to "A Different Mathematics" — hidden premise + annealing analogy -->
+
+Why does classical optimization force these trade-offs? It's a hidden premise — a mathematical assumption, not a physics limit. Just as simulated annealing borrows from metallurgy without molten metal, COGNISYN borrows from quantum mechanics without qubits.
+
+<break time="2.0s"/>
+<!-- SCROLL: down to "The Stag Hunt" — game theory explanation -->
+
+The Stag Hunt makes this intuitive. Two hunters can cooperate to catch a stag — high reward, but risky. Or each hunts a hare alone — low reward, but guaranteed. The rational choice is hare. Both end up worse off. That's the Nash equilibrium. COGNISYN's quantum game theory finds the cooperative state — where hunting stag isn't risky, it's the ground state.
+
+<break time="2.0s"/>
+<!-- SCROLL: down to "Why Results Can't Be Hallucinated" — 3-stage flow -->
+
+And critically — these results can't be hallucinated. The LLM creates a Baba rule. H total computes the result mathematically. The LLM operates the mathematics — it doesn't generate the answers.
+
+<break time="1.5s"/>
+<!-- SCROLL: down to "The Mathematical Foundation" — H_total components -->
+
+The mathematical foundation is real quantum formalism running on classical compute. H total equals H quantum plus H classical plus H coupling plus H care. Hilbert space, Hadamard operations, Hermitian operators, and interference — all implemented in 55,000 lines of production code.
+
+<break time="2.0s"/>
 ```
 
 **Before pasting:** Remove the `<!-- SCROLL -->` comment lines — they're instructions for you, not for the AI voice. The final text ElevenLabs sees should just be narration paragraphs separated by `<break>` tags.
 
 ### Step 4: Download
 - Click **Generate**
-- Listen through — if any words sound wrong, adjust the text (e.g., if "YbCl3" sounds garbled, try "Ytterbium Chloride 3" or "Y-b-C-l-3")
-- **Check total duration:** Should be approximately 2:45 to 3:00 including the silences. The narration is now longer due to the new sections.
-- If it's over 3:00: reduce break times to 1.5s each, or trim the Market Expansion paragraph
+- Listen through — if any words sound wrong, adjust the text (e.g., if "YbCl3" sounds garbled, try "Ytterbium Chloride 3" or "Y-b-C-l-3"; if "H total" sounds odd, try "H-total")
+- **Check total duration:** Should be approximately 2:45 to 3:00 including the silences
+- If it's over 3:00: reduce all break times by 0.5s (to 1.0-1.5s), or speed up voice slightly
 - If it's under 2:30: increase breaks by 0.5s each
 - Download as MP3
 - Save to your Desktop as `cognisyn_voiceover.mp3`
@@ -128,18 +148,22 @@ cd /Users/ogl3/repos/cognisyn-demo && python3 -m streamlit run app.py
 - **The silences are your scroll windows.** When the voice goes quiet, that's when you scroll to the next section.
 - Practice once with the app open — no recording. Just scroll along to get the feel.
 
-**The rhythm:**
-1. Voice talks about header → **2.5 sec silence** → scroll to The Problem
-2. Voice talks about the problem → **2.5 sec silence** → scroll to How It Works
-3. Voice talks about agents → **2.0 sec silence** → scroll to LLMs as Strategic Operators
-4. Voice talks about operators → **2.5 sec silence** → scroll to Pipeline Output
-5. Voice talks about pipeline → **2.5 sec silence** → scroll to Care vs Nash
-6. Voice talks about Nash vs Care → **2.0 sec silence** → scroll to By the Numbers
-7. Voice talks about metrics → **2.0 sec silence** → scroll to PID Platform Validation
-8. Voice talks about PID → **2.5 sec silence** → scroll to Market Expansion
-9. Voice talks about market vision → **2.5 sec silence** → scroll to Orchestration Monitor
-10. Voice talks about orchestration → **2.0 sec silence** → scroll to Agent Learning + Cumulative Intelligence
-11. Voice talks about memory architecture → **2.5 sec silence** → hold, done
+**The rhythm (15 sections, ~3 min total):**
+1. Header / mission → **2s** → scroll to The Problem
+2. The Problem → **2s** → scroll to How It Works + operator tags
+3. How It Works → **2s** → scroll to LLMs as Strategic Operators
+4. Strategic Operators → **2s** → scroll to Pipeline Output
+5. Pipeline Output → **2s** → scroll to Care vs Nash
+6. Care vs Nash → **1.5s** → scroll to By the Numbers
+7. By the Numbers → **1.5s** → scroll to PID Platform Validation
+8. PID circles → **2s** → scroll to Market Expansion
+9. Market Expansion → **2s** → scroll to Orchestration Monitor
+10. Orchestration Monitor → **2s** → scroll to Agent Learning + Cumulative Intelligence
+11. Cumulative Intelligence → **2s** → scroll to A Different Mathematics
+12. A Different Mathematics → **2s** → scroll to Stag Hunt
+13. Stag Hunt → **2s** → scroll to Why Can't Hallucinate
+14. Why Can't Hallucinate → **1.5s** → scroll to Mathematical Foundation
+15. Mathematical Foundation → **2s** → hold, done
 
 ### Step 9: Record the Screen
 1. Open **QuickTime Player** (Cmd+Space → "QuickTime")
