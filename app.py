@@ -54,9 +54,15 @@ def main():
     # HEADER
     # ========================================================================
 
-    st.title("🔬 COGNISYN — Applying AI-operated quantum game theory to find cooperative wins")
+    st.title("🔬 COGNISYN")
 
-    st.info("**COGNISYN** turns LLMs into mathematical physics operators using quantum-inspired game theory. Quantum game theory discovers synergies where classical methods find only trade-offs.")
+    st.markdown("""
+    <div style="text-align: center; padding: 8px 0 16px 0;">
+        <span style="font-size: 24px; color: #ffd43b;">Applying AI-operated quantum game theory to find cooperative wins</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.info("**COGNISYN** turns LLMs into mathematical physics operators. Three AI agents create rules in Baba is Quantum grammar — subject, verb, property. Each rule triggers real Hamiltonian computation. The LLMs operate the mathematics, they don't generate the answers — no hallucination of results possible.")
 
     st.markdown("""
     **First application: quantum computing materials discovery** — finding host crystals for Yb-171 where host quality, optical properties, and spin coherence are ALL high simultaneously, not one at the expense of another.
