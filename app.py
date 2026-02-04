@@ -999,15 +999,11 @@ result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
 
     col1, col2 = st.columns(2)
     with col1:
-        st.image("dashboard_b1_examples.png", caption="B1 (Host Quality): All 5 examples — from SUPERPOSE to full 3-stage pipeline")
+        st.image("dashboard_b1_examples.png", caption="B1 (Host Quality): All 5 examples — SUPERPOSE through full 3-stage pipeline")
     with col2:
-        st.image("dashboard_b1_b2.png", caption="B1 completes Ex 3-5, B2 (Optical) begins — same operations, different perspective")
+        st.image("dashboard_b2_optical.png", caption="B2 (Optical): All 5 examples — same operations, evaluating from optical perspective")
 
-    col1, col2 = st.columns(2)
-    with col1:
-        st.image("dashboard_b2_b3.png", caption="B2 Ex 2-5 complete, B3 (Coherence) begins — all agents run the same grammar")
-    with col2:
-        st.image("dashboard_b3_coherence.png", caption="B3 (Coherence): All 5 examples — same pipeline, evaluating from spin coherence perspective")
+    st.image("dashboard_b3_coherence.png", caption="B3 (Coherence): All 5 examples — same pipeline, evaluating from spin coherence perspective")
 
     st.markdown("""
     <div style="text-align: center; padding: 16px; background-color: #1e2130; border-radius: 8px;">
