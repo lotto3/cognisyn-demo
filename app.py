@@ -26,7 +26,7 @@ st.set_page_config(
     page_title="COGNISYN: Yb-171 Host Materials Discovery",
     page_icon="🔬",
     layout="wide",
-    initial_sidebar_state="auto"  # Collapsed on mobile, expanded on desktop
+    initial_sidebar_state="collapsed"
 )
 
 
@@ -45,6 +45,8 @@ def main():
         .stMetric {background-color: #1e2130; padding: 10px; border-radius: 5px;}
         h1, h2, h3 {color: #00ffff;}
         p, li, .stMarkdown {font-size: 20px !important; line-height: 1.7;}
+        /* Hide sidebar toggle for clean layout */
+        [data-testid="collapsedControl"] {display: none;}
         </style>
     """, unsafe_allow_html=True)
 
@@ -906,64 +908,52 @@ result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
     </div>
     """, unsafe_allow_html=True)
 
-    st.markdown("""
-    <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 24px; flex-wrap: wrap;">
-        <div style="width: 240px; padding: 20px; background-color: #da77f215; border: 2px solid #da77f2; border-radius: 12px; text-align: center;">
-            <div style="font-size: 28px; margin-bottom: 8px;">🧠</div>
-            <div style="font-size: 17px; color: #da77f2; font-weight: 700;">LLM Creates Baba is Quantum Rule</div>
-            <div style="font-size: 14px; color: #aaa; margin-top: 8px;">Compositional grammar<br/>maps to operators</div>
-        </div>
-
-        <div style="font-size: 28px; color: #aaa;">→</div>
-
-        <div style="width: 240px; padding: 20px; background-color: #4dabf715; border: 2px solid #4dabf7; border-radius: 12px; text-align: center;">
-            <div style="font-size: 28px; margin-bottom: 8px;">⚙️</div>
-            <div style="font-size: 17px; color: #4dabf7; font-weight: 700;">H_total Computes</div>
-            <div style="font-size: 14px; color: #aaa; margin-top: 8px;">Mathematical<br/>operations</div>
-        </div>
-
-        <div style="font-size: 28px; color: #aaa;">→</div>
-
-        <div style="width: 240px; padding: 20px; background-color: #00d4aa15; border: 2px solid #00d4aa; border-radius: 12px; text-align: center;">
-            <div style="font-size: 28px; margin-bottom: 8px;">📊</div>
-            <div style="font-size: 17px; color: #00d4aa; font-weight: 700;">Results Calculated</div>
-            <div style="font-size: 14px; color: #aaa; margin-top: 8px;">Not generated—<br/>computed from physics</div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("""<div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 24px; flex-wrap: wrap;">
+<div style="width: 240px; padding: 20px; background-color: #da77f215; border: 2px solid #da77f2; border-radius: 12px; text-align: center;">
+<div style="font-size: 28px; margin-bottom: 8px;">🧠</div>
+<div style="font-size: 17px; color: #da77f2; font-weight: 700;">LLM Creates Baba is Quantum Rule</div>
+<div style="font-size: 14px; color: #aaa; margin-top: 8px;">Compositional grammar<br/>maps to operators</div>
+</div>
+<div style="font-size: 28px; color: #aaa;">→</div>
+<div style="width: 240px; padding: 20px; background-color: #4dabf715; border: 2px solid #4dabf7; border-radius: 12px; text-align: center;">
+<div style="font-size: 28px; margin-bottom: 8px;">⚙️</div>
+<div style="font-size: 17px; color: #4dabf7; font-weight: 700;">H_total Computes</div>
+<div style="font-size: 14px; color: #aaa; margin-top: 8px;">Mathematical<br/>operations</div>
+</div>
+<div style="font-size: 28px; color: #aaa;">→</div>
+<div style="width: 240px; padding: 20px; background-color: #00d4aa15; border: 2px solid #00d4aa; border-radius: 12px; text-align: center;">
+<div style="font-size: 28px; margin-bottom: 8px;">📊</div>
+<div style="font-size: 17px; color: #00d4aa; font-weight: 700;">Results Calculated</div>
+<div style="font-size: 14px; color: #aaa; margin-top: 8px;">Not generated—<br/>computed from physics</div>
+</div>
+</div>""", unsafe_allow_html=True)
 
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("""
-        <div style="padding: 20px; background-color: #0e1117; border: 1px solid #00d4aa44; border-radius: 10px; height: 180px;">
-            <div style="font-size: 16px; color: #00d4aa; font-weight: 700; margin-bottom: 10px;">✓ Computed by H_total (not LLM):</div>
-            <div style="font-size: 15px; color: #aaa; line-height: 1.8;">
-                8 operators — all computed, none generated:<br/>
-                Care · EQFT · Coherence · Scale Coupling · Boundary · +3
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown("""<div style="padding: 20px; background-color: #0e1117; border: 1px solid #00d4aa44; border-radius: 10px; height: 180px;">
+<div style="font-size: 16px; color: #00d4aa; font-weight: 700; margin-bottom: 10px;">✓ Computed by H_total (not LLM):</div>
+<div style="font-size: 15px; color: #aaa; line-height: 1.8;">
+8 operators — all computed, none generated:<br/>
+Care · EQFT · Coherence · Scale Coupling · Boundary · +3
+</div>
+</div>""", unsafe_allow_html=True)
 
     with col2:
-        st.markdown("""
-        <div style="padding: 20px; background-color: #0e1117; border: 1px solid #2a2a3a; border-radius: 10px; height: 180px;">
-            <div style="font-size: 16px; color: #ff6b6b; font-weight: 700; margin-bottom: 10px;">If Routing Fails:</div>
-            <div style="font-size: 15px; color: #aaa; line-height: 1.8;">
-                • Wrong Baba rule → Operation fails visibly<br/>
-                • No silent errors — immediate feedback<br/>
-                • System self-corrects on next operation
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown("""<div style="padding: 20px; background-color: #0e1117; border: 1px solid #2a2a3a; border-radius: 10px; height: 180px;">
+<div style="font-size: 16px; color: #ff6b6b; font-weight: 700; margin-bottom: 10px;">If Routing Fails:</div>
+<div style="font-size: 15px; color: #aaa; line-height: 1.8;">
+• Wrong Baba rule → Operation fails visibly<br/>
+• No silent errors — immediate feedback<br/>
+• System self-corrects on next operation
+</div>
+</div>""", unsafe_allow_html=True)
 
-    st.markdown("""
-    <div style="text-align: center; padding: 20px; background-color: #1e2130; border: 2px solid #00d4aa; border-radius: 10px; margin-top: 20px;">
-        <span style="color: #00d4aa; font-size: 20px; font-weight: bold;">
-            The LLM operates the mathematics — it doesn't generate the answers.
-        </span>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("""<div style="text-align: center; padding: 20px; background-color: #1e2130; border: 2px solid #00d4aa; border-radius: 10px; margin-top: 20px;">
+<span style="color: #00d4aa; font-size: 20px; font-weight: bold;">
+The LLM operates the mathematics — it doesn't generate the answers.
+</span>
+</div>""", unsafe_allow_html=True)
 
     st.markdown("---")
 
@@ -1020,32 +1010,19 @@ result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
 
 
     # ========================================================================
-    # SIDEBAR
+    # FOOTER (formerly sidebar)
     # ========================================================================
 
-    with st.sidebar:
-        st.header("ℹ️ About")
+    st.markdown("---")
 
-        st.markdown("""
-        **COGNISYN** discovers Yb-171 host materials through quantum-inspired game theory.
+    st.markdown("""
+**Key Innovation:** Care equilibria (synergies) beyond Pareto frontier (trade-offs).
+**Three Properties:** Host Quality · Optical Properties · Spin Coherence
 
-        **Key Innovation:** Care equilibria (synergies) beyond Pareto frontier (trade-offs).
+**Data Source:** [Materials Project](https://materialsproject.org/) — 150,000+ inorganic compounds, CC BY 4.0
+    """)
 
-        **Three Properties:**
-        - Host Quality
-        - Optical Properties
-        - Spin Coherence
-        """)
-
-        st.markdown("---")
-
-        st.markdown("""
-        **Data:** [Materials Project](https://materialsproject.org/)
-
-        **Contact:** tish@cognisyn.ai
-        """)
-
-        st.caption("Powered by COGNISYN · Built with Streamlit")
+    st.caption("Powered by COGNISYN · Built with Streamlit")
 
 
 # ============================================================================
