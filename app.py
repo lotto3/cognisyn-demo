@@ -45,10 +45,6 @@ def main():
         .stMetric {background-color: #1e2130; padding: 10px; border-radius: 5px;}
         h1, h2, h3 {color: #00ffff;}
         p, li, .stMarkdown {font-size: 20px !important; line-height: 1.7;}
-        /* Tighter spacing in header area */
-        .block-container {padding-top: 1rem;}
-        h1 {margin-bottom: 0 !important;}
-        .stAlert {margin-top: 0.5rem !important; margin-bottom: 0.5rem !important;}
         /* Hide sidebar toggle for clean layout */
         [data-testid="collapsedControl"] {display: none;}
         </style>
