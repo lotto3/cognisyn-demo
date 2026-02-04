@@ -57,8 +57,8 @@ def main():
     st.title("🔬 COGNISYN")
 
     st.markdown("""
-    <div style="text-align: center; padding: 8px 0 16px 0;">
-        <span style="font-size: 24px; color: #ffd43b;">Applying AI-operated quantum game theory to find cooperative wins</span>
+    <div style="text-align: left; margin-top: -16px; padding-bottom: 16px;">
+        <span style="font-size: 22px; color: #c0c0c0;">Applying AI-operated quantum game theory to find cooperative wins</span>
     </div>
     """, unsafe_allow_html=True)
 
