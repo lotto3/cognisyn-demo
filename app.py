@@ -82,7 +82,7 @@ def main():
 
     with col1:
         st.markdown(f"""
-        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; height: 320px;">
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; min-height: 320px;">
             <h4 style="color: #4dabf7; font-size: 26px; margin-bottom: 12px;">YVO₄:Yb³⁺</h4>
             <p style="font-size: 18px; line-height: 2; color: #e0e0e0;"><span style="color: #00d4aa;">✓ Host Quality</span><br/><span style="color: #00d4aa;">✓ Optical Properties</span><br/><span style="color: #ff6b6b;">✗ Spin Coherence</span></p>
             <p style="font-size: 15px; color: #aaa; margin-top: 16px;"><i>V-51 (I=7/2, 99.75%) creates magnetic noise</i></p>
@@ -91,7 +91,7 @@ def main():
 
     with col2:
         st.markdown(f"""
-        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; height: 320px;">
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; min-height: 320px;">
             <h4 style="color: #4dabf7; font-size: 26px; margin-bottom: 12px;">Y₂SiO₅:Yb³⁺</h4>
             <p style="font-size: 18px; line-height: 2; color: #e0e0e0;"><span style="color: #00d4aa;">✓ Host Quality (320 Hz)</span><br/><span style="color: #aaa;">~ Optical Properties</span><br/><span style="color: #ff6b6b;">✗ Spin Coherence</span></p>
             <p style="font-size: 15px; color: #aaa; margin-top: 16px;"><i>Y-89 (I=1/2, 100%) limits T₂ times</i></p>
@@ -100,7 +100,7 @@ def main():
 
     with col3:
         st.markdown(f"""
-        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ffd43b; height: 320px;">
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ffd43b; min-height: 320px;">
             <h4 style="color: #4dabf7; font-size: 26px; margin-bottom: 12px;">CaWO₄:Yb³⁺</h4>
             <p style="font-size: 18px; line-height: 2; color: #e0e0e0;"><span style="color: #00d4aa;">✓ Host Quality</span><br/><span style="color: #aaa;">~ Optical Properties</span><br/><span style="color: #00d4aa;">✓ Spin Coherence (0.15s)</span></p>
             <p style="font-size: 15px; color: #aaa; margin-top: 16px;"><i>Current best. COGNISYN searches for more.</i></p>
@@ -174,7 +174,7 @@ def main():
 
     with col1:
         st.markdown("""
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; height: 160px;">
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; min-height: 160px;">
             <h4 style="color: #ffd43b; font-size: 18px;">Annealing</h4>
             <p style="font-size: 15px; color: #aaa; margin-top: 8px;">Metallurgy math<br/><b style="color: #e0e0e0;">→ no molten metal</b></p>
         </div>
@@ -182,7 +182,7 @@ def main():
 
     with col2:
         st.markdown("""
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; height: 160px;">
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; min-height: 160px;">
             <h4 style="color: #da77f2; font-size: 18px;">Genetic Algorithms</h4>
             <p style="font-size: 15px; color: #aaa; margin-top: 8px;">Biology math<br/><b style="color: #e0e0e0;">→ no DNA</b></p>
         </div>
@@ -190,7 +190,7 @@ def main():
 
     with col3:
         st.markdown("""
-        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; border: 2px solid #00d4aa; height: 160px;">
+        <div style="background-color: #1e2130; padding: 20px; border-radius: 10px; text-align: center; border: 2px solid #00d4aa; min-height: 160px;">
             <h4 style="color: #00d4aa; font-size: 18px;">COGNISYN</h4>
             <p style="font-size: 15px; color: #aaa; margin-top: 8px;">Quantum game theory<br/><b style="color: #e0e0e0;">→ no qubits</b></p>
         </div>
@@ -250,7 +250,7 @@ def main():
 
     with col1:
         st.markdown("""
-        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #ff6b6b; height: 320px;">
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #ff6b6b; min-height: 320px;">
             <h4 style="color: #ff6b6b; font-size: 22px; margin-bottom: 16px;">CLASSICAL (Nash Equilibrium)</h4>
             <div style="background-color: #0e1117; border-radius: 8px; padding: 14px; font-family: monospace; font-size: 15px; margin-bottom: 12px;">
                 <div style="color: #4dabf7;">Hunter A</div>
@@ -268,7 +268,7 @@ def main():
 
     with col2:
         st.markdown("""
-        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #00d4aa; height: 320px;">
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #00d4aa; min-height: 320px;">
             <h4 style="color: #00d4aa; font-size: 22px; margin-bottom: 16px;">QUANTUM (Cooperative Equilibrium)</h4>
             <div style="background-color: #0e1117; border-radius: 8px; padding: 14px; font-family: monospace; font-size: 15px; margin-bottom: 12px;">
                 <div style="color: #4dabf7;">Hunter A</div>
@@ -333,7 +333,7 @@ def main():
 
     with col1:
         st.markdown("""
-        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-top: 6px solid #00d4aa; height: 200px;">
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-top: 6px solid #00d4aa; min-height: 200px;">
             <h4 style="color: #00d4aa; font-size: 24px;">B1: Host Quality</h4>
             <p style="font-size: 16px; color: #e0e0e0;">Crystal stability, site symmetry, phonon properties, optical linewidth</p>
         </div>
@@ -341,7 +341,7 @@ def main():
 
     with col2:
         st.markdown("""
-        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-top: 6px solid #4dabf7; height: 200px;">
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-top: 6px solid #4dabf7; min-height: 200px;">
             <h4 style="color: #4dabf7; font-size: 24px;">B2: Optical Properties</h4>
             <p style="font-size: 16px; color: #e0e0e0;">Band gap, transition rates, photon emission quality for quantum networking</p>
         </div>
@@ -349,7 +349,7 @@ def main():
 
     with col3:
         st.markdown("""
-        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-top: 6px solid #da77f2; height: 200px;">
+        <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-top: 6px solid #da77f2; min-height: 200px;">
             <h4 style="color: #da77f2; font-size: 24px;">B3: Spin Coherence</h4>
             <p style="font-size: 16px; color: #e0e0e0;">Nuclear spin bath (I=0), T2 coherence times, magnetic noise suppression</p>
         </div>
@@ -422,14 +422,14 @@ Not knowledge repositories — mathematical physics operators
     col1, col2 = st.columns([1, 1])
 
     with col1:
-        st.markdown("""<div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border: 2px solid #2a2a3a; text-align: center; height: 160px;">
+        st.markdown("""<div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border: 2px solid #2a2a3a; text-align: center; min-height: 160px;">
 <div style="font-size: 22px; color: #da77f2; font-weight: 700; margin-bottom: 10px;">Most AI</div>
 <div style="font-size: 16px; color: #aaa;">LLMs as knowledge repositories</div>
 <div style="font-size: 17px; color: #e0e0e0; margin-top: 10px;">Query → Answer</div>
 </div>""", unsafe_allow_html=True)
 
     with col2:
-        st.markdown("""<div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border: 2px solid #00d4aa; text-align: center; height: 160px;">
+        st.markdown("""<div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border: 2px solid #00d4aa; text-align: center; min-height: 160px;">
 <div style="font-size: 22px; color: #00d4aa; font-weight: 700; margin-bottom: 10px;">COGNISYN</div>
 <div style="font-size: 16px; color: #aaa;">LLMs as strategic operators</div>
 <div style="font-size: 17px; color: #e0e0e0; margin-top: 10px;">Rule → H_total → Discovery</div>
@@ -699,7 +699,7 @@ Language emerges bottom-up — AI agents discover what works through doing
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("""<div style="padding: 20px; background-color: #0e1117; border: 1px solid #00d4aa44; border-radius: 10px; height: 180px;">
+        st.markdown("""<div style="padding: 20px; background-color: #0e1117; border: 1px solid #00d4aa44; border-radius: 10px; min-height: 180px;">
 <div style="font-size: 16px; color: #00d4aa; font-weight: 700; margin-bottom: 10px;">✓ Computed by H_total (not LLM):</div>
 <div style="font-size: 15px; color: #aaa; line-height: 1.8;">
 8 operators — all computed, none generated:<br/>
@@ -708,7 +708,7 @@ Care · EQFT · Coherence · Scale Coupling · Boundary · +3
 </div>""", unsafe_allow_html=True)
 
     with col2:
-        st.markdown("""<div style="padding: 20px; background-color: #0e1117; border: 1px solid #2a2a3a; border-radius: 10px; height: 180px;">
+        st.markdown("""<div style="padding: 20px; background-color: #0e1117; border: 1px solid #2a2a3a; border-radius: 10px; min-height: 180px;">
 <div style="font-size: 16px; color: #ff6b6b; font-weight: 700; margin-bottom: 10px;">If Routing Fails:</div>
 <div style="font-size: 15px; color: #aaa; line-height: 1.8;">
 • Wrong Baba rule → Operation fails visibly<br/>
@@ -799,7 +799,7 @@ The LLMs operate the mathematics — they don't generate the answers.
 
     with col1:
         st.markdown("""
-<div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #ff6b6b; height: 320px;">
+<div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #ff6b6b; min-height: 320px;">
     <h4 style="color: #ff6b6b; font-size: 22px; margin-bottom: 16px;">Traditional PID Tuning</h4>
     <div style="display: flex; justify-content: center; gap: 18px; margin-bottom: 16px;">
         <div style="width: 80px; height: 80px; border-radius: 50%; background: #00d4aa; display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -823,7 +823,7 @@ The LLMs operate the mathematics — they don't generate the answers.
 
     with col2:
         st.markdown("""
-<div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #00d4aa; height: 320px;">
+<div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #00d4aa; min-height: 320px;">
     <h4 style="color: #00d4aa; font-size: 22px; margin-bottom: 16px;">COGNISYN Care Equilibrium</h4>
     <div style="display: flex; justify-content: center; gap: 18px; margin-bottom: 16px;">
         <div style="width: 80px; height: 80px; border-radius: 50%; background: #00d4aa; display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -918,17 +918,17 @@ FUTURE — more "pick two" problems:
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.markdown("""<div style="padding: 16px; background-color: #0e1117; border: 1px solid #da77f244; border-radius: 8px; height: 100px;">
+        st.markdown("""<div style="padding: 16px; background-color: #0e1117; border: 1px solid #da77f244; border-radius: 8px; min-height: 100px;">
 <div style="font-size: 16px; color: #da77f2; font-weight: 600;">Drug Discovery</div>
 <div style="font-size: 14px; color: #aaa; margin-top: 6px;">Efficacy + Safety + Cost</div>
 </div>""", unsafe_allow_html=True)
     with col2:
-        st.markdown("""<div style="padding: 16px; background-color: #0e1117; border: 1px solid #ffd43b44; border-radius: 8px; height: 100px;">
+        st.markdown("""<div style="padding: 16px; background-color: #0e1117; border: 1px solid #ffd43b44; border-radius: 8px; min-height: 100px;">
 <div style="font-size: 16px; color: #ffd43b; font-weight: 600;">Climate / Energy</div>
 <div style="font-size: 14px; color: #aaa; margin-top: 6px;">Clean + Reliable + Affordable</div>
 </div>""", unsafe_allow_html=True)
     with col3:
-        st.markdown("""<div style="padding: 16px; background-color: #0e1117; border: 1px solid #00d4aa44; border-radius: 8px; height: 100px;">
+        st.markdown("""<div style="padding: 16px; background-color: #0e1117; border: 1px solid #00d4aa44; border-radius: 8px; min-height: 100px;">
 <div style="font-size: 16px; color: #00d4aa; font-weight: 600;">Foundation Models</div>
 <div style="font-size: 14px; color: #aaa; margin-top: 6px;">Capability + Alignment + Efficiency</div>
 </div>""", unsafe_allow_html=True)
