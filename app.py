@@ -54,18 +54,12 @@ def main():
     # HEADER
     # ========================================================================
 
-    st.title("🔬 COGNISYN")
+    st.title("🔬 COGNISYN — Why trade off? AI-operated math finds cooperative wins.")
+
+    st.info("**COGNISYN** is cooperative intelligence through mathematical physics. Where classical methods accept trade-offs as inevitable, COGNISYN applies AI-operated quantum game theory to find cooperative wins.")
 
     st.markdown("""
-    <div style="text-align: center; padding: 16px 0;">
-        <span style="font-size: 28px; color: #ffd43b; font-weight: bold;">Why trade off? AI-operated math finds cooperative wins.</span>
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.info("**COGNISYN** is cooperative intelligence through mathematical physics. Where classical methods accept trade-offs as inevitable, COGNISYN applies AI-operated quantum game theory to find cooperative wins. Just as annealing borrows from metallurgy without molten metal, COGNISYN borrows from quantum mechanics without the need for qubits.")
-
-    st.markdown("""
-    **First application: quantum computing materials discovery** — finding host crystals for Yb-171 where host quality, optical properties, and spin coherence are ALL high simultaneously, not one at the expense of another. Materials scientists are currently stuck with sub-optimal trade-offs. Multi-objective optimization matters from materials to medicine to society — the same mathematics applies wherever classical methods force trade-offs.
+    **First application: quantum computing materials discovery** — finding host crystals for Yb-171 where host quality, optical properties, and spin coherence are ALL high simultaneously, not one at the expense of another.
 
     **What are host materials?** Crystals that Yb-171 ions are doped into (e.g., `CaWO₄:Yb³⁺` = Yb in calcium tungstate).
     """)
