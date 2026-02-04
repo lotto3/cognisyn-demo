@@ -45,6 +45,10 @@ def main():
         .stMetric {background-color: #1e2130; padding: 10px; border-radius: 5px;}
         h1, h2, h3 {color: #00ffff;}
         p, li, .stMarkdown {font-size: 20px !important; line-height: 1.7;}
+        /* Tighter spacing in header area */
+        .block-container {padding-top: 1rem;}
+        h1 {margin-bottom: 0 !important;}
+        .stAlert {margin-top: 0.5rem !important; margin-bottom: 0.5rem !important;}
         /* Hide sidebar toggle for clean layout */
         [data-testid="collapsedControl"] {display: none;}
         </style>
@@ -56,11 +60,7 @@ def main():
 
     st.title("🔬 COGNISYN")
 
-    st.markdown("""
-    <div style="text-align: left; margin-top: -16px; padding-bottom: 16px;">
-        <span style="font-size: 22px; color: #ffffff;">Applying AI-operated quantum game theory to find cooperative wins</span>
-    </div>
-    """, unsafe_allow_html=True)
+    st.caption("Applying AI-operated quantum game theory to find cooperative wins")
 
     st.info("**COGNISYN** turns LLMs into mathematical physics operators. Three AI agents create rules in Baba is Quantum grammar — subject, verb, property. Each rule triggers real Hamiltonian computation. The LLMs operate the mathematics, they don't generate the answers — no hallucination of results possible.")
 
