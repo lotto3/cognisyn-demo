@@ -813,7 +813,7 @@ result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
         <div style="width: 240px; padding: 20px; background-color: #da77f215; border: 2px solid #da77f2; border-radius: 12px; text-align: center;">
             <div style="font-size: 28px; margin-bottom: 8px;">🧠</div>
             <div style="font-size: 17px; color: #da77f2; font-weight: 700;">LLM Creates Baba is Quantum Rule</div>
-            <div style="font-size: 14px; color: #aaa; margin-top: 8px; font-family: monospace;">[COMPOUNDS] [SUPERPOSE]<br/>[CARE-EQUILIBRIA]</div>
+            <div style="font-size: 14px; color: #aaa; margin-top: 8px;">Compositional grammar<br/>maps to operators</div>
         </div>
 
         <div style="font-size: 28px; color: #aaa;">→</div>
