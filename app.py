@@ -54,14 +54,20 @@ def main():
     # HEADER
     # ========================================================================
 
-    st.title("🔬 COGNISYN: Yb-171 Host Materials Discovery")
-
-    st.info("**COGNISYN** turns LLMs into mathematical physics operators using quantum-inspired game theory. Quantum game theory discovers synergies where classical methods find only trade-offs.")
+    st.title("🔬 COGNISYN")
 
     st.markdown("""
-    **What are host materials?** Crystals that Yb-171 ions are doped into (e.g., `CaWO₄:Yb³⁺` = Yb in calcium tungstate).
+    <div style="text-align: center; padding: 16px 0;">
+        <span style="font-size: 28px; color: #ffd43b; font-weight: bold;">Why trade off? AI-operated math finds mutual wins.</span>
+    </div>
+    """, unsafe_allow_html=True)
 
-    **Mission:** Find hosts where **host quality + optical properties + spin coherence** are ALL high—synergies beyond the Pareto frontier.
+    st.info("**COGNISYN** is cooperative intelligence through mathematical physics. Where classical methods accept trade-offs as inevitable, our quantum game theory finds the state where all objectives cooperate — no qubits required, just as simulated annealing borrows from metallurgy without molten metal.")
+
+    st.markdown("""
+    **First application: quantum computing materials discovery** — finding host crystals for Yb-171 where host quality, optical properties, and spin coherence are ALL high. Multi-objective optimization matters from materials to medicine to society — the same mathematics applies wherever classical methods force trade-offs.
+
+    **What are host materials?** Crystals that Yb-171 ions are doped into (e.g., `CaWO₄:Yb³⁺` = Yb in calcium tungstate).
     """)
 
     st.markdown("---")
