@@ -460,6 +460,104 @@ def main():
     st.markdown("---")
 
     # ========================================================================
+    # PLATFORM VALIDATION: PID CONTROL SYSTEMS (from pitch deck slide 7)
+    # ========================================================================
+
+    st.header("Platform Validation: Same Math. Different Domain.")
+
+    st.markdown("""
+<div style="font-size: 17px; color: #aaa; margin-bottom: 20px;">
+    Speed OR Stability OR Accuracy — COGNISYN finds all three.
+</div>
+""", unsafe_allow_html=True)
+
+    st.markdown("""
+<div style="background-color: #1e2130; padding: 20px; border-radius: 10px; border-left: 6px solid #4dabf7; margin-bottom: 20px;">
+    <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
+        <b style="color: #4dabf7;">PID</b> (Proportional-Integral-Derivative) controllers are everywhere —
+        thermostats, cruise control, drones, industrial automation. Every PID system faces the same
+        "pick two" trade-off that plagues materials discovery.
+    </p>
+</div>
+""", unsafe_allow_html=True)
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("""
+<div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #ff6b6b; height: 320px;">
+    <h4 style="color: #ff6b6b; font-size: 22px; margin-bottom: 16px;">Traditional PID Tuning</h4>
+    <div style="display: flex; justify-content: center; gap: 18px; margin-bottom: 16px;">
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: #00d4aa; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <span style="font-size: 11px; color: #0a0a0f; font-weight: 600;">Speed</span>
+            <span style="font-size: 13px; color: #0a0a0f; font-weight: 700;">HIGH</span>
+        </div>
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: #00d4aa; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <span style="font-size: 11px; color: #0a0a0f; font-weight: 600;">Stability</span>
+            <span style="font-size: 13px; color: #0a0a0f; font-weight: 700;">HIGH</span>
+        </div>
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: #ff6b6b; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <span style="font-size: 11px; color: #0a0a0f; font-weight: 600;">Accuracy</span>
+            <span style="font-size: 13px; color: #0a0a0f; font-weight: 700;">LOW</span>
+        </div>
+    </div>
+    <div style="text-align: center; padding: 12px; background-color: #ff6b6b33; border-radius: 6px;">
+        <span style="font-size: 16px; color: #ff6b6b; font-weight: 600;">"Pick two" — the engineer's dilemma</span>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""
+<div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border: 2px solid #00d4aa; height: 320px;">
+    <h4 style="color: #00d4aa; font-size: 22px; margin-bottom: 16px;">COGNISYN Care Equilibrium</h4>
+    <div style="display: flex; justify-content: center; gap: 18px; margin-bottom: 16px;">
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: #00d4aa; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <span style="font-size: 11px; color: #0a0a0f; font-weight: 600;">Speed</span>
+            <span style="font-size: 13px; color: #0a0a0f; font-weight: 700;">HIGH</span>
+        </div>
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: #00d4aa; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <span style="font-size: 11px; color: #0a0a0f; font-weight: 600;">Stability</span>
+            <span style="font-size: 13px; color: #0a0a0f; font-weight: 700;">HIGH</span>
+        </div>
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: #00d4aa; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <span style="font-size: 11px; color: #0a0a0f; font-weight: 600;">Accuracy</span>
+            <span style="font-size: 13px; color: #0a0a0f; font-weight: 700;">HIGH</span>
+        </div>
+    </div>
+    <div style="text-align: center; padding: 12px; background-color: #00d4aa33; border-radius: 6px;">
+        <span style="font-size: 16px; color: #00d4aa; font-weight: 600;">All three — Care finds the synergy</span>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+    st.markdown("""
+<div style="background-color: #0e1117; border: 1px solid #2a2a3a; border-radius: 10px; padding: 16px 20px; margin-top: 16px;">
+    <div style="display: grid; grid-template-columns: auto 1fr auto 1fr auto 1fr; gap: 6px 12px; font-size: 15px;">
+        <span style="color: #4dabf7; font-weight: 600;">B1:</span>
+        <span style="color: #aaa;">P-specialist → Speed</span>
+        <span style="color: #da77f2; font-weight: 600;">B2:</span>
+        <span style="color: #aaa;">I-specialist → Accuracy</span>
+        <span style="color: #00d4aa; font-weight: 600;">B3:</span>
+        <span style="color: #aaa;">D-specialist → Stability</span>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+    st.markdown("""
+<div style="text-align: center; padding: 20px; background-color: #1e2130; border: 2px solid #da77f2; border-radius: 10px; margin-top: 20px;">
+    <span style="color: #da77f2; font-size: 20px; font-weight: bold;">
+        Same H_total. Same Care operator. Same Baba is Quantum grammar.<br/>
+    </span>
+    <span style="color: #aaa; font-size: 17px;">
+        The math that discovers quantum materials also tunes control systems.
+    </span>
+</div>
+""", unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ========================================================================
     # ORCHESTRATION MONITOR
     # ========================================================================
 
