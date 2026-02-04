@@ -390,7 +390,7 @@ def main():
     st.markdown("""
     Each rule accesses **H_total** — a Hermitian Hamiltonian in Hilbert space with 8 components,
     computed classically from [Materials Project](https://materialsproject.org/) data for **1,073 Yb-containing compounds**.
-    The LLM operates the mathematics — it doesn't generate the answers.
+    The LLMs operate the mathematics — they don't generate the answers.
     """)
 
     # Why This Runs on Classical Compute (from pitch deck slide 5)
@@ -719,7 +719,7 @@ Care · EQFT · Coherence · Scale Coupling · Boundary · +3
 
     st.markdown("""<div style="text-align: center; padding: 20px; background-color: #1e2130; border: 2px solid #00d4aa; border-radius: 10px; margin-top: 20px;">
 <span style="color: #00d4aa; font-size: 20px; font-weight: bold;">
-The LLM operates the mathematics — it doesn't generate the answers.
+The LLMs operate the mathematics — they don't generate the answers.
 </span>
 </div>""", unsafe_allow_html=True)
 
