@@ -784,6 +784,64 @@ result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
     </div>
     """, unsafe_allow_html=True)
 
+    # Cumulative Intelligence: Dynamic Memory Architecture (from pitch deck slide 13)
+    st.subheader("Cumulative Intelligence")
+
+    st.markdown("""
+Not ephemeral sessions — learning that persists
+    """)
+
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        st.markdown("""<div style="padding: 18px; background-color: #ff6b6b15; border: 1px solid #ff6b6b44; border-radius: 8px; margin-bottom: 14px;">
+<div style="font-size: 17px; color: #ff6b6b; font-weight: 600;">The Problem</div>
+<div style="font-size: 15px; color: #aaa; margin-top: 8px; line-height: 1.6;">Every LLM session starts from zero.<br/>Insights, patterns — all lost at context limit.</div>
+</div>""", unsafe_allow_html=True)
+
+        st.markdown("""<div style="padding: 18px; background-color: #00d4aa15; border: 1px solid #00d4aa44; border-radius: 8px;">
+<div style="font-size: 17px; color: #00d4aa; font-weight: 600;">COGNISYN Solution</div>
+<div style="font-size: 15px; color: #aaa; margin-top: 8px; line-height: 1.6;">Base LLM stays frozen.<br/>Learning via external memory + rules.</div>
+</div>""", unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""<div style="text-align: center; font-size: 14px; color: #aaa; margin-bottom: 10px;">Dynamic Memory Architecture</div>
+<div style="padding: 14px 18px; background-color: #4dabf722; border-left: 3px solid #4dabf7; border-radius: 8px; margin-bottom: 8px;">
+<div style="font-size: 15px; color: #4dabf7; font-weight: 600;">Layer 1: Episodic Memory</div>
+<div style="font-size: 13px; color: #aaa;">"What happened" — Experiences with amplitudes + phases</div>
+</div>
+<div style="text-align: center; font-size: 12px; color: #00d4aa; padding: 4px 0;">↓ Constructive: matching patterns reinforce ↓</div>
+<div style="padding: 14px 18px; background-color: #00d4aa22; border-left: 3px solid #00d4aa; border-radius: 8px; margin-bottom: 8px;">
+<div style="font-size: 15px; color: #00d4aa; font-weight: 600;">Layer 2: Strategic Memory</div>
+<div style="font-size: 13px; color: #aaa;">"What works" — Successful patterns amplified</div>
+</div>
+<div style="text-align: center; font-size: 12px; color: #ff6b6b; padding: 4px 0;">↓ Destructive: conflicting patterns cancel ↓</div>
+<div style="padding: 14px 18px; background-color: #da77f222; border-left: 3px solid #da77f2; border-radius: 8px;">
+<div style="font-size: 15px; color: #da77f2; font-weight: 600;">Layer 3: Conceptual Memory</div>
+<div style="font-size: 13px; color: #aaa;">"What it means" — Only coherent abstractions persist</div>
+</div>""", unsafe_allow_html=True)
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown("""<div style="text-align: center; padding: 12px;">
+<div style="font-size: 16px; color: #00d4aa; font-weight: 600;">Learning</div>
+<div style="font-size: 13px; color: #aaa;">Repeated patterns amplify</div>
+</div>""", unsafe_allow_html=True)
+    with col2:
+        st.markdown("""<div style="text-align: center; padding: 12px;">
+<div style="font-size: 16px; color: #ff6b6b; font-weight: 600;">No Overfitting</div>
+<div style="font-size: 13px; color: #aaa;">Noise cancels out</div>
+</div>""", unsafe_allow_html=True)
+    with col3:
+        st.markdown("""<div style="text-align: center; padding: 12px;">
+<div style="font-size: 16px; color: #da77f2; font-weight: 600;">Generalization</div>
+<div style="font-size: 13px; color: #aaa;">Only consistent patterns survive</div>
+</div>""", unsafe_allow_html=True)
+
+    st.markdown("""<div style="text-align: center; padding: 12px; margin-top: 8px;">
+<span style="font-size: 15px; color: #4dabf7; font-style: italic;">One mechanism delivers all three — no hyperparameter tuning required</span>
+</div>""", unsafe_allow_html=True)
+
     st.markdown("---")
 
     # ========================================================================
