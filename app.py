@@ -195,6 +195,40 @@ def main():
     st.markdown("---")
 
     # ========================================================================
+    # LLMs AS STRATEGIC OPERATORS (from pitch deck slide 10)
+    # ========================================================================
+
+    st.header("LLMs as Strategic Operators")
+
+    st.markdown("""
+Not knowledge repositories — mathematical physics operators
+    """)
+
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        st.markdown("""<div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border: 2px solid #2a2a3a; text-align: center; height: 160px;">
+<div style="font-size: 22px; color: #da77f2; font-weight: 700; margin-bottom: 10px;">Most AI</div>
+<div style="font-size: 16px; color: #aaa;">LLMs as knowledge repositories</div>
+<div style="font-size: 17px; color: #e0e0e0; margin-top: 10px;">Query → Answer</div>
+</div>""", unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""<div style="background-color: #1e2130; padding: 24px; border-radius: 10px; border: 2px solid #00d4aa; text-align: center; height: 160px;">
+<div style="font-size: 22px; color: #00d4aa; font-weight: 700; margin-bottom: 10px;">COGNISYN</div>
+<div style="font-size: 16px; color: #aaa;">LLMs as strategic operators</div>
+<div style="font-size: 17px; color: #e0e0e0; margin-top: 10px;">Rule → H_total → Discovery</div>
+</div>""", unsafe_allow_html=True)
+
+    st.markdown("""<div style="text-align: center; padding: 20px; background-color: #1e2130; border: 2px solid #da77f2; border-radius: 10px; margin-top: 20px;">
+<span style="color: #da77f2; font-size: 18px; font-style: italic;">
+Language emerges bottom-up — AI agents discover what works through doing
+</span>
+</div>""", unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ========================================================================
     # REAL RESULTS: 5-EXAMPLE DISCOVERY PIPELINE
     # ========================================================================
 
@@ -556,6 +590,79 @@ def main():
     </span>
 </div>
 """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ========================================================================
+    # MARKET EXPANSION: NOW → NEXT → FUTURE (from pitch deck slide 14)
+    # ========================================================================
+
+    st.header("Market Expansion: NOW → NEXT → FUTURE")
+
+    st.markdown("""
+Same H_total mathematics — different "pick two" problems
+    """)
+
+    # NOW
+    st.markdown("""<div style="padding: 18px 24px; background-color: #00d4aa15; border: 2px solid #00d4aa; border-radius: 10px; margin-bottom: 16px;">
+<div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+<div style="font-size: 14px; font-weight: 700; background: #00d4aa; color: #0a0a0f; padding: 6px 14px; border-radius: 4px;">NOW</div>
+<div style="flex: 1; min-width: 200px;">
+<div style="font-size: 20px; color: #00d4aa; font-weight: 700;">Quantum Computing Materials</div>
+<div style="font-size: 15px; color: #aaa; margin-top: 4px;">Host quality + Optical properties + Spin coherence — demo running</div>
+</div>
+<div style="text-align: right;">
+<div style="font-size: 26px; color: #00d4aa; font-weight: 700;">$50B+</div>
+<div style="font-size: 12px; color: #aaa;">by 2030</div>
+</div>
+</div>
+</div>""", unsafe_allow_html=True)
+
+    # NEXT
+    st.markdown("""<div style="padding: 18px 24px; background-color: #4dabf715; border: 2px solid #4dabf7; border-radius: 10px; margin-bottom: 20px;">
+<div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+<div style="font-size: 14px; font-weight: 700; background: #4dabf7; color: #0a0a0f; padding: 6px 14px; border-radius: 4px;">NEXT</div>
+<div style="flex: 1; min-width: 200px;">
+<div style="font-size: 20px; color: #4dabf7; font-weight: 700;">Control Systems (PID)</div>
+<div style="font-size: 15px; color: #aaa; margin-top: 4px;">Speed + Stability + Accuracy — framework designed, same H_total</div>
+</div>
+<div style="text-align: right;">
+<div style="font-size: 26px; color: #4dabf7; font-weight: 700;">$350B+</div>
+<div style="font-size: 12px; color: #aaa;">industrial + robotics</div>
+</div>
+</div>
+</div>""", unsafe_allow_html=True)
+
+    # FUTURE
+    st.markdown("""
+FUTURE — more "pick two" problems:
+    """)
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown("""<div style="padding: 16px; background-color: #0e1117; border: 1px solid #da77f244; border-radius: 8px; height: 100px;">
+<div style="font-size: 16px; color: #da77f2; font-weight: 600;">Drug Discovery</div>
+<div style="font-size: 14px; color: #aaa; margin-top: 6px;">Efficacy + Safety + Cost</div>
+</div>""", unsafe_allow_html=True)
+    with col2:
+        st.markdown("""<div style="padding: 16px; background-color: #0e1117; border: 1px solid #ffd43b44; border-radius: 8px; height: 100px;">
+<div style="font-size: 16px; color: #ffd43b; font-weight: 600;">Climate / Energy</div>
+<div style="font-size: 14px; color: #aaa; margin-top: 6px;">Clean + Reliable + Affordable</div>
+</div>""", unsafe_allow_html=True)
+    with col3:
+        st.markdown("""<div style="padding: 16px; background-color: #0e1117; border: 1px solid #00d4aa44; border-radius: 8px; height: 100px;">
+<div style="font-size: 16px; color: #00d4aa; font-weight: 600;">Foundation Models</div>
+<div style="font-size: 14px; color: #aaa; margin-top: 6px;">Capability + Alignment + Efficiency</div>
+</div>""", unsafe_allow_html=True)
+
+    st.markdown("""
+*Today: 3 agents, 3 properties. **The math extends to N.***
+    """)
+
+    st.markdown("""<div style="text-align: center; padding: 20px; background-color: #1e2130; border: 2px solid #da77f2; border-radius: 10px; margin-top: 16px;">
+<div style="font-size: 17px; color: #e0e0e0;">World models describe the terrain. Strategic intelligence navigates it.</div>
+<div style="font-size: 19px; color: #da77f2; font-weight: 700; margin-top: 8px;">COGNISYN is the navigation layer — Care-guided exploration of possibility spaces.</div>
+</div>""", unsafe_allow_html=True)
 
     st.markdown("---")
 
