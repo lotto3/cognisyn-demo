@@ -160,12 +160,11 @@ def main():
     <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #00d4aa; margin-bottom: 20px;">
         <h4 style="color: #00d4aa; font-size: 22px; margin-bottom: 12px;">The Solution: A Different Mathematics</h4>
         <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
-            Competitive solutions to optimization problems aren't physics limits — they're mathematical assumptions.
-            We changed the mathematics. <span style="color: #00d4aa; font-weight: 700;">AI agents built the language.</span>
+            Quantum game theory introduces superposition, interference, and entanglement.
+            Three AI agents operate this mathematics, and <span style="color: #00d4aa; font-weight: 700;">COGNISYN's Care operator makes the computation tractable and cooperation the ground state.</span>
         </p>
         <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8; margin-top: 12px;">
-            <span style="color: #ffd43b; font-weight: 700;">COGNISYN enables quantum game theory on classical compute.</span>
-            Mathematical structures transfer without the physical substrate:
+            <span style="color: #ffd43b; font-weight: 700;">Mathematical structures transfer without the physical substrate:</span>
         </p>
     </div>
     """, unsafe_allow_html=True)
