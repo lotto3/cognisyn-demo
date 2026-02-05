@@ -201,7 +201,7 @@ def main():
     # THE STAG HUNT (from pitch deck slide 4)
     # ========================================================================
 
-    st.header("The Stag Hunt: Quantum Game Theory in Action")
+    st.header("The Stag Hunt: Game Theory's Classic Cooperation Problem")
 
     st.markdown("""
     <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; margin-bottom: 20px;">
