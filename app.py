@@ -161,7 +161,7 @@ def main():
         <h4 style="color: #00d4aa; font-size: 22px; margin-bottom: 12px;">The Solution: A Different Mathematics</h4>
         <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
             Quantum game theory introduces superposition, interference, and entanglement.
-            COGNISYN's three AI agents operate this mathematics through Baba is Quantum grammar and the mathematical physics engine. <span style="color: #00d4aa; font-weight: 700;">The Care operator makes the computation tractable and cooperation the ground state.</span>
+            Three AI agents operate this mathematics through Baba is Quantum grammar and COGNISYN's mathematical physics engine. <span style="color: #00d4aa; font-weight: 700;">The Care operator makes the computation tractable and cooperation the ground state.</span>
         </p>
         <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8; margin-top: 12px;">
             <span style="color: #ffd43b; font-weight: 700;">Mathematical structures transfer without the physical substrate:</span>
