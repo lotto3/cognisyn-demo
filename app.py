@@ -109,7 +109,7 @@ def main():
 
     st.markdown("""
     <div style="text-align: center; padding: 24px; background-color: #1e2130; border-radius: 8px; margin-top: 20px;">
-        <span style="color: #00d4aa; font-size: 22px; font-weight: bold;">COGNISYN searches systematically for hosts where ALL THREE are high</span>
+        <span style="color: #00d4aa; font-size: 22px; font-weight: bold;">COGNISYN finds cooperative wins — host materials where ALL THREE are high</span>
     </div>
     """, unsafe_allow_html=True)
 
@@ -238,7 +238,7 @@ def main():
             No one can improve by changing alone, yet everyone is worse off.
         </p>
         <p style="font-size: 17px; color: #00d4aa; line-height: 1.8; margin-top: 12px; font-weight: 600;">
-            Same principle as Yb-171 host materials discovery: classical optimization forces trade-offs. Three AI agents apply quantum game theory through Baba is Quantum grammar — COGNISYN's mathematical physics engine computes the results, agents evaluate and discover cooperative wins.
+            Same principle as Yb-171 host materials discovery: classical optimization forces trade-offs. COGNISYN's three AI agents apply quantum game theory through Baba is Quantum grammar — COGNISYN's mathematical physics engine computes the results, agents evaluate and discover cooperative wins.
         </p>
     </div>
     """, unsafe_allow_html=True)
