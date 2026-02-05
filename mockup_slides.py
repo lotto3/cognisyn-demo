@@ -7,30 +7,36 @@ Formatted for 16:9 aspect ratio — one screenshot per Google Slide.
 """
 import streamlit as st
 
-st.set_page_config(page_title="COGNISYN UI/UX", page_icon="🔬", layout="wide")
+st.set_page_config(page_title="COGNISYN UI/UX", page_icon="🔬", layout="wide", initial_sidebar_state="collapsed")
 
 st.markdown("""
 <style>
 .main {background-color: #0e1117;}
 h1, h2, h3 {color: #00ffff;}
 p, li, .stMarkdown {font-size: 18px !important; line-height: 1.6;}
+/* Hide sidebar, hamburger menu, and footer for clean screenshots */
+[data-testid="stSidebar"] {display: none;}
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
 </style>
 """, unsafe_allow_html=True)
 
-# Slide selector
-slide = st.sidebar.radio("Slide", [
+# Top-level slide selector (no sidebar)
+slide = st.selectbox("Slide", [
     "1. Orchestration Monitor — Overview",
-    "2. Orchestration Monitor — Agent Detail",
-    "3. Pipeline Test Code — Setup & SUPERPOSE",
-    "4. Pipeline Test Code — Pipeline & Results",
-    "5. System Overview",
-    "6. Three-Agent Architecture",
-    "7. Baba is Quantum Grammar",
-    "8. Pipeline Progression",
-    "9. Pipeline Output — SUPERPOSE & ENTANGLE",
-    "10. Pipeline Output — INTERFERE & Care vs Nash",
-    "11. Care vs Nash Equilibria",
-    "12. Agent Learning System",
+    "2. Orchestration Monitor — B1 & B2",
+    "3. Orchestration Monitor — B2 & B3",
+    "4. Pipeline Test Code — Setup & SUPERPOSE",
+    "5. Pipeline Test Code — Multi-Stage Operations",
+    "6. System Overview",
+    "7. Three-Agent Architecture",
+    "8. Baba is Quantum Grammar",
+    "9. Pipeline Progression",
+    "10. Pipeline Output — SUPERPOSE & ENTANGLE",
+    "11. Pipeline Output — INTERFERE & Care vs Nash",
+    "12. Care vs Nash Equilibria",
+    "13. Agent Learning System",
 ])
 
 if slide.startswith("1."):
@@ -48,6 +54,27 @@ if slide.startswith("1."):
 
     st.image("dashboard_overview.png", caption="System overview: 5/5 examples complete, 3/3 agents, 1,073 compounds evaluated, 24 strategic patterns learned")
 
+    st.markdown("""
+    <div style="text-align: center; padding: 12px; background-color: #1e2130; border-radius: 8px; margin-top: 10px;">
+        <span style="font-size: 14px; color: #888;">
+            Illustrative examples from orchestration pipeline test. Scores computed by H_total from real crystal structure data.
+        </span>
+    </div>
+    """, unsafe_allow_html=True)
+
+elif slide.startswith("2."):
+    # ---- SLIDE 2: ORCHESTRATION MONITOR — B1 & B2 ----
+    st.markdown("""
+    <div style="padding: 20px 40px 10px;">
+        <h2 style="font-size: 36px; color: #00ffff; text-align: center; margin-bottom: 8px;">
+            Orchestration Monitor — B1 & B2
+        </h2>
+        <p style="text-align: center; font-size: 18px; color: #aaa; margin-bottom: 20px;">
+            Each agent evaluates from its own property perspective using the same Baba is Quantum grammar.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
     col1, col2 = st.columns(2)
     with col1:
         st.image("dashboard_b1_examples.png", caption="B1 (Host Quality): All 5 examples — SUPERPOSE to full 3-stage pipeline")
@@ -62,15 +89,15 @@ if slide.startswith("1."):
     </div>
     """, unsafe_allow_html=True)
 
-elif slide.startswith("2."):
-    # ---- SLIDE 2: ORCHESTRATION MONITOR — AGENT DETAIL ----
+elif slide.startswith("3."):
+    # ---- SLIDE 3: ORCHESTRATION MONITOR — B2 & B3 ----
     st.markdown("""
     <div style="padding: 20px 40px 10px;">
         <h2 style="font-size: 36px; color: #00ffff; text-align: center; margin-bottom: 8px;">
-            Orchestration Monitor — Agent Detail
+            Orchestration Monitor — B2 & B3
         </h2>
         <p style="text-align: center; font-size: 18px; color: #aaa; margin-bottom: 20px;">
-            Each agent evaluates from its own property perspective. When all three score above threshold simultaneously, that's a Care equilibrium.
+            When all three agents score above threshold simultaneously, that's a Care equilibrium.
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -95,8 +122,8 @@ elif slide.startswith("2."):
     </div>
     """, unsafe_allow_html=True)
 
-elif slide.startswith("3."):
-    # ---- SLIDE 3: PIPELINE TEST CODE — SETUP & SUPERPOSE ----
+elif slide.startswith("4."):
+    # ---- SLIDE 4: PIPELINE TEST CODE — SETUP & SUPERPOSE ----
     st.markdown("""
     <div style="padding: 20px 40px 10px;">
         <h2 style="font-size: 36px; color: #00ffff; text-align: center; margin-bottom: 8px;">
@@ -142,8 +169,8 @@ result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
     </div>
     """, unsafe_allow_html=True)
 
-elif slide.startswith("4."):
-    # ---- SLIDE 4: PIPELINE TEST CODE — PIPELINE & RESULTS ----
+elif slide.startswith("5."):
+    # ---- SLIDE 5: PIPELINE TEST CODE — PIPELINE & RESULTS ----
     st.markdown("""
     <div style="padding: 20px 40px 10px;">
         <h2 style="font-size: 36px; color: #00ffff; text-align: center; margin-bottom: 8px;">
@@ -184,8 +211,8 @@ result = await b.orchestrate_mathematics(rule, ctx, {'day': 6})
     </div>
     """, unsafe_allow_html=True)
 
-elif slide.startswith("5."):
-    # ---- SLIDE 5: SYSTEM OVERVIEW ----
+elif slide.startswith("6."):
+    # ---- SLIDE 6: SYSTEM OVERVIEW ----
     st.markdown("""
     <div style="text-align: center; padding: 60px 40px;">
         <h1 style="font-size: 48px; color: #00ffff; margin-bottom: 20px;">🔬 COGNISYN</h1>
@@ -220,8 +247,8 @@ elif slide.startswith("5."):
     </div>
     """, unsafe_allow_html=True)
 
-elif slide.startswith("6."):
-    # ---- SLIDE 6: THREE-AGENT ARCHITECTURE ----
+elif slide.startswith("7."):
+    # ---- SLIDE 7: THREE-AGENT ARCHITECTURE ----
     st.markdown("""
     <div style="padding: 40px;">
         <h2 style="font-size: 36px; color: #00ffff; text-align: center; margin-bottom: 30px;">
@@ -261,8 +288,11 @@ elif slide.startswith("6."):
             </div>
         </div>
         <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: #1e2130; border-radius: 8px; max-width: 700px; margin-left: auto; margin-right: auto;">
-            <span style="font-size: 18px; color: #ffd43b; font-weight: bold;">
+            <span style="font-size: 16px; color: #ffd43b; font-weight: bold;">
                 H<sub>total</sub> = H<sub>quantum</sub> + H<sub>classical</sub> + H<sub>coupling</sub> + H<sub>care</sub>
+            </span><br/>
+            <span style="font-size: 14px; color: #ffd43b;">
+                F<sub>boundary</sub>(t) = optimize(ρ<sub>quantum</sub>, ρ<sub>classical</sub>, C<sub>care</sub>)
             </span><br/>
             <span style="font-size: 15px; color: #888;">
                 Care operator C<sub>λ</sub> reweights the energy landscape — cooperation becomes the ground state
@@ -271,8 +301,8 @@ elif slide.startswith("6."):
     </div>
     """, unsafe_allow_html=True)
 
-elif slide.startswith("7."):
-    # ---- SLIDE 7: BABA IS QUANTUM GRAMMAR ----
+elif slide.startswith("8."):
+    # ---- SLIDE 8: BABA IS QUANTUM GRAMMAR ----
     st.markdown("""
     <div style="padding: 40px;">
         <h2 style="font-size: 36px; color: #00ffff; text-align: center; margin-bottom: 30px;">
@@ -311,8 +341,8 @@ elif slide.startswith("7."):
     </div>
     """, unsafe_allow_html=True)
 
-elif slide.startswith("8."):
-    # ---- SLIDE 8: PIPELINE PROGRESSION ----
+elif slide.startswith("9."):
+    # ---- SLIDE 9: PIPELINE PROGRESSION ----
     st.markdown("""
     <div style="padding: 40px;">
         <h2 style="font-size: 36px; color: #00ffff; text-align: center; margin-bottom: 30px;">
@@ -353,8 +383,8 @@ elif slide.startswith("8."):
     </div>
     """, unsafe_allow_html=True)
 
-elif slide.startswith("9."):
-    # ---- SLIDE 9: PIPELINE OUTPUT — SUPERPOSE & ENTANGLE ----
+elif slide.startswith("10."):
+    # ---- SLIDE 10: PIPELINE OUTPUT — SUPERPOSE & ENTANGLE ----
     st.markdown("""
     <div style="padding: 30px 40px;">
         <h2 style="font-size: 36px; color: #00ffff; text-align: center; margin-bottom: 10px;">
@@ -389,8 +419,8 @@ elif slide.startswith("9."):
     </div>
     """, unsafe_allow_html=True)
 
-elif slide.startswith("10."):
-    # ---- SLIDE 10: PIPELINE OUTPUT — INTERFERE & CARE VS NASH ----
+elif slide.startswith("11."):
+    # ---- SLIDE 11: PIPELINE OUTPUT — INTERFERE & CARE VS NASH ----
     st.markdown("""
     <div style="padding: 30px 40px;">
         <h2 style="font-size: 36px; color: #00ffff; text-align: center; margin-bottom: 10px;">
@@ -423,8 +453,8 @@ elif slide.startswith("10."):
     </div>
     """, unsafe_allow_html=True)
 
-elif slide.startswith("11."):
-    # ---- SLIDE 11: CARE VS NASH FULL ----
+elif slide.startswith("12."):
+    # ---- SLIDE 12: CARE VS NASH FULL ----
     st.markdown("""
     <div style="padding: 40px;">
         <h2 style="font-size: 36px; color: #00ffff; text-align: center; margin-bottom: 30px;">
@@ -457,15 +487,16 @@ elif slide.startswith("11."):
             </div>
         </div>
         <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: #1e2130; border-radius: 8px; max-width: 700px; margin-left: auto; margin-right: auto;">
-            <span style="font-size: 18px; color: #ffd43b; font-weight: bold;">H<sub>total</sub> = H<sub>quantum</sub> + H<sub>classical</sub> + H<sub>coupling</sub> + H<sub>care</sub></span><br/>
+            <span style="font-size: 16px; color: #ffd43b; font-weight: bold;">H<sub>total</sub> = H<sub>quantum</sub> + H<sub>classical</sub> + H<sub>coupling</sub> + H<sub>care</sub></span><br/>
+            <span style="font-size: 14px; color: #ffd43b;">F<sub>boundary</sub>(t) = optimize(ρ<sub>quantum</sub>, ρ<sub>classical</sub>, C<sub>care</sub>)</span><br/>
             <span style="font-size: 16px; color: #888;">Care operator C<sub>λ</sub> reweights the energy landscape — cooperation becomes the ground state</span><br/>
             <span style="font-size: 13px; color: #666;">Illustrative examples from orchestration pipeline test. Scores computed by H_total from real crystal structure data.</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
-elif slide.startswith("12."):
-    # ---- SLIDE 12: AGENT LEARNING ----
+elif slide.startswith("13."):
+    # ---- SLIDE 13: AGENT LEARNING ----
     st.markdown("""
     <div style="padding: 40px;">
         <h2 style="font-size: 36px; color: #00ffff; text-align: center; margin-bottom: 30px;">
@@ -496,7 +527,7 @@ elif slide.startswith("12."):
             <div style="font-size: 16px; color: #c0c0c0; line-height: 1.8;">
                 <b style="color: #00d4aa;">Episodic Memory</b> — Each orchestration step recorded. Agents recall what worked.<br/>
                 <b style="color: #4dabf7;">Strategic Patterns</b> — Cross-example insights emerge. Agents recognize structure.<br/>
-                <b style="color: #ffd43b;">Creative Composition</b> — Agents invent NEW Baba is Quantum rules during orchestration.<br/>
+                <b style="color: #ffd43b;">Creative Composition</b> — Agents create NEW Baba is Quantum rules during orchestration.<br/>
                 <b style="color: #ff6b6b;">Cumulative Intelligence</b> — Knowledge persists across examples via DynamicMemoryArchitecture.
             </div>
         </div>

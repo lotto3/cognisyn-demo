@@ -125,7 +125,7 @@ def main():
     <div style="background-color: #1e2130; padding: 28px; border-radius: 10px; border-left: 6px solid #ff6b6b; margin-bottom: 20px;">
         <h4 style="color: #ff6b6b; font-size: 22px; margin-bottom: 12px;">The Hidden Premise</h4>
         <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8;">
-            Classical optimization forces impossible choices. "Pick two" blocks progress everywhere:
+            Classical optimization forces trade-offs — every gain requires a sacrifice:
         </p>
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px;">
             <div style="text-align: center; padding: 14px; background-color: #0e1117; border-radius: 8px; border: 1px solid #ff6b6b44;">
