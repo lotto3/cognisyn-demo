@@ -66,8 +66,6 @@ def main():
     **What are host materials?** Crystals that Yb-171 ions are doped into (e.g., `CaWO₄:Yb³⁺` = Yb in calcium tungstate).
     """)
 
-    st.markdown("---")
-
     # ========================================================================
     # THE PROBLEM: PICK TWO
     # ========================================================================
