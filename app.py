@@ -58,7 +58,7 @@ def main():
 
     st.caption("Applying AI-operated quantum game theory to find cooperative wins")
 
-    st.info("**COGNISYN** turns LLMs into mathematical physics operators. Three AI agents create rules in Baba is Quantum grammar — subject, verb, property. Each rule triggers real Hamiltonian computation. The LLMs operate the mathematics, they don't generate the answers — no hallucination of results possible.")
+    st.info("**COGNISYN** turns LLMs into mathematical physics operators. Three AI agents create rules in Baba is Quantum grammar — subject, verb, property. Each rule triggers real Hamiltonian computation. The LLMs build the language through discovery — but results come from the math engine, not generation. No results hallucinated.")
 
     st.markdown("""
     **First application: quantum computing materials discovery** — finding host crystals for Yb-171 where host quality, optical properties, and spin coherence are ALL high simultaneously, not one at the expense of another.
