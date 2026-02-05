@@ -238,7 +238,7 @@ def main():
             No one can improve by changing alone, yet everyone is worse off.
         </p>
         <p style="font-size: 17px; color: #00d4aa; line-height: 1.8; margin-top: 12px; font-weight: 600;">
-            Same principle as Yb-171: classical optimization forces trade-offs. Three AI agents operate COGNISYN's mathematical physics engine through Baba is Quantum grammar — finding cooperative wins instead of trade-offs.
+            Same principle as Yb-171: classical optimization forces trade-offs. Three AI agents apply quantum game theory through Baba is Quantum grammar — COGNISYN's mathematical physics engine computes the results, agents evaluate and discover cooperative wins.
         </p>
     </div>
     """, unsafe_allow_html=True)
