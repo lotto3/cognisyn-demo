@@ -1174,9 +1174,6 @@ Not ephemeral sessions — learning that persists
     st.markdown("---")
 
     st.markdown("""
-**Key Innovation:** Care equilibria (synergies) beyond Pareto frontier (trade-offs).
-**Three Properties:** Host Quality · Optical Properties · Spin Coherence
-
 **Data Source:** [Materials Project](https://materialsproject.org/) — 150,000+ inorganic compounds, CC BY 4.0
     """)
 
