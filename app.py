@@ -304,10 +304,8 @@ def main():
     st.markdown("""
     <div style="text-align: center; padding: 24px; background-color: #1e2130; border-radius: 8px; border: 2px solid #00d4aa;">
         <span style="color: #e0e0e0; font-size: 18px;">
-            <span style="color: #00d4aa; font-weight: bold;">Same principle as Yb-171:</span>
-            Classical forces "pick 2 of 3" properties →
-            <span style="color: #4dabf7;">Quantum game theory</span> finds where
-            <span style="color: #00d4aa; font-weight: bold;">ALL THREE</span> synergize
+            <span style="color: #ff6b6b; font-weight: bold;">Classical:</span> both pick hare (stable but suboptimal) →
+            <span style="color: #00d4aa; font-weight: bold;">Quantum:</span> both hunt stag (cooperation wins)
         </span>
     </div>
     """, unsafe_allow_html=True)
