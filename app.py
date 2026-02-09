@@ -56,7 +56,7 @@ def main():
 
     st.title("🔬 COGNISYN")
 
-    st.caption("Applying AI-operated quantum game theory to find cooperative wins")
+    st.caption("AI for materials discovery via quantum game theory")
 
     st.info("**COGNISYN** turns LLMs into mathematical physics operators. Three AI agents create rules in Baba is Quantum grammar — subject, verb, property. Each rule triggers real Hamiltonian computation. The LLMs build the language through discovery — but results come from the math engine, not generation. No results hallucinated.")
 
