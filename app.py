@@ -56,7 +56,17 @@ def main():
 
     st.title("🔬 COGNISYN")
 
-    st.markdown("<p style='font-size: 1.8em; font-weight: 600; color: #00d4aa; margin-top: -10px;'>AI for materials discovery via quantum game theory</p>", unsafe_allow_html=True)
+    st.markdown("""
+<style>
+.tagline {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    color: #00d4aa !important;
+    margin-top: -10px !important;
+}
+</style>
+<p class="tagline">AI for materials discovery via quantum game theory</p>
+""", unsafe_allow_html=True)
 
     st.info("**COGNISYN** turns LLMs into mathematical physics operators. Three AI agents create rules in Baba is Quantum grammar — subject, verb, property. Each rule triggers real Hamiltonian computation. The LLMs build the language through discovery — but results come from the math engine, not generation. No results hallucinated.")
 
